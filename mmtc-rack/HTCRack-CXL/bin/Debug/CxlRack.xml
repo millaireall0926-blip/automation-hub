@@ -1,0 +1,194 @@
+<cxl-rack>
+  <rack-map column="2" logo="gsi" svmax="1" svmode="1" humidityWarnval="60">
+    <rack id="0" ip="192.168.1.101" port="5000" as="0" prev-sv="0">
+      <box name="A" id="0">
+        <site id="0">
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+        </site>
+        <site id="1">
+          <sv>2</sv>
+          <ssr>2,3</ssr>
+          <fp>2</fp>
+          <fan>2</fan>
+          <pv>2</pv>
+        </site>
+      </box>
+      <box name="B" id="1">
+        <site id="0">
+          <sv>4</sv>
+          <ssr>4,5</ssr>
+          <fp>4</fp>
+          <fan>4</fan>
+          <pv>4</pv>
+        </site>
+        <site id="1">
+          <sv>6</sv>
+          <ssr>6,7</ssr>
+          <fp>6</fp>
+          <fan>6</fan>
+          <pv>6</pv>
+        </site>
+      </box>
+    </rack>
+    <rack id="1" ip="192.168.1.102" port="5000" as="0" prev-sv="0">
+      <box name="A" id="0">
+        <site id="0">
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+        </site>
+        <site id="1">
+          <sv>2</sv>
+          <ssr>2,3</ssr>
+          <fp>2</fp>
+          <fan>2</fan>
+          <pv>2</pv>
+        </site>
+      </box>
+      <box name="B" id="1">
+        <site id="0">
+          <sv>4</sv>
+          <ssr>4,5</ssr>
+          <fp>4</fp>
+          <fan>4</fan>
+          <pv>4</pv>
+        </site>
+        <site id="1">
+          <sv>6</sv>
+          <ssr>6,7</ssr>
+          <fp>6</fp>
+          <fan>6</fan>
+          <pv>6</pv>
+        </site>
+      </box>
+    </rack>
+    <rack id="2" ip="192.168.1.103" port="5000" as="0" prev-sv="0">
+      <box name="A" id="0">
+        <site id="0">
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+        </site>
+        <site id="1">
+          <sv>2</sv>
+          <ssr>2,3</ssr>
+          <fp>2</fp>
+          <fan>2</fan>
+          <pv>2</pv>
+        </site>
+      </box>
+      <box name="B" id="1">
+        <site id="0">
+          <sv>4</sv>
+          <ssr>4,5</ssr>
+          <fp>4</fp>
+          <fan>4</fan>
+          <pv>4</pv>
+        </site>
+        <site id="1">
+          <sv>6</sv>
+          <ssr>6,7</ssr>
+          <fp>6</fp>
+          <fan>6</fan>
+          <pv>6</pv>
+        </site>
+      </box>
+    </rack>
+    <rack id="3" ip="192.168.1.104" port="5000" as="0" prev-sv="0">
+      <box name="A" id="0">
+        <site id="0">
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+        </site>
+        <site id="1">
+          <sv>2</sv>
+          <ssr>2,3</ssr>
+          <fp>2</fp>
+          <fan>2</fan>
+          <pv>2</pv>
+        </site>
+      </box>
+      <box name="B" id="1">
+        <site id="0">
+          <sv>4</sv>
+          <ssr>4,5</ssr>
+          <fp>4</fp>
+          <fan>4</fan>
+          <pv>4</pv>
+        </site>
+        <site id="1">
+          <sv>6</sv>
+          <ssr>6,7</ssr>
+          <fp>6</fp>
+          <fan>6</fan>
+          <pv>6</pv>
+        </site>
+      </box>
+    </rack>
+    <!-- <dim-pos>6,7,4,5,2,3,0,1,9,8,11,10,13,12,15,14,22,23,20,21,18,19,16,17,25,24,27,26,29,28,31,30</dim-pos>  -->
+  </rack-map>
+  <tams all="0" auto="1">
+    <!-- fix folder path is added rack number ex) fix1, fix2 ... -->
+    <set-temp path="z:\\result" folder="fix" name="hibim.txt" />
+    <!-- finish rack if test have made hdiag  ... -->
+    <end-flag path="z:\\result" folder="fix" name="hdiag.log" />
+  </tams>
+  <log save-ex="0" save-water="0" retention="1">
+    <event path="d:\\cxl-data" />
+    <temp path="d:\\cxl-data" />
+  </log>
+  <water over="70">
+    <pv>1,3,5,7</pv>
+  </water>
+  <!-- warte jacket Tcon PV Read : over temp limit -->
+  <fan duty="50" under="500" over="20000" />
+  <!-- set-duty, under rpm limit, over rpm limit -->
+  <cur>
+    <utility-cur>
+      <Water-Pump under="0.1" over="8" />
+      <Radiator-Fan under="1" over="8" />
+    </utility-cur>
+    <paltier-cur over="50" />
+  </cur>
+  <!-- Peltier Current Monitor -->
+  <fet-temp under="-10" warn="40" over="10000" />
+  <!-- FET Temp Monitor -->
+  <defrost targettemp="60" targetwaittime="10" tempstep="1" steptime="60" />
+  <dimm max="90" min="60" stable="10" limit="5" per-log="5" alarmH="90" alarmL="30" per-alarm="5" no-dimm-check="1800" SVMin="-10" SVMax="85">
+    <!-- example  
+        sv 60 인경우
+          baseline = 4, step = 0.5 경우
+            dimm avg가 64가 되면 -0.5 씩 sv를 낮춤.
+          baseline = 2, step = 0.2 경우 
+            dimm avg가 62가 되면 -0.2 씩 sv를 낮춤
+    -->
+    <limit use="0" baseline="4" step="0.5" />
+  </dimm>
+  <!-- Dimm Warnning, Over Temp -->
+  <gpio>
+    <ssr in="ff" out="0" ch="f" en="0" cold="ff" freq="0" />
+    <extra pump="0" rad="0" fan="1" />
+  </gpio>
+  <motor>
+    <polarity limit="0" contact="0" direction="0" />
+    <stepping freq="100000" maxcount="55000" />
+    <use boxcontact="5" />
+    <!-- 1 : boxA ,  2 : boxB, 4 : boxC, 8 : boxD-->
+  </motor>
+  <password use="0" value="1234" />
+  <setup use="1" />
+  <fpga path="c:\\mmtc-rack\\bin\\htc_ctrl_wrapper_Rev0.50_230810.bit" />
+  <mongo use="0" name="htc_icheon" ip="222.98.49.24" port="27017" user="ui" pw="housemania2" auth="admin" />
+  <plc use="1" ip="192.168.1.200" port="2004" racks="6" />
+</cxl-rack>

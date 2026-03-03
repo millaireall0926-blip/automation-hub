@@ -1,0 +1,25 @@
+﻿<Application x:Class="StarRouter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:StarRouter"
+             StartupUri="MainWindow.xaml"
+             xmlns:hc="https://handyorg.github.io/handycontrol" >
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <hc:ThemeResources RequestedTheme="Dark"/>
+                <hc:Theme/>
+
+
+                <ResourceDictionary Source="pack://application:,,,/StarRouter;component/Style/Style_Ctrl.xaml"/>
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+
+
+
+        </ResourceDictionary>
+        
+    </Application.Resources>
+</Application>

@@ -1,0 +1,45 @@
+<!--%File-Version:1.0.0%-->
+<starResult logo="1">
+  <data path="D:\data" />
+  <pos>
+    <group no="0" name="default">
+      <pwr w="0" h="0" />
+      <temp w="0" h="0" />
+      <info w="0" h="0" />
+      <log w="0" h="0" />
+      <step w="627" h="271" />
+      <bib w="798" h="250" />
+      <detail w="794" h="275" />
+    </group>
+    <group no="1" name="user1">
+      <pwr w="400" h="300" />
+      <temp w="400" h="300" />
+      <info w="400" h="300" />
+      <log w="400" h="300" />
+      <step w="400" h="300" />
+      <bib w="400" h="300" />
+      <detail w="400" h="300" />
+    </group>
+    <group no="2" name="user2">
+      <pwr w="400" h="300" />
+      <temp w="400" h="300" />
+      <info w="400" h="300" />
+      <log w="400" h="300" />
+      <step w="400" h="300" />
+      <bib w="400" h="300" />
+      <detail w="400" h="300" />
+    </group>
+    <group no="3" name="user3">
+      <pwr w="400" h="300" />
+      <temp w="400" h="300" />
+      <info w="400" h="300" />
+      <log w="400" h="300" />
+      <step w="400" h="300" />
+      <bib w="400" h="300" />
+      <detail w="400" h="300" />
+    </group>
+  </pos>
+</starResult>
+<!--%File-History:
+  v1.00 start
+ %-->

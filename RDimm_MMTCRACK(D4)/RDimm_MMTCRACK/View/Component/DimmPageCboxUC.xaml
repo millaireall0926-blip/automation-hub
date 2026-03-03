@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="RDimm_MMTCRACK.View.Component.DimmPageCboxUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"  
+             xmlns:local="clr-namespace:RDimm_MMTCRACK.View.Component"
+             mc:Ignorable="d" 
+                      d:DesignHeight="400" d:DesignWidth="300">
+    <Grid>
+
+        <ItemsControl ItemsSource="{Binding DimmsInBox}" Margin="0,30,0,0">
+            <ItemsControl.ItemsPanel >
+                <ItemsPanelTemplate>
+                    <Canvas>
+                    </Canvas>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemContainerStyle>
+                <Style TargetType="ContentPresenter">
+                    <Setter Property="Canvas.Left" Value="{Binding Left}"/>
+                    <Setter Property="Canvas.Top" Value="{Binding Top}"/>
+                </Style>
+            </ItemsControl.ItemContainerStyle>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="250" Height="20" Orientation="Horizontal">
+                        <Image Margin="30,0,0,0" Source="/Resource/dim.png"></Image>
+                        <hc:Shield Margin="10,0,0,0" HorizontalAlignment="Right" Subject="{Binding Name}"  Status="{Binding TempText}" Color="{Binding StatColor}" FontSize="12" FontWeight="Bold"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <Image Opacity="0.25" Source="/Resource/box.png" />
+        <hc:Shield HorizontalAlignment="left" VerticalAlignment="top" Subject="{Binding Name}"  Status="{Binding BoxInTemp}" Color="Green" />
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,5,0" VerticalAlignment="top" Text="{Binding BoxSVC}" FontSize="14" FontWeight="Bold" />
+        <TextBlock HorizontalAlignment="Right" Margin="0,24,5,0" VerticalAlignment="top" Text="{Binding SVValue}" FontSize="12" FontWeight="Bold" />
+
+
+    </Grid>
+</UserControl>

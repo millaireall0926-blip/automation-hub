@@ -1,0 +1,390 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|d:\\project\\lp-mmtcrack\\lp\\lpmmtc\\lp-mmtcrack\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\model\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:model\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\viewmodel\\configvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:viewmodel\\configvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\model\\manmotormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:model\\manmotormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\view\\component\\manmotoruc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:view\\component\\manmotoruc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\net\\alarmcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:net\\alarmcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\net\\tconcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:net\\tconcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\net\\sitecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:net\\sitecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\view\\engineerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:view\\engineerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\view\\configpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:view\\configpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\base\\basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:base\\basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\style\\style_ctrl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:style\\style_ctrl.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|LP-MMTCRack.csproj|solutionrelative:viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-26T10:32:34.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RackModel.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Model\\RackModel.cs",
+              "RelativeDocumentMoniker": "Model\\RackModel.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Model\\RackModel.cs",
+              "RelativeToolTip": "Model\\RackModel.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAwOcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T08:40:35.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BoxModel.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Model\\BoxModel.cs",
+              "RelativeDocumentMoniker": "Model\\BoxModel.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Model\\BoxModel.cs",
+              "RelativeToolTip": "Model\\BoxModel.cs",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAowJ4BAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T03:42:25.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAswMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T06:09:03.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPageVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\MainPageVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainPageVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\MainPageVM.cs",
+              "RelativeToolTip": "ViewModel\\MainPageVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T06:43:33.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RackUC.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\Component\\RackUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\RackUC.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\Component\\RackUC.xaml",
+              "RelativeToolTip": "View\\Component\\RackUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-01T08:42:35.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManMotorUC.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\Component\\ManMotorUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\ManMotorUC.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\Component\\ManMotorUC.xaml",
+              "RelativeToolTip": "View\\Component\\ManMotorUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T04:23:38.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\MainPage.xaml",
+              "RelativeDocumentMoniker": "View\\MainPage.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\MainPage.xaml",
+              "RelativeToolTip": "View\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-28T07:13:26.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAYwEICAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T06:05:57.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManMotorModel.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Model\\ManMotorModel.cs",
+              "RelativeDocumentMoniker": "Model\\ManMotorModel.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Model\\ManMotorModel.cs",
+              "RelativeToolTip": "Model\\ManMotorModel.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAQwGMAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:01:32.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-26T10:43:09.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TconCom.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Net\\TconCom.cs",
+              "RelativeDocumentMoniker": "Net\\TconCom.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Net\\TconCom.cs",
+              "RelativeToolTip": "Net\\TconCom.cs",
+              "ViewState": "AQIAAD8BAAAAAAAAAAAhwEEBAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T01:02:26.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Style_Ctrl.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Style\\Style_Ctrl.xaml",
+              "RelativeDocumentMoniker": "Style\\Style_Ctrl.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Style\\Style_Ctrl.xaml",
+              "RelativeToolTip": "Style\\Style_Ctrl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-26T10:34:13.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfigPage.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\ConfigPage.xaml",
+              "RelativeDocumentMoniker": "View\\ConfigPage.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\ConfigPage.xaml",
+              "RelativeToolTip": "View\\ConfigPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-22T05:49:07.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EngineerPage.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\EngineerPage.xaml",
+              "RelativeDocumentMoniker": "View\\EngineerPage.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\EngineerPage.xaml",
+              "RelativeToolTip": "View\\EngineerPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-04T08:48:00.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAMoAAAAAAAAAAAApwNcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T10:54:28.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\ConfigVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ConfigVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\ConfigVM.cs",
+              "RelativeToolTip": "ViewModel\\ConfigVM.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAQwAoBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T05:13:46.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AlarmCom.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Net\\AlarmCom.cs",
+              "RelativeDocumentMoniker": "Net\\AlarmCom.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Net\\AlarmCom.cs",
+              "RelativeToolTip": "Net\\AlarmCom.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwIoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T09:37:17.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ConfigPage.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\ConfigPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ConfigPage.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\View\\ConfigPage.xaml.cs",
+              "RelativeToolTip": "View\\ConfigPage.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAADwvx8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T06:19:21.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SiteCom.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Net\\SiteCom.cs",
+              "RelativeDocumentMoniker": "Net\\SiteCom.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Net\\SiteCom.cs",
+              "RelativeToolTip": "Net\\SiteCom.cs",
+              "ViewState": "AQIAAHYCAAAAAAAAAAAuwIgCAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T04:56:51.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BaseVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Base\\BaseVM.cs",
+              "RelativeDocumentMoniker": "Base\\BaseVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\Base\\BaseVM.cs",
+              "RelativeToolTip": "Base\\BaseVM.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAASwDcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T13:44:13.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-26T10:33:02.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GraphVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\GraphVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP\\lpmmtc\\LP-MMTCRack\\ViewModel\\GraphVM.cs",
+              "RelativeToolTip": "ViewModel\\GraphVM.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAADwv+gAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T04:40:30.752Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

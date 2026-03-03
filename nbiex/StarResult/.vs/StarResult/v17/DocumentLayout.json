@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|d:\\project\\hsbiex\\nbiex\\starresult\\viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|solutionrelative:viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|D:\\Project\\HSBIEX\\nbiex\\StarResult\\viewmodel\\resultsectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|solutionrelative:viewmodel\\resultsectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|D:\\Project\\HSBIEX\\nbiex\\StarResult\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|D:\\Project\\HSBIEX\\nbiex\\StarResult\\view\\resultselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|solutionrelative:view\\resultselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|D:\\Project\\HSBIEX\\nbiex\\StarResult\\view\\infoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{017EDD4F-D5E0-405A-A2ED-9D67021B4FB4}|StarResult.csproj|solutionrelative:view\\infoview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResultSectionVM.cs",
+              "DocumentMoniker": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\ViewModel\\ResultSectionVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ResultSectionVM.cs",
+              "ToolTip": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\ViewModel\\ResultSectionVM.cs",
+              "RelativeToolTip": "ViewModel\\ResultSectionVM.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAhwHkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T04:33:36.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAAG4BAAAAAAAAAAAjwIIBAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T04:34:34.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResultSelection.xaml",
+              "DocumentMoniker": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\View\\ResultSelection.xaml",
+              "RelativeDocumentMoniker": "View\\ResultSelection.xaml",
+              "ToolTip": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\View\\ResultSelection.xaml",
+              "RelativeToolTip": "View\\ResultSelection.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T04:33:06.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InfoView.xaml",
+              "DocumentMoniker": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\View\\InfoView.xaml",
+              "RelativeDocumentMoniker": "View\\InfoView.xaml",
+              "ToolTip": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\View\\InfoView.xaml",
+              "RelativeToolTip": "View\\InfoView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T04:32:58.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GraphVM.cs",
+              "DocumentMoniker": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\ViewModel\\GraphVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphVM.cs",
+              "ToolTip": "D:\\Project\\HSBIEX\\nbiex\\StarResult\\ViewModel\\GraphVM.cs",
+              "RelativeToolTip": "ViewModel\\GraphVM.cs",
+              "ViewState": "AQIAAIYBAAAAAAAAAAAswJsBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T04:20:17.767Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+﻿<Window x:Class="StarRouter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarRouter"
+        xmlns:vm="clr-namespace:StarRouter.ViewModel"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+        Title="StarRouter" Height="620" Width="640" AllowsTransparency="True" WindowStyle="None" ResizeMode="CanResizeWithGrip" Background="Transparent" 
+        >
+  
+    <Grid Background="#DD1ca8be">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" x:Name="xTB_Title" Foreground="MidnightBlue" Margin="10,0,0,0" FontSize="16" FontWeight="Bold" FontFamily="Calibri" MouseLeftButtonDown="MoveTitle"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTMin" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/min.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTRestore" Background="Transparent"  BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/restore.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="3" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTClose" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/close.png" />
+                </Button>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="SLOT LIST" VerticalAlignment="Top" Height="30" FontSize="24" Foreground="Black"/>
+                <hc:Card Background="Black" BorderBrush="#FF131313" Margin="10,32,10,10" >
+                    <DataGrid Background="#cc007e9f" x:Name="SlotGrid"  
+                                    CanUserAddRows="False"
+                                   AutoGenerateColumns = "False"
+                                   CanUserResizeRows="True"      
+                                   SelectionMode="Single"
+                                   SelectionUnit="FullRow" 
+                                   RowHeight="24"
+                                   ItemsSource="{Binding CMs}" MouseUp="SlotGrid_MouseUp" MouseDoubleClick="SlotGrid_MouseDoubleClick" >
+                        <DataGrid.CellStyle>
+                            <Style TargetType="{x:Type DataGridCell}">
+                                <Setter Property="BorderThickness" Value="1" />
+                                
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="BorderThickness" Value="0, 1, 0, 1" />
+                                        <Setter Property="BorderBrush" Value="#FF5454BD" />
+                                        <Setter Property="Background" Value="#FF2E2E7D" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.CellStyle>
+
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="CON" Width="50">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Viewbox>
+                                            <Image Source="{Binding Icon, UpdateSourceTrigger=PropertyChanged}" Stretch="Fill"/>
+                                        </Viewbox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="NAME" Width="60" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+
+                                        <TextBlock Text="{Binding Name}" Foreground="{Binding StatBrush}"
+                                        VerticalAlignment="Center" 
+                                       FontFamily="Segoe WP Black" FontWeight="Bold" Padding="10" />
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="IP" Width="120" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding IP}" Foreground="{Binding StatBrush}"
+                                        VerticalAlignment="Center" 
+                                       FontFamily="Segoe WP Black" FontWeight="Bold" Padding="10" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="PORT" Width="60" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Port}" Foreground="{Binding StatBrush}"
+                                        VerticalAlignment="Center" 
+                                       FontFamily="Segoe WP Black" FontWeight="Bold" Padding="10" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                                                                               
+
+                    </DataGrid>
+                </hc:Card>
+            </Grid>
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" >
+                <GridSplitter.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#DD1b95a8"/>
+                        <GradientStop Color="#DD12172D " Offset="1"/>
+                    </LinearGradientBrush>
+                </GridSplitter.Background>
+            </GridSplitter>
+            <Grid Grid.Column="2">
+                <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="PRODUCT LIST" VerticalAlignment="Top" Height="30"  FontSize="24" Foreground="Black"/>
+                <hc:Card Background="Black" BorderBrush="#FF131313" Margin="10,32,10,10" >
+                    <DataGrid Background="#cc007e9f" x:Name="ProductGrid"         
+                                    CanUserAddRows="False"
+                                   AutoGenerateColumns = "False"
+                                   CanUserResizeRows="True"      
+                                   SelectionMode="Single"
+                                   SelectionUnit="FullRow" 
+                                   RowHeight="40"
+                                   ItemsSource="{Binding Products}" MouseUp="SlotGrid_MouseUp" MouseDoubleClick="SlotGrid_MouseDoubleClick" >
+                        <DataGrid.CellStyle>
+                            <Style TargetType="{x:Type DataGridCell}">
+                                <Setter Property="BorderThickness" Value="1" />
+
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="BorderThickness" Value="0, 1, 0, 1" />
+                                        <Setter Property="BorderBrush" Value="#FF5454BD" />
+                                        <Setter Property="Background" Value="#FF2E2E7D" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.CellStyle>
+
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="CON" Width="50">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Viewbox>
+                                            <Image Source="{Binding Icon, UpdateSourceTrigger=PropertyChanged}" Stretch="Fill"/>
+                                        </Viewbox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="NAME" Width="70" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+
+                                        <TextBlock Text="{Binding Name}" Foreground="{Binding StatBrush}"
+                                        VerticalAlignment="Center" 
+                                       FontFamily="Segoe WP Black" FontWeight="Bold" Padding="10" />
+
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="IP" Width="120" IsReadOnly="True">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding IP}" Foreground="{Binding StatBrush}"
+                                        VerticalAlignment="Center" 
+                                       FontFamily="Segoe WP Black" FontWeight="Bold" Padding="10" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </hc:Card>
+            </Grid>
+            
+        </Grid>
+        <Grid Grid.Row="2" >
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#ff057e9f"/>
+                        <GradientStop Color="#DD12172D" Offset="1"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Image Source="/Resource/logo.png" Margin="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+            <StackPanel Orientation="Horizontal" Margin="10, 0,0, 0">
+                <TextBlock Text="LOG" VerticalAlignment="Center" Foreground="LightSkyBlue" FontSize="18" FontWeight="Bold"/>
+                <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                    <ToggleButton Margin="0,4,0,1"  Height="20" Click="ToggleButton_Click" HorizontalAlignment="Center"   Style="{StaticResource ToggleButtonSwitch}"/>
+                    <TextBlock Text="Enable Debug" HorizontalAlignment="Center" FontSize="10" Foreground="White"/>
+                </StackPanel>
+                <Button x:Name="xbt_Debug"  Click="Log_Button_Click" HorizontalAlignment="Left" Background="Transparent" Height="48" BorderThickness="0">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/Resource/info.png" Height="24"/>
+                        <TextBlock Text="Show Debug" HorizontalAlignment="Center" FontSize="10"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="xbt_Error" Margin="20,0,0,0"  Click="Log_Button_Click" HorizontalAlignment="Left" Background="Transparent" Height="48" BorderThickness="0">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="/Resource/error.png" Height="24"/>
+                        <TextBlock Text="Show Error" HorizontalAlignment="Center" FontSize="10" Foreground="LightPink"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,99 @@
+﻿<Page x:Class="StarIDE.View.DockView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StarIDE.View"      
+      xmlns:hc="https://handyorg.github.io/handycontrol"    
+      xmlns:vm="clr-namespace:StarIDE.ViewModel"   
+      xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DockView">
+
+    <Page.DataContext>
+        <vm:DockVM/>
+    </Page.DataContext>
+    <Grid>
+        <xcad:DockingManager  x:Name="xDockManager" AllowMixedOrientation="True" Background="#FF2A3B5A" BorderThickness="1" ActiveContentChanged="xDockManager_ActiveContentChanged">
+            <xcad:LayoutRoot x:Name="layoutRoot" >
+                <xcad:LayoutPanel Orientation="Horizontal" DockHeight="*" DockWidth="*" >
+                    <xcad:LayoutAnchorablePane DockWidth="200" DockHeight="*" >
+                        <xcad:LayoutAnchorable ContentId="File" AutoHideWidth="240" Title="FILES" CanHide="False" CanClose="False" >
+                            <Frame Source="/View/FilesView.xaml" BorderThickness="0"/>
+                        </xcad:LayoutAnchorable>
+                    </xcad:LayoutAnchorablePane>
+
+                    <xcad:LayoutPanel Orientation="Vertical" DockHeight="*" DockWidth="*">
+                        <xcad:LayoutDocumentPaneGroup  DockHeight="*" DockWidth="*">
+                            <xcad:LayoutDocumentPane x:Name="xPane_Document" DockHeight="*" DockWidth="*" >
+                                <!-- Document -->
+                            </xcad:LayoutDocumentPane>
+                        </xcad:LayoutDocumentPaneGroup >
+
+                        <xcad:LayoutAnchorablePaneGroup DockHeight="280" DockWidth="Auto" >
+                            <xcad:LayoutAnchorablePane  DockHeight="*" DockWidth="400" >
+
+                                <xcad:LayoutAnchorable  ContentId="Output" Title="OUTPUT" CanHide="False" CanClose="False">
+                                    <ListBox x:Name="xLB_Output" Margin="0" ItemsSource="{Binding Reports}" SelectionChanged="ListBox_SelectionChanged" IsSynchronizedWithCurrentItem="True" >
+                                        <ListBox.ItemContainerStyle>
+                                            <Style TargetType="ListBoxItem">
+                                                <Setter Property="Height" Value="19" />
+                                            </Style>
+                                        </ListBox.ItemContainerStyle>
+                                        <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <DockPanel LastChildFill="True" Height="14">
+                                                    <TextBlock Height="14" FontSize="12" Text="{Binding Text}" >
+                                                        <TextBlock.Resources>
+                                                            <Style TargetType="TextBlock">
+                                                                <Style.Triggers>
+                                                                    <DataTrigger Binding="{Binding Type}" Value="0">
+                                                                        <Setter Property="Foreground" Value="WhiteSmoke" />
+                                                                    </DataTrigger>
+                                                                    <DataTrigger Binding="{Binding Type}" Value="1">
+                                                                        <Setter Property="Foreground" Value="#FF71BD27" />
+                                                                    </DataTrigger>
+                                                                    <DataTrigger Binding="{Binding Type}" Value="2">
+                                                                        <Setter Property="Foreground" Value="IndianRed" />
+                                                                    </DataTrigger>
+                                                                    <DataTrigger Binding="{Binding Type}" Value="3">
+                                                                        <Setter Property="Foreground" Value="Orange" />
+                                                                    </DataTrigger>
+                                                                </Style.Triggers>
+                                                            </Style>
+                                                        </TextBlock.Resources>
+                                                    </TextBlock>
+
+                                                </DockPanel>
+                                            </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                    </ListBox>
+                                </xcad:LayoutAnchorable>
+                            </xcad:LayoutAnchorablePane>
+
+                            <xcad:LayoutAnchorablePane  DockHeight="*" DockWidth="400" >
+                                <xcad:LayoutAnchorable  ContentId="Message" Title="Teminal" CanClose="false">
+                                        <Frame Source="/View/TerminalView.xaml" BorderThickness="2"/>
+                                </xcad:LayoutAnchorable>
+
+                            </xcad:LayoutAnchorablePane>
+                            
+                        </xcad:LayoutAnchorablePaneGroup>
+                    </xcad:LayoutPanel>
+
+                    <xcad:LayoutAnchorablePaneGroup DockWidth="200" DockHeight="*">
+                        <xcad:LayoutAnchorablePane DockHeight="*" DockWidth="*">
+                            <xcad:LayoutAnchorable ContentId="paneApi" Title="API" CanHide="False" CanClose="False">
+                                <Frame Source="/View/APIView.xaml" BorderThickness="2"/>
+                            </xcad:LayoutAnchorable>
+                            <xcad:LayoutAnchorable ContentId="paneReg" Title="REG" CanHide="False" CanClose="False">
+                                <Frame Source="/View/REGView.xaml" BorderThickness="2"/>
+                            </xcad:LayoutAnchorable>
+                        </xcad:LayoutAnchorablePane>
+                    </xcad:LayoutAnchorablePaneGroup>
+                </xcad:LayoutPanel>
+            </xcad:LayoutRoot>
+        </xcad:DockingManager>
+    </Grid>
+</Page>

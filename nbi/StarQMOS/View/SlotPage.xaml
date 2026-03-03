@@ -1,0 +1,101 @@
+﻿<Page x:Class="StarQMOS.View.SlotPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:StarQMOS.ViewModel"
+      xmlns:local="clr-namespace:StarQMOS.View"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="400"
+      Title="SlotPage">
+    <Page.DataContext>
+        <vm:SlotVM/>
+    </Page.DataContext>
+    <Grid> 
+        <DataGrid x:Name="SlotGrid"         
+                  CanUserAddRows="False"
+                  AutoGenerateColumns = "False"
+                  CanUserResizeRows="True"      
+                  SelectionMode="Extended"
+                  SelectionUnit="FullRow"
+                  ItemsSource="{Binding Slots}" MouseUp="SlotGrid_MouseUp" MouseDoubleClick="SlotGrid_MouseDoubleClick"
+                  >
+
+            <DataGrid.CellStyle>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="BorderThickness" Value="0, 1, 0, 1" />
+                            <Setter Property="BorderBrush" Value="#FF5454BD" />
+                            <Setter Property="Background" Value="#FF2E2E7D" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="" Width="40">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Viewbox>
+                                <Image Source="{Binding Icon, UpdateSourceTrigger=PropertyChanged}" Stretch="None" />
+                            </Viewbox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="NAME" Width="60" IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                            <TextBlock Text="{Binding Name}" Foreground="{Binding StatBrush}"
+                                        VerticalAlignment="Center" 
+                                       FontFamily="Segoe WP Black" FontWeight="Bold" Padding="10" />
+                            
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                <DataGridTemplateColumn Header="BID"  Width="*" IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding BID}" Foreground="{Binding StatBrush}"  VerticalAlignment="Center"
+                                               FontFamily="Bahnschrift Light" FontWeight="Bold"  Padding="0" FontSize="9"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Stat" Width="*" IsReadOnly="True" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding StatText}" Foreground="{Binding StatBrush}" VerticalAlignment="Center"
+                                               FontFamily="Fixedsys" FontWeight="Bold"  Padding="10"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Run" Width="*" IsReadOnly="True" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <hc:WaveProgressBar  Value="{Binding RunPrint}" WaveFill="{Binding ConBrush}" WaveStroke="#FF807C0B" Foreground="White" FontSize="1" WaveThickness="8"  RenderTransformOrigin="0.5,0.5" Background="{x:Null}" Height="60" Width="60" >
+                                <hc:WaveProgressBar.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.1"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </hc:WaveProgressBar.RenderTransform>
+                            </hc:WaveProgressBar>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+    
+        </DataGrid>
+    </Grid>
+</Page>

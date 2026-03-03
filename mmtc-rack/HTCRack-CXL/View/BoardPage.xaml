@@ -1,0 +1,258 @@
+﻿<Page x:Class="HTCRack_CXL.View.BoardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HTCRack_CXL.View"
+      xmlns:hc="https://handyorg.github.io/handycontrol"
+      xmlns:vm="clr-namespace:HTCRack_CXL.ViewModel"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1100"
+      Title="BoardPage">
+
+    <Page.DataContext>
+        <vm:BoardVM />
+    </Page.DataContext>
+    <Grid Margin="10,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" BorderThickness="2" Style="{StaticResource BorderRegion}" Width="205" Height="292" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+            <Grid>
+                <TextBlock Text="Fixture Selection" FontSize="16" FontFamily="Arial" FontWeight="DemiBold"/>
+                <Image Source="{Binding EquipImg}" Margin="5,24,5,-2" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                <Rectangle x:Name="xRect_Select" Fill="#550000ff" Stroke="Blue" StrokeThickness="3" Margin="23, 91, 92, 134" RadiusX="4" RadiusY="4"/>
+            </Grid>
+        </Border>
+        <Grid Grid.Column="1" >
+            <Image Source="/Resource/board.png" Height="640" Margin="20,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="850" />
+
+
+            <!-- RPM Heat Sink Fan1 -->
+            <Label Content="{Binding HeatSink4Text}" Margin="58,316,0,0" Background="{Binding HeatSink4Color}" 
+        Foreground="White" BorderThickness="2" BorderBrush="Black" FontSize="11"
+        HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="178"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding HeatSink4Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="49,292,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="269.339"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Heat Sink Fan2 -->
+            <Label Content="{Binding HeatSink3Text}" Margin="385,316,0,0" Background="{Binding HeatSink3Color}" 
+        Foreground="White" BorderThickness="2" FontSize="11"
+        BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding HeatSink3Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="394,292,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="269.339"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Heat Sink Fan3 -->
+            <Label Content="{Binding HeatSink2Text}" Margin="422,216,0,0" Background="{Binding HeatSink2Color}" 
+        Foreground="White" BorderThickness="2" FontSize="11"
+        BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding HeatSink2Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="436,205,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="91.515"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Heat Sink Fan4 -->
+            <Label Content="{Binding HeatSink4Text}" Margin="692,216,0,0" Background="{Binding HeatSink4Color}" 
+            Foreground="White" BorderThickness="2" FontSize="11"
+            BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+            Stroke="{Binding HeatSink4Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="775,205,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="91.515"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Heat Sink Fan4 -->
+            <Label Content="{Binding HeatSink1Text}" Margin="692,216,0,0" Background="{Binding HeatSink1Color}" 
+            Foreground="White" BorderThickness="2" FontSize="11"
+            BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                Stroke="{Binding HeatSink1Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="775,205,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="91.515"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Peltier Fan1 -->
+            <Label Content="{Binding Peltier1Text}" Margin="129,244,0,0" Background="{Binding Peltier1Color}" 
+        Foreground="White" BorderThickness="2" BorderBrush="Black" FontSize="11"
+        HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="178"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding Peltier1Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="104,225,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="145.549"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Peltier CASE Fan2 -->
+            <Label Content="{Binding PeltierCase2Text}" Margin="57,181,0,0" Background="{Binding PeltierCase2Color}" 
+        Foreground="White" BorderThickness="2" BorderBrush="Black" FontSize="11"
+        HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="178"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding PeltierCase2Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="35,169,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.231"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+
+            <!-- RPM Temp Box Fan1 -->
+            <Label Content="{Binding TempBox1Text}" Margin="27,591,0,0" Background="{Binding TempBox1Color}" 
+        Foreground="White" BorderThickness="2" FontSize="11"
+        BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding TempBox1Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="105,565,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="269.339"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Temp Box Fan3 -->
+            <Label Content="{Binding TempBox3Text}" Margin="255,591,0,0" Background="{Binding TempBox3Color}" 
+        Foreground="White" BorderThickness="2" FontSize="11"
+        BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding TempBox3Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="306,565,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="269.339"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Temp Box Fan5 -->
+            <Label Content="{Binding TempBox5Text}" Margin="473,591,0,0" Background="{Binding TempBox5Color}" 
+        Foreground="White" BorderThickness="2" FontSize="11"
+        BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding TempBox5Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="503,565,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="269.339"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- RPM Temp Box Fan7 -->
+            <Label Content="{Binding TempBox7Text}" Margin="687,591,0,0" Background="{Binding TempBox7Color}" 
+        Foreground="White" BorderThickness="2" FontSize="11"
+        BorderBrush="Black" VerticalAlignment="Top" Height="44" Width="178" HorizontalAlignment="Left"/>
+            <Path  Stretch="Fill" StrokeLineJoin="Miter" Data="M 0 -5 L 10 -5 M 5 0 L 10 -5 L 5 -10" VerticalAlignment="Top" HorizontalAlignment="Left" 
+        Stroke="{Binding TempBox7Color}" Height="22" Width="19" RenderTransformOrigin="-0.727,0.847" Margin="705,565,0,0" StrokeThickness="5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="269.339"/>
+                        <TranslateTransform X="44.615" Y="21.894"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <!-- Temp/Current 1 -->
+            <Label Content="{Binding UnitInfo1}" Margin="68,372,0,0" 
+           Background="#55000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 2 -->
+            <Label Content="{Binding UnitInfo2}" Margin="163,372,0,0" 
+           Background="#55000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 3 -->
+            <Label Content="{Binding UnitInfo3}" Margin="259,372,0,0" Background="#88000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 4 -->
+            <Label Content="{Binding UnitInfo4}" Margin="353,372,0,0" Background="#88000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 5 -->
+            <Label Content="{Binding UnitInfo5}" Margin="468,372,0,0" Background="#88000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 6 -->
+            <Label Content="{Binding UnitInfo6}" Margin="562,372,0,0" Background="#88000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 7 -->
+            <Label Content="{Binding UnitInfo7}" Margin="657,372,0,0" Background="#88000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+            <!-- Temp/Current 8 -->
+            <Label Content="{Binding UnitInfo8}" Margin="753,372,0,0" Background="#88000000" Foreground="White" BorderThickness="2" BorderBrush="OrangeRed" FontSize="13" FontWeight="DemiBold"
+        HorizontalAlignment="Left" Height="53" Width="71" VerticalAlignment="Top"/>
+
+
+
+
+
+        </Grid>
+
+        <Border  Grid.Column="1" BorderBrush="{Binding BoarderColor}" BorderThickness="4"  CornerRadius="8,8,3,3" Margin="0,682,0,0" HorizontalAlignment="Center" Width="511" Height="68" VerticalAlignment="Top">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="White" Offset="0.0" />
+                    <GradientStop Color="Black" Offset="1.5" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel  Orientation="Horizontal" >
+                <Button Content="Reset"  Command="{Binding DGCmdBoard}" CommandParameter="reset" Width="100" Margin="10" Style="{StaticResource ButtonWarning}" ></Button>
+                <Button Content="Run Hot"  Command="{Binding DGCmdBoard}" CommandParameter="hot"  Width="100" Margin="10" Style="{StaticResource ButtonDanger}"></Button>
+                <Button Content="Run Cold"  Command="{Binding DGCmdBoard}" CommandParameter="cold"  Width="100" Margin="10" Style="{StaticResource ButtonInfo}"></Button>
+                <Button Content="Stop"  Command="{Binding DGCmdBoard}" CommandParameter="stop" Width="100" Margin="10"></Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Page>

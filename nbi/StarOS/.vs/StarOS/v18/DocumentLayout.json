@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\nbi\\nbi\\StarOS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C618711C-895C-4712-B78D-758F5E829636}|..\\StarBase\\StarBase.csproj|d:\\project\\nbi\\nbi\\starbase\\net\\starclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:net.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\model\\slotmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:model\\slotmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C618711C-895C-4712-B78D-758F5E829636}|..\\StarBase\\StarBase.csproj|d:\\project\\nbi\\nbi\\starbase\\net\\starprotocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\model\\resultmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:model\\resultmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\viewmodel\\resultvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:viewmodel\\resultvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\model\\logmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:model\\logmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\model\\dbpgmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:model\\dbpgmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\model\\plcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:model\\plcmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\viewmodel\\slotvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:viewmodel\\slotvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|d:\\project\\nbi\\nbi\\staros\\viewmodel\\testinfovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{282B49D5-68A6-4948-B4F3-078F145B7CCC}|StarOS.csproj|solutionrelative:viewmodel\\testinfovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AgIAANQDAAAAAAAAAAAewOIDAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:01:27.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-12T08:06:05.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Net.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Net.cs",
+              "RelativeDocumentMoniker": "Net.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Net.cs",
+              "RelativeToolTip": "Net.cs",
+              "ViewState": "AgIAAGAEAAAAAAAAAAAawGgEAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:02:19.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PLCModel.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\PLCModel.cs",
+              "RelativeDocumentMoniker": "Model\\PLCModel.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\PLCModel.cs",
+              "RelativeToolTip": "Model\\PLCModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:24:40.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAWwFEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:06:11.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StarClient.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarBase\\Net\\StarClient.cs",
+              "RelativeDocumentMoniker": "..\\StarBase\\Net\\StarClient.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarBase\\Net\\StarClient.cs",
+              "RelativeToolTip": "..\\StarBase\\Net\\StarClient.cs",
+              "ViewState": "AgIAAL4BAAAAAAAAAAAWwMABAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:28:20.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SlotModel.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\SlotModel.cs",
+              "RelativeDocumentMoniker": "Model\\SlotModel.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\SlotModel.cs",
+              "RelativeToolTip": "Model\\SlotModel.cs",
+              "ViewState": "AgIAAOcBAAAAAAAAAAASwPEBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:04:36.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAawLkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:13:53.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResultModel.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\ResultModel.cs",
+              "RelativeDocumentMoniker": "Model\\ResultModel.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\ResultModel.cs",
+              "RelativeToolTip": "Model\\ResultModel.cs",
+              "ViewState": "AgIAANAAAAAAAAAAAAAtwNUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:25:07.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResultVM.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\ResultVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ResultVM.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\ResultVM.cs",
+              "RelativeToolTip": "ViewModel\\ResultVM.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAtwF4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:25:04.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StarProtocal.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarBase\\Net\\StarProtocal.cs",
+              "RelativeDocumentMoniker": "..\\StarBase\\Net\\StarProtocal.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarBase\\Net\\StarProtocal.cs",
+              "RelativeToolTip": "..\\StarBase\\Net\\StarProtocal.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAvwD8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:29:35.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DBPgmModel.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\DBPgmModel.cs",
+              "RelativeDocumentMoniker": "Model\\DBPgmModel.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\DBPgmModel.cs",
+              "RelativeToolTip": "Model\\DBPgmModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:24:59.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LogModel.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\LogModel.cs",
+              "RelativeDocumentMoniker": "Model\\LogModel.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\Model\\LogModel.cs",
+              "RelativeToolTip": "Model\\LogModel.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAtwD0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:25:01.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SlotVM.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\SlotVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SlotVM.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\SlotVM.cs",
+              "RelativeToolTip": "ViewModel\\SlotVM.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAWwDIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:04:04.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TestInfoVM.cs",
+              "DocumentMoniker": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\TestInfoVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\TestInfoVM.cs",
+              "ToolTip": "D:\\Project\\nbi\\nbi\\StarOS\\ViewModel\\TestInfoVM.cs",
+              "RelativeToolTip": "ViewModel\\TestInfoVM.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T08:09:49.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

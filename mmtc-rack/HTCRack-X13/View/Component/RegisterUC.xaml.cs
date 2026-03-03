@@ -1,0 +1,49 @@
+﻿using HTCRack.Model;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace HTCRack.View.Component
+{
+    /// <summary>
+    /// RegisterUC.xaml에 대한 상호 작용 논리
+    /// </summary>
+    public partial class RegisterUC : UserControl
+    {
+        public RegisterUC()
+        {
+            InitializeComponent();
+
+        }
+
+
+
+        private void Send_Click(object sender, RoutedEventArgs e)
+        {
+            Storyboard sb = (Storyboard)FindResource("storySend");
+            sb.Begin();
+            
+            Global.gEnginerVM.Send((RegModel)DataContext);
+        }
+
+        private void HexOnlyInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9a-fA-F]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+    }
+}

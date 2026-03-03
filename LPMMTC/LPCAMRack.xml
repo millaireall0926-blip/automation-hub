@@ -1,0 +1,66 @@
+<lpcam-rack>
+  <rack-map column="2" logo="gsi" Boxes="2" tcon-port="" humidityWarnval="60" site-maxval="55000" site-offsetval="0" capture-cycle="4">
+    <rack id="0" capture-port="" capture-use="0" site-port="" site-val="35000" site-use="1" site-final="0" site-position="0">
+      <box id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+      <box id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+    </rack>
+    <rack id="1" capture-port="" capture-use="0" site-port="" site-val="42000" site-use="1" site-final="0" site-position="0">
+      <box id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+      <box id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+    </rack>
+    <rack id="2" capture-port="" capture-use="0" site-port="" site-val="42000" site-use="1" site-final="0" site-position="0">
+      <box id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+      <box id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+    </rack>
+    <rack id="3" capture-port="" capture-use="0" site-port="" site-val="42000" site-use="1" site-final="0" site-position="0">
+      <box id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+      <box id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+    </rack>
+    <rack id="4" capture-port="" capture-use="0" site-port="" site-val="42000" site-use="1" site-final="0" site-position="0">
+      <box id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+      <box id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+    </rack>
+    <rack id="5" capture-port="" capture-use="0" site-port="COM11" site-val="42000" site-use="1" site-final="0" site-position="0">
+      <box id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+      <box id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+      </box>
+    </rack>
+  </rack-map>
+  <defrost targettemp="35" targetwaittime="5" tempstep="1" steptime="60" />
+  <tempcontrol step="0.5" diff="10" offset="0.5" maxtemp="97" mintemp="0" />
+  <flowmeter port="">
+    <flow1 min="5" max="50" />
+    <flow2 min="5" max="50" />
+    <flow3 min="5" max="50" />
+    <flow4 min="5" max="50" />
+    <flow5 min="5" max="50" />
+    <flow6 min="5" max="50" />
+  </flowmeter>
+  <alarm port="" flag="0" use="0" />
+  <tams>
+    <!-- fix folder path is added rack number ex) fix1, fix2 ... -->
+    <set-temp path="z:\\Result" folder="fix" name="hibim.txt" />
+    <!-- finish rack if test have made hdiag  ... -->
+    <end-flag path="z:\\Result" folder="fix" name="hdiag.log" />
+  </tams>
+  <log logdeletemonth="2">
+    <event path="c:\\gsi\\LPCAM-data\\event" />
+    <temp path="c:\\gsi\\LPCAM-data\\temp" />
+    <humidity path="c:\\gsi\\LPCAM-data\\humidity" />
+    <flowmeter path="c:\\gsi\\LPCAM-data\\flowmeter" />
+  </log>
+  <error stable="15" temperr="5" temperrcondition="5" highalarm="95" lowalarm="0" alarmcondition="10" />
+  <password use="0" value="1234" />
+  <etc engrmode="0" NoiseTempDiff="200" notempGraph="0" controlsvcycle="0" svmode="3" />
+</lpcam-rack>

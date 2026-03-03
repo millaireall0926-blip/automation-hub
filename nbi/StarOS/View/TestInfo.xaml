@@ -1,0 +1,172 @@
+﻿<Page x:Class="StarOS.View.TestInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:StarOS.ViewModel"
+      xmlns:hc="https://handyorg.github.io/handycontrol"         
+      xmlns:sp="clr-namespace:ScottPlot;assembly=ScottPlot.WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="TestInfo">
+
+    <Page.DataContext>
+        <vm:TestInfoVM />
+    </Page.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480"/>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <!-- Header -->
+            <Rectangle HorizontalAlignment="Left" Height="41" Margin="10,0,0,0"  VerticalAlignment="Top" Width="45">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Offset="0"/>
+                        <GradientStop Color="#77BBBBBB" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Image Source="/Resource/testinfo.png" HorizontalAlignment="Left" Height="32" Margin="18,1,0,0" VerticalAlignment="Top" Width="35"/>
+            <TextBlock HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Margin="63,1,0,0" Text="TEST INFORMATION" Foreground="#FFFDFAFA" FontSize="24"/>
+
+            <!-- PGM -->
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Margin="182,48,0,0" Text="PGM" Foreground="#FFFDFAFA" FontSize="16"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Margin="182,72,0,0" Text="LOTID" Foreground="#FFFDFAFA" FontSize="16"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" Margin="266,48,0,0" Text="{Binding Pgm}" Foreground="#FFFDFAFA" FontSize="16"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="327" Margin="266,72,0,0" Text="{Binding LotID}" Foreground="#FFFDFAFA" FontSize="16"/>
+
+            <!-- STEP -->
+            <hc:CircleProgressBar HorizontalAlignment="Left" Height="140" Width="140" VerticalAlignment="Top" ArcThickness="10" 
+                                  Value="{Binding ScanProg}" Background="Gray" Foreground="{Binding ScanBrush}" FontSize="20" FontWeight="Bold" Margin="16,51,0,0" BorderBrush="#FF0E0E40"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Margin="183,108,0,0" Text="STEP" Foreground="#FFFDFAFA" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Margin="183,129,0,0" Text="METHOD" Foreground="#FFFDFAFA" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Margin="183,150,0,0" Text="START" Foreground="#FFFDFAFA" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" Margin="183,171,0,0" Text="END" Foreground="#FFFDFAFA" FontSize="14"/>
+
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Margin="266,108,0,0" Text="{Binding Step}" Foreground="#FFFDFAFA" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Margin="266,129,0,0" Text="{Binding Method}" Foreground="#FFFDFAFA" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Margin="266,150,0,0" Text="{Binding Start}" Foreground="#FFFDFAFA" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Margin="266,171,0,0" Text="{Binding End}" Foreground="#FFFDFAFA" FontSize="14"/>
+
+            <!-- YEILD -->
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" Margin="10,221,0,0" Text="FAIL" Foreground="#FFFDFAFA" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Margin="10,250,0,0" Text="PASS" Foreground="#FFFDFAFA" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Margin="10,279,0,0" Text="MOUNT" Foreground="#FFFDFAFA" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Margin="11,308,0,0" Text="TOTAL" Foreground="#FFFDFAFA" FontSize="18"/>
+
+
+
+            <TextBlock Text="{Binding FailCnt}" HorizontalAlignment="Left" Height="29"  VerticalAlignment="Top" Width="105" Margin="88,227,0,0"  Foreground="#FFFDFAFA" FontSize="16" FontFamily="Courier New"/>
+            <TextBlock Text="{Binding PassCnt}" HorizontalAlignment="Left" Height="29"  VerticalAlignment="Top" Width="105" Margin="88,253,0,0"  Foreground="#FFFDFAFA" FontSize="16" FontFamily="Courier New"/>
+            <TextBlock Text="{Binding MountCnt}" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="105" Margin="88,282,0,0"  Foreground="#FFFDFAFA" FontSize="16" FontFamily="Courier New"/>
+            <TextBlock Text="{Binding TotalCnt}" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" Width="105" Margin="88,311,0,0"  Foreground="#FFFDFAFA" FontSize="16" FontFamily="Courier New"/>
+            <sp:WpfPlot x:Name="xSCOT_Yield" Margin="198,205,2,10" Background="Transparent" />
+        </Grid>
+        <Grid Grid.Column="0" Visibility="{Binding ShowReqInfo}">
+            <Rectangle Fill="#bb4466cc" RadiusX="30" RadiusY="30" Margin="10" />
+            <TextBlock Text="{Binding ReqMessage}" Foreground="WhiteSmoke" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold"></TextBlock>
+            <Button Content="Close Info" Background="#55000099" Margin="0,20,20,0" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_CloseInfo"></Button>
+
+        </Grid>
+
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Background="#FF6B6A6A"/>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ListView x:Name="xList_SysLog" Grid.Row="0" IsSynchronizedWithCurrentItem="True" MouseDoubleClick="xList_SysLog_MouseDoubleClick" 
+                      ItemsSource="{Binding SysLog}" >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}" >
+                        <Setter Property="BorderBrush" Value="DarkGray" />
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="ToolTipService.HorizontalOffset" Value="0" />
+                        <Setter Property="ToolTipService.VerticalOffset" Value="0" />
+                        <Setter Property="ToolTipService.ShowOnDisabled" Value="True" />
+                        <Setter Property="ToolTipService.ShowDuration" Value="100000" />
+                        <Setter Property="ToolTipService.PlacementRectangle" Value="50,50,50,50" />
+                        <Setter Property="ToolTipService.ToolTip" Value="{Binding Path=Message}" />
+                        
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Type}" Value="0">
+                                <Setter Property="Background" Value="#FF444444" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="1">
+                                <Setter Property="Background" Value="DarkOrange" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="2">
+                                <Setter Property="Background" Value="IndianRed" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="3">
+                                <Setter Property="Background" Value="CadetBlue" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="4">
+                                <Setter Property="Background" Value="CadetBlue" />
+                            </DataTrigger>
+                        </Style.Triggers>
+
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="100" Header="Uint" DisplayMemberBinding="{Binding Uint}"/>
+                        <GridViewColumn Width="160" Header="Time" DisplayMemberBinding="{Binding Time}"/>
+                        <GridViewColumn Width="1000" Header="Message" DisplayMemberBinding="{Binding Message}"/>
+
+                    </GridView>
+                </ListView.View>
+
+            </ListView>
+
+            <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="#FF6B6A6A"/>
+
+            <ListView x:Name="xList_SlotLog" Grid.Row="2" IsSynchronizedWithCurrentItem="True" 
+                      ItemsSource="{Binding SlotLog}">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListViewItem}" >
+                        <Setter Property="ToolTipService.Placement" Value="RelativePoint" />
+                        <Setter Property="ToolTipService.HorizontalOffset" Value="0" />
+                        <Setter Property="ToolTipService.VerticalOffset" Value="0" />
+                        <Setter Property="ToolTipService.ShowOnDisabled" Value="True" />
+                        <Setter Property="ToolTipService.ShowDuration" Value="100000" />
+                        <Setter Property="ToolTipService.PlacementRectangle" Value="50,50,50,50" />
+                        <Setter Property="ToolTipService.ToolTip" Value="{Binding Path=Message}" />
+                        
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Type}" Value="0">
+                                <Setter Property="Background" Value="#FF444444" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="1">
+                                <Setter Property="Background" Value="DarkOrange" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="2">
+                                <Setter Property="Background" Value="IndianRed" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="3">
+                                <Setter Property="Background" Value="CadetBlue" />
+                            </DataTrigger>
+                            <DataTrigger Binding="{Binding Type}" Value="4">
+                                <Setter Property="Background" Value="CadetBlue" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="100" Header="Slot" DisplayMemberBinding="{Binding Step}"/>
+                        <GridViewColumn Width="160" Header="Time" DisplayMemberBinding="{Binding Time}"/>
+                        <GridViewColumn Width="1000" Header="Message" DisplayMemberBinding="{Binding Message}" />
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+    </Grid>
+</Page>

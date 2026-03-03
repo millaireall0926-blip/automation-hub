@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedfishTest", "RedfishTest.csproj", "{4734DE7D-C91C-4993-90C7-A909B6109E2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedfishLib", "..\RedfishLib\RedfishLib.csproj", "{AD386DE7-513D-4D86-93B7-ADDCBC2002CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4734DE7D-C91C-4993-90C7-A909B6109E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4734DE7D-C91C-4993-90C7-A909B6109E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4734DE7D-C91C-4993-90C7-A909B6109E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4734DE7D-C91C-4993-90C7-A909B6109E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD386DE7-513D-4D86-93B7-ADDCBC2002CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD386DE7-513D-4D86-93B7-ADDCBC2002CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD386DE7-513D-4D86-93B7-ADDCBC2002CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD386DE7-513D-4D86-93B7-ADDCBC2002CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF797E82-FE42-4CDD-A2FF-0A150DF08857}
+	EndGlobalSection
+EndGlobal

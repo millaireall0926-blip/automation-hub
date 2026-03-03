@@ -1,0 +1,133 @@
+﻿<Window x:Class="RDimm_MMTCRACK.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"  
+        xmlns:local="clr-namespace:RDimm_MMTCRACK"
+        xmlns:vm="clr-namespace:RDimm_MMTCRACK.ViewModel"
+        mc:Ignorable="d"
+        Title="LPMMTCRACK" Height="1000" Width="1370" AllowsTransparency="True" WindowStyle="None" 
+        ResizeMode="CanResizeWithGrip" Background="Transparent" Closed="Window_Closed" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <Storyboard x:Key="storyViewChange">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="rectContent" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="0,0,-30,-30"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.1000000" Value="10,10,-30,-30"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.2000000" Value="20,20,-30,-30"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="10,10,-30,-30"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.4000000" Value="0,0,-30,-30"/>
+            </ThicknessAnimationUsingKeyFrames>
+
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="grid1" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="0,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.1000000" Value="-60,0,60,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.2000000" Value="20,0,-20,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="0,0,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+
+    <Window.DataContext>
+        <vm:MainVM/>
+    </Window.DataContext>
+
+    <Grid Background="#CCdee3ef">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="xTB_Title" Grid.Column="0" Foreground="#63819a" Margin="10,0,0,0" FontSize="16" FontWeight="Bold" FontFamily="Calibri" MouseLeftButtonDown="MoveTitle" />
+            <Grid Grid.Column="1" HorizontalAlignment="Center" Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTMin" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/min.png"/>
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTRestore" Background="Transparent"  BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/restore.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="3" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTClose" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/close.png" />
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Rectangle x:Name="rectangle"  HorizontalAlignment="Stretch" Fill="#e1e4ec" Margin="20,0,-50,-50" RadiusX="30.675" RadiusY="30.675"/>
+        </Grid>
+        <Grid x:Name="grid" Grid.Row="1" Margin="30,20,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0" Source="{Binding LogoPath}" HorizontalAlignment="Left" Margin="1,23,0,10" Width="120" />
+                <hc:SideMenu Grid.Row="1" Background="Transparent" SideBrush="#82949f" >
+
+                    <hc:SideMenuItem Uid="MAIN" Header="Main" Background="Transparent" Margin="10,20,0,0" Foreground="#87a4bc" FontFamily="Arial" FontWeight="DemiBold" FontSize="16" 
+                         MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" >
+                        <hc:SideMenuItem.Icon>
+                            <Image Source="/Resource/chamber.png" Width="24" Height="24"/>
+                        </hc:SideMenuItem.Icon>
+                    </hc:SideMenuItem>
+                    <hc:SideMenuItem Uid="GRAPH" Header="Graph" Background="Transparent" Margin="10,20,0,0" Foreground="#87a4bc" FontFamily="Arial" FontWeight="DemiBold" FontSize="16" 
+                         MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" >
+                        <hc:SideMenuItem.Icon>
+                            <Image Source="/Resource/temp.png" Width="30" Height="30"/>
+                        </hc:SideMenuItem.Icon>
+                    </hc:SideMenuItem>
+                    <hc:SideMenuItem Uid="ENGINEER" Header="Engineer" Background="Transparent" Margin="10,20,0,0" Foreground="#87a4bc" FontFamily="Arial" FontWeight="DemiBold" FontSize="16" 
+                         MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" >
+                        <hc:SideMenuItem.Icon>
+                            <Image Source="/Resource/etc.png" Width="24" Height="24"/>
+                        </hc:SideMenuItem.Icon>
+                    </hc:SideMenuItem>
+                    <hc:SideMenuItem Uid="CONFIG" Header="Config" Background="Transparent" Margin="10,20,0,0" Foreground="#87a4bc" FontFamily="Arial" FontWeight="DemiBold" FontSize="16" 
+                         MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" >
+                        <hc:SideMenuItem.Icon>
+                            <Image Source="/Resource/configure.png" Width="24" Height="24"/>
+                        </hc:SideMenuItem.Icon>
+                    </hc:SideMenuItem>
+                </hc:SideMenu>
+            </Grid>
+            <Rectangle x:Name="rectContent" Grid.Column="1" HorizontalAlignment="Stretch" Fill="#fefefe" Margin="0,0,-30,-30" RadiusX="30" RadiusY="30"/>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="149*" />
+                        <ColumnDefinition Width="33*"/>
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="{Binding SelectViewName}" FontSize="18" FontFamily="Arial" FontWeight="DemiBold"  HorizontalAlignment="Left" Width="311" Height="38" VerticalAlignment="Center" Margin="55,0,0,0"/>
+                    <TextBlock Grid.Column="0" Text="{Binding SelectViewDiscription}" FontFamily="Arial" FontWeight="DemiBold"  HorizontalAlignment="Left" Width="566" Height="28" VerticalAlignment="Top" Margin="55,55,0,0" Foreground="#8aa6bd"/>
+                </Grid>
+                <Grid x:Name="grid1" Grid.Row="1" Margin="-10,0,10,8">
+                    <Frame Visibility="{Binding ShowMain}" Source="View/MainPage.xaml" BorderThickness="0"/>
+                    <Frame Visibility="{Binding ShowGraph}" Source="View/DimmPage.xaml" BorderThickness="0"/>
+                    <Frame Visibility="{Binding ShowEngineer}" Source="View/EngineerPage.xaml" BorderThickness="0"/>
+                    <Frame Visibility="{Binding ShowConfig}" Source="View/ConfigPage.xaml" BorderThickness="0"/>
+                </Grid>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Window>

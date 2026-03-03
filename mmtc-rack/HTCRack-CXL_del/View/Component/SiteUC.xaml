@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="HTCRack.View.Component.SiteUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTCRack.View.Component"
+             mc:Ignorable="d" 
+             d:DesignHeight="125" d:DesignWidth="125">
+    <Grid Margin="2">
+        <Border BorderThickness="2" Style="{StaticResource BorderRegion}" Background="{Binding boxSiteColor}" BorderBrush="{Binding BoarderSiteColor}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock FontSize="12" VerticalAlignment="Center" FontWeight="DemiBold">
+                    <Run Text="CH " />
+                    <Run Text="{Binding EachBoxViewSiteIndex}" />
+                </TextBlock>
+                <TextBlock Grid.Row="1" Text="SV " FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0" FontSize="20"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding TConGetSV}" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0" FontSize="20"/>
+                <TextBlock Grid.Row="2" Text="PV " FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0" FontSize="20"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding TConGetPV}" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0,0,0" FontSize="20"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

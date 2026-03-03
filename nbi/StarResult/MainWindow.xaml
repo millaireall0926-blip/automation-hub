@@ -1,0 +1,435 @@
+﻿<Window x:Class="StarResult.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:StarResult.ViewModel"        
+        xmlns:hc="https://handyorg.github.io/handycontrol"         
+        AllowsTransparency="True" WindowStyle="None" ResizeMode="CanResizeWithGrip" Background="Transparent" 
+        xmlns:local="clr-namespace:StarResult"        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1400" Closed="Window_Closed">
+
+    <Window.DataContext>
+        <vm:MainVM />
+    </Window.DataContext>
+
+    <Grid  Background="#DDD69F9F">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="xTB_Title" Grid.Column="0" Foreground="#AA170501" Margin="10,0,0,0" FontSize="16" FontWeight="Bold" FontFamily="Calibri" MouseLeftButtonDown="MoveTitle"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTMin" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/min.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTRestore" Background="Transparent"  BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/restore.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="3" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTClose" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/close.png" />
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+            <hc:Card x:Name="xCard" Grid.Column="0" Background="#FFDA6B6B" Margin="5,0,5,10" >
+                <Frame Source="/View/ResultSelection.xaml" />
+            </hc:Card>
+
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" >
+                <GridSplitter.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#DDC87070"/>
+                        <GradientStop Color="#DD4A0F0F" Offset="1"/>
+                    </LinearGradientBrush>
+                </GridSplitter.Background>
+            </GridSplitter>
+
+            <StackPanel Grid.Column="1" >
+
+                <TextBlock Text=" VIEW" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False" FontSize="30" FontWeight="DemiBold">
+                    <TextBlock.LayoutTransform>
+                        <RotateTransform Angle="90" />
+                    </TextBlock.LayoutTransform>
+                </TextBlock>
+                <Image Grid.Column="1" Source="/Resource/movebar.png" Height="24" Margin="0,10,0,0"/>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="PWR" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="TEMP" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="INFO" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="LOG" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="STEP" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="BIB" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Show_Button_Click">
+                    <TextBlock Text="DETAIL" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                
+                <Image Source="/Resource/select-all.png" Height="32"  Margin="0,20,0,0"/>
+                
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="ShowAll_Button_Click">
+                    <TextBlock Text="ALL" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+                <Button Margin="0,10,0,0"  Background="Transparent" Width="50" Click="ShowAll_Button_Click">
+                    <TextBlock Text="CLEAR" FontSize="10px" FontFamily="Fixed Sys"  Foreground="WhiteSmoke" />
+                </Button>
+
+                <Image Margin="0,20,0,0" Source="/Resource/layout.png" Height="32"/>
+
+                <Button x:Name="xbt_LoadL" Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Load_Save_Click" >
+                    <TextBlock Text="LOAD" FontSize="10px" FontFamily="Fixed Sys" >
+                        <TextBlock.Resources>
+                            <Style TargetType="TextBlock">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding LayoutMode}" Value="true">
+                                        <Setter Property="Foreground" Value="IndianRed" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding LayoutMode}" Value="false">
+                                        <Setter Property="Foreground" Value="White" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Resources>
+                    </TextBlock>
+                </Button>
+                <Button x:Name="xbt_SaveL" Margin="0,10,0,0"  Background="Transparent" Width="50" Click="Load_Save_Click" >
+                    <TextBlock Text="SAVE" FontSize="10px" FontFamily="Fixed Sys" >
+                        <TextBlock.Resources>
+                            <Style TargetType="TextBlock">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding LayoutMode}" Value="false">
+                                        <Setter Property="Foreground" Value="IndianRed" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding LayoutMode}" Value="true">
+                                        <Setter Property="Foreground" Value="White" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </TextBlock.Resources>
+                    </TextBlock>
+                </Button>
+
+                <Button x:Name="xbt_Layout1" Margin="0,10,0,0"  Background="Transparent" Width="50" Click="LayoutNum_Click"  BorderThickness="2">
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="0">
+                                    <Setter Property="BorderBrush" Value="IndianRed" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="1">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="2">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="3">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="LAYOUT1" FontSize="10px" FontFamily="Fixed Sys"   Foreground="White" />
+                </Button>
+
+                <Button x:Name="xbt_Layout2" Margin="0,6,0,0"  Background="Transparent" Width="50" Click="LayoutNum_Click" BorderThickness="2" >
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="0">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="1">
+                                    <Setter Property="BorderBrush" Value="IndianRed" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="2">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="3">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="LAYOUT2" FontSize="10px" FontFamily="Fixed Sys" Foreground="White"  />
+                </Button>
+
+                <Button x:Name="xbt_Layout3" Margin="0,6,0,0"  Background="Transparent" Width="50" Click="LayoutNum_Click" BorderThickness="2" >
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="0">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="1">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="2">
+                                    <Setter Property="BorderBrush" Value="IndianRed" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="3">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="LAYOUT3" FontSize="10px" FontFamily="Fixed Sys" Foreground="White"  />
+                </Button>
+
+                <Button x:Name="xbt_Layout4" Margin="0,6,0,0"  Background="Transparent" Width="50" Click="LayoutNum_Click" BorderThickness="2" >
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="0">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="1">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="2">
+                                    <Setter Property="BorderBrush" Value="White" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutNum}" Value="3">
+                                    <Setter Property="BorderBrush" Value="IndianRed" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Resources>
+                    <TextBlock Text="LAYOUT4" FontSize="10px" FontFamily="Fixed Sys" Foreground="White"  />
+                </Button>
+
+            </StackPanel>
+
+
+            <hc:ScrollViewer Grid.Column="2" VerticalScrollBarVisibility="Auto" 
+                             MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                             MouseMove="Moving_MouseMove"
+                             >
+                <WrapPanel MouseMove="Moving_MouseMove" >
+                    <!-- Power Gragph -->
+                    <Grid x:Name="xGrid_PWR" Margin="10,10,0,0" Height="300" Width="400">
+                        <TextBlock FontSize="20" Text="  POWER GRAPH  " FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+                        <Frame Margin="6,30,6,6" Source="/View/PowerGraph.xaml" />
+                        <Image x:Name="xImg_PWR" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseLeave="Image_MouseLeave"
+                               MouseEnter="Image_MouseEnter"  
+                               />
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!-- TEMP Gragph -->
+                    <Grid x:Name="xGrid_Temp" Margin="10,10,0,0" Height="300" Width="400" >
+                        <TextBlock FontSize="20" Text=" TEMP GRAPH" FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+                        <Frame Margin="6,30,6,6" Source="/View/TempGraph.xaml" />
+                        <Image x:Name="xImg_Temp" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseLeave="Image_MouseLeave"
+                               MouseEnter="Image_MouseEnter"  
+                               />
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!-- INFO -->
+                    <Grid x:Name="xGrid_Info" Margin="10,10,0,0" Height="300" Width="400" >
+                        <TextBlock FontSize="20" Text=" INFOMATION" FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+                        <Frame Margin="6,30,6,6" Source="/View/InfoView.xaml"/>
+                        <Image x:Name="xImg_Info" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseLeave="Image_MouseLeave"
+                               MouseEnter="Image_MouseEnter"  
+                               />
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!-- LOG -->
+                    <Grid x:Name="xGrid_Log" Margin="10,10,0,0" Height="300" Width="400" >
+                        <TextBlock FontSize="20" Text=" TEST LOG" FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+                        <Frame Margin="6,30,6,6" Source="/View/LogView.xaml"/>
+                        <Image x:Name="xImg_Log" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseEnter="Image_MouseEnter"  
+                               MouseLeave="Image_MouseLeave"
+                               />
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!-- STEP -->
+                    <Grid x:Name="xGrid_Step" Margin="10,10,0,0" Height="300" Width="400" >
+                        <TextBlock FontSize="20" Text=" STEP" FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+                        <Frame Margin="6,30,6,6" Source="/View/StepView.xaml"/>
+                        <Image x:Name="xImg_Step" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseEnter="Image_MouseEnter"  
+                               MouseLeave="Image_MouseLeave"
+                               />
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!-- BIB -->
+                    <Grid x:Name="xGrid_BIB" Margin="10,10,0,0" Height="300" Width="400" >
+                        <TextBlock FontSize="20" Text=" BIB" FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+
+                        <Frame Margin="6,30,6,6" Source="/View/BIBView.xaml" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                        <Image x:Name="xImg_BIB" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseEnter="Image_MouseEnter"  
+                               MouseLeave="Image_MouseLeave" Grid.Row="1" Grid.Column="1"
+                               />
+                        <ToggleButton Content="{Binding TotalText}" IsChecked="{Binding Total}" Height="30" Width="50" FontSize="10" 
+                          HorizontalAlignment="Left" Margin="70,0,0,0" VerticalAlignment="Top" Background="WhiteSmoke" BorderBrush="#FF3F3F46" Foreground="Black"/>
+
+                        <ComboBox HorizontalAlignment="Left" Height="15" Margin="130,0,0,0" VerticalAlignment="Top" Width="100"
+                                  SelectedIndex="{Binding TextMode}" SelectionChanged="ComboBox_SelectionChanged" >
+                            <ComboBoxItem  Content="-"/>
+                            <ComboBoxItem  Content="Number"/>
+                            <ComboBoxItem  Content="IO"/>
+                            <ComboBoxItem  Content="FailBit"/>
+                            <ComboBoxItem  Content="ChipID"/>
+                            <ComboBoxItem  Content="Bin"/>
+                        </ComboBox>
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+                    <!-- BIB -->
+                    <Grid x:Name="xGrid_Detail" Margin="10,10,0,0" Height="300" Width="400" >
+                        <TextBlock FontSize="20" Text=" DUT DETAIL" FontWeight="DemiBold" >
+                            <TextBlock.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#DDC87070"/>
+                                    <GradientStop Color="#DD541414" Offset="1"/>
+                                </LinearGradientBrush>
+                            </TextBlock.Background>
+                        </TextBlock>
+                        <Frame Margin="6,30,6,6" Source="/View/DutDetailView.xaml"/>
+                        <Image x:Name="xImg_Detail" Source="/Resource/resize.png" Margin="380,280,0,0"  Height="20" 
+                               MouseLeftButtonDown="MoveStart_MouseLeftButtonDown" 
+                               MouseLeftButtonUp="MoveEnd_MouseLeftButtonUp"
+                               MouseEnter="Image_MouseEnter"  
+                               MouseLeave="Image_MouseLeave"
+                               />
+                        <Grid Style="{StaticResource xsTitleGrid}" VerticalAlignment="Top" HorizontalAlignment="Right" Height="26" Width="38">
+                            <Button Background="Transparent" BorderThickness="0" Click="CloseWarp_Click" >
+                                <Image Source="/Resource/close.png" />
+                            </Button>
+                        </Grid>
+                    </Grid>
+
+                </WrapPanel>
+            </hc:ScrollViewer>
+        </Grid>
+
+        <Grid Grid.Row="2" >
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FF673636" />
+                        <GradientStop Offset="1" Color="#FF370303" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                <Button Background="Transparent" Click="DataPath_Click" Width="46" Height="36" BorderThickness="0" >
+                    <Image Source="/Resource/path.png" />
+                </Button>
+                <TextBlock Background="Transparent" Text="{Binding DataPath}" Margin="5" 
+                           VerticalAlignment="Center" Foreground="DarkGray" 
+                           FontSize="18" FontWeight="Bold" FontFamily="FixedSys"/>
+            </StackPanel>
+            <Image Source="/Resource/logo.png" Visibility="{Binding ShowLogo}" Margin="0,0,4,0" HorizontalAlignment="Right"/>
+        </Grid>
+    </Grid>
+</Window>

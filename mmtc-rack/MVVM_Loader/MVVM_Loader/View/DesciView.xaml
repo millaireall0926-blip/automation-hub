@@ -1,0 +1,49 @@
+﻿<Page x:Class="MVVM_Loader.View.DesciView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MVVM_Loader.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="120" d:DesignWidth="400"
+      Title="DesciView">
+   <!--
+    <Page.DataContext>
+        <vm:DesciViewModel/>
+    </Page.DataContext>
+    -->
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" BorderBrush="White" BorderThickness="1,1,0,1">
+            <Label Margin="1" Content="기능설명" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="12"  Foreground="Yellow">
+                <Label.Background>
+                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.0" Color="Black" />
+                            <GradientStop Offset="1.0" Color="#9e9e9e" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+        </Border>
+        <Border Grid.Column="1" BorderBrush="White" BorderThickness="1,1,1,1">
+            <TextBox x:Name="txt_descri" Text="{Binding Description}" FontSize="12" Foreground="Yellow" IsReadOnly="True" 
+                     ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                <TextBox.Background>
+                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 1">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.0" Color="Black" />
+                            <GradientStop Offset="1.0" Color="#9e9e9e" />
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <!--
+            <Label Margin="5,0,0,0" Content="{Binding Description}"  FontSize="13" Background="DimGray" Foreground="Yellow"/>
+            -->
+        </Border>
+    </Grid>
+</Page>

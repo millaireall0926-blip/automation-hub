@@ -1,0 +1,13 @@
+<StarIDE>
+  <compile>
+    <pgm cc="g++" api="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM/" eapi="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM" />
+    <pat pgc="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM/" />
+    <head path="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM/" name="STAR_HSBI.h" />
+    <makefile delete="0" />
+  </compile>
+  <recent>
+    <folder name="st840_test" path="D:\hsbi\pgm\st840_test" />
+    <folder name="[ST840]DDR5_H_M_16G__BurnIn_r01" path="D:\hsbi\pgm\apps\BURNIN\[ST840]DDR5_H_M_16G__BurnIn_r01" />
+    <folder name="DDR_TEST_SAMPLE" path="D:\hsbi\pgm\DDR_TEST_SAMPLE" />
+  </recent>
+</StarIDE>

@@ -1,0 +1,97 @@
+<lpcam-rack>
+  <rack-map column="2" dims="16" logo="gsi" tcon-port="" humidityWarnval="50" site-maxval="55000" site-offsetval="0" capture-cycle="1">
+    <rack id="0" capture-port="" capture-use="1" site-port="COM7" site-val="40000" site-use="1" site-final="0" site-position="0">
+      <box name="A" id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">0,1,2,3</dim>
+      </box>
+      <box name="B" id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HL">4,5,6,7,8,9,10,11</dim>
+      </box>
+      <box name="C" id="2" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">12,13,14,15</dim>
+      </box>
+    </rack>
+    <rack id="1" capture-port="" capture-use="1" site-port="" site-val="40000" site-use="1" site-final="0" site-position="0">
+      <box name="A" id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">0,1,2,3</dim>
+      </box>
+      <box name="B" id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HL">4,5,6,7,8,9,10,11</dim>
+      </box>
+      <box name="C" id="2" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">12,13,14,15</dim>
+      </box>
+    </rack>
+    <rack id="2" capture-port="" capture-use="1" site-port="" site-val="40000" site-use="1" site-final="0" site-position="0">
+      <box name="A" id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">0,1,2,3</dim>
+      </box>
+      <box name="B" id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HL">4,5,6,7,8,9,10,11</dim>
+      </box>
+      <box name="C" id="2" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">12,13,14,15</dim>
+      </box>
+    </rack>
+    <rack id="3" capture-port="" capture-use="1" site-port="" site-val="40000" site-use="1" site-final="0" site-position="0">
+      <box name="A" id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">0,1,2,3</dim>
+      </box>
+      <box name="B" id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HL">4,5,6,7,8,9,10,11</dim>
+      </box>
+      <box name="C" id="2" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">12,13,14,15</dim>
+      </box>
+    </rack>
+    <rack id="4" capture-port="" capture-use="1" site-port="" site-val="40000" site-use="1" site-final="0" site-position="0">
+      <box name="A" id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">0,1,2,3</dim>
+      </box>
+      <box name="B" id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HL">4,5,6,7,8,9,10,11</dim>
+      </box>
+      <box name="C" id="2" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">12,13,14,15</dim>
+      </box>
+    </rack>
+    <rack id="5" capture-port="" capture-use="1" site-port="" site-val="40000" site-use="1" site-final="0" site-position="0">
+      <box name="A" id="0" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">0,1,2,3</dim>
+      </box>
+      <box name="B" id="1" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HL">4,5,6,7,8,9,10,11</dim>
+      </box>
+      <box name="C" id="2" humidityoffset="0" tc-unit="1" as="0" tams="0">
+        <dim type="HIGH">12,13,14,15</dim>
+      </box>
+    </rack>
+  </rack-map>
+  <defrost targettemp="60" targetwaittime="20" tempstep="1" steptime="60" />
+  <tempcontrol step="0.5" diff="10" offset="0.5" maxtemp="97" mintemp="0" />
+  <flowmeter port="">
+    <flow1 min="5" max="50" />
+    <flow2 min="5" max="50" />
+    <flow3 min="5" max="50" />
+    <flow4 min="5" max="50" />
+    <flow5 min="5" max="50" />
+    <flow6 min="5" max="50" />
+  </flowmeter>
+  <alarm port="" flag="0" use="1" />
+  <tams>
+    <!-- fix folder path is added rack number ex) fix1, fix2 ... -->
+    <set-temp path="z:\\Result" folder="fix" name="hibim.txt" />
+    <!-- finish rack if test have made hdiag  ... -->
+    <end-flag path="z:\\Result" folder="fix" name="hdiag.log" />
+  </tams>
+  <log logdeletemonth="2">
+    <event path="c:\\gsi\\RDIMM-data\\event" />
+    <temp path="c:\\gsi\\RDIMM-data\\temp" />
+    <humidity path="c:\\gsi\\RDIMM-data\\humidity" />
+    <flowmeter path="c:\\gsi\\RDIMM-data\\flowmeter" />
+  </log>
+  <ControlSV ShorttermCount="10" LongtermCount="20" DownCatchShortMax="4" MaxDimSVDiff="5" SDUP="6" SUDown="6" UPActionDown="1" UPDownCatchDIMSVDiff="0.5" UPCatchUP="2" DownCatchDown="2" DownCatchAvg="-1" UPCatchAvg="1" />
+  <error stable="15" temperr="5" temperrcondition="5" highalarm="95" lowalarm="0" alarmcondition="10" />
+  <password use="0" value="1234" />
+  <etc engrmode="1" NoiseTempDiff="30" notempGraph="0" controlsvcycle="0" svmode="3" />
+</lpcam-rack>

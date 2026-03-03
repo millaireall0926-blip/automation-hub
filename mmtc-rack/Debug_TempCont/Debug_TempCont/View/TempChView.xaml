@@ -1,0 +1,110 @@
+﻿<Page x:Class="Debug_TempCont.View.TempChView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Debug_TempCont.View"
+      xmlns:vm="clr-namespace:Debug_TempCont.ViewModel" 
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      Title="TempChView">
+
+    <Page.DataContext>
+        <vm:TempChVM/>
+    </Page.DataContext>
+
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Black">
+            <ItemsControl ItemsSource="{Binding TempDatas}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <DockPanel Background="#ffe0b2">
+                            <Border BorderThickness="1" BorderBrush="Black">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="60"/>
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Button Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,0,5,0" Height="70" Width="70" HorizontalAlignment="Right" Command="{Binding ButtonCommand}"  >
+                                        <Button.Background>
+                                            <ImageBrush ImageSource="/Resource/play_icon_ch.png"/>
+                                        </Button.Background>
+                                        <Button.Resources>
+                                            <Style TargetType="Border">
+                                                <Setter Property="CornerRadius" Value="20"/>
+                                            </Style>
+                                        </Button.Resources>
+                                    </Button>
+                                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" >
+                                        <Label.InputBindings>
+                                            <MouseBinding Gesture="LeftClick" Command="{Binding CheckCommand}" />
+                                        </Label.InputBindings>
+                                        <TextBlock Margin="5,0,0,0" FontWeight="Bold" FontSize="36"  >
+                                            <Run Text="CH"/>
+                                            <Run Text="{Binding TxtNumerCh}" />
+                                        </TextBlock>
+                                    </Label>
+                                    <Ellipse Grid.Row="0" Grid.Column="3" Width="40" Height="40" Margin="0,3,10,0" Fill="{Binding EllipseColorValue}" HorizontalAlignment="Right" VerticalAlignment="Top" />
+                                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
+                                        <Label.InputBindings>
+                                            <MouseBinding Gesture="LeftClick" Command="{Binding CheckCommand}" />
+                                        </Label.InputBindings>
+                                        <TextBlock Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40">
+                                        <Run Text="PV  " Foreground="Red" FontWeight="Bold" />
+                                        <Run Text="{Binding TxtNowValue}" Foreground="Red" FontWeight="Bold" />
+                                        </TextBlock>
+                                    </Label>
+                                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                                        <Label.InputBindings>
+                                            <MouseBinding Gesture="LeftClick" Command="{Binding CheckCommand}" />
+                                        </Label.InputBindings>
+                                        <TextBlock Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="40">
+                                         <Run Text="SV  " Foreground="Blue" FontWeight="Bold"/>
+                                         <Run Text="{Binding TxtSetValue}" Foreground="Blue" FontWeight="Bold"/>
+                                        </TextBlock>
+                                    </Label>
+                                    <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" >
+                                        <Label.InputBindings>
+                                            <MouseBinding Gesture="LeftClick" Command="{Binding CheckCommand}" />
+                                        </Label.InputBindings>
+                                        <TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="36">
+                                        <Run Text="{Binding TxtStatusValue}" Foreground="Black" FontWeight="Bold" />
+                                        </TextBlock>
+                                    </Label>
+                                </Grid>
+                            </Border>
+                        </DockPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemContainerStyle>
+                    <Style TargetType="ContentPresenter">
+                        <Setter Property="Grid.Row" Value="{Binding RowCh}" />
+                        <Setter Property="Grid.Column" Value="{Binding ColCh}"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+        </Border>
+    </Grid>
+</Page>

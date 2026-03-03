@@ -1,0 +1,257 @@
+﻿<Page x:Class="RDimm_MMTCRACK.View.EngineerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RDimm_MMTCRACK.View"
+      xmlns:vm="clr-namespace:RDimm_MMTCRACK.ViewModel"
+      xmlns:uc="clr-namespace:RDimm_MMTCRACK.View.Component"
+      xmlns:hc="https://handyorg.github.io/handycontrol"  
+      mc:Ignorable="d" 
+      d:DesignHeight="900" d:DesignWidth="1250"
+      Title="EngineerPage">
+
+    <Page.DataContext>
+        <vm:EngineerVM/>
+    </Page.DataContext>
+    
+    <Grid Margin="2">
+        <Border BorderThickness="2" Style="{StaticResource BorderRegion}" Margin="2">
+            <TabControl HorizontalAlignment="Center" Style="{StaticResource TabControlCapsule}" >
+                <TabItem Header="Fix Status Parameter">
+                    <Border BorderThickness="1" Margin="30,3,30,3" Width="1100" >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="300"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="FIX All Status" FontSize="36" FontWeight="DemiBold" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="250,0,0,0" />
+                                <Grid Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock FontWeight="DemiBold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Run Text="TCon Write Data : "/>
+                                    <Run Text="{Binding TconWriteCnt}"/>
+                                    </TextBlock>
+                                    <TextBlock Grid.Row="1" FontWeight="DemiBold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Run Text="TCon Read Data : "/>
+                                    <Run Text="{Binding TconReadCnt}"/>
+                                    </TextBlock>
+                                    <TextBlock Grid.Row="2" FontWeight="DemiBold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <Run Text="{Binding caputretime}"/>
+                                    </TextBlock>
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="220"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <ListView Margin="-25,0,0,0" x:Name="xList_Motor" Background="White" IsSynchronizedWithCurrentItem="True" FontSize="9" ItemsSource="{Binding MotorLogs}">
+                                    <ListView.ItemContainerStyle>
+                                        <Style TargetType="{x:Type ListViewItem}" >
+                                            <Setter Property="ToolTipService.Placement" Value="RelativePoint" />
+                                            <Setter Property="ToolTipService.HorizontalOffset" Value="0" />
+                                            <Setter Property="ToolTipService.VerticalOffset" Value="0" />
+                                            <Setter Property="ToolTipService.ToolTip" Value="{Binding Path=Message}" />
+                                        </Style>
+                                    </ListView.ItemContainerStyle>
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Width="105" Header="Time" DisplayMemberBinding="{Binding Time}"/>
+                                            <GridViewColumn Width="500" Header="Message" DisplayMemberBinding="{Binding Message}" />
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                                <ItemsControl Grid.Column="1" ItemsSource="{Binding ManualMotor}" Margin="10,0,0,0">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid Columns="2"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <uc:ManMotorUC/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </TabItem>
+                <TabItem Header="TCON Parameter">
+                    <Grid>
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="120"/>
+                        </Grid.RowDefinitions>
+                        <TabControl Grid.Row="0" Margin="2" Width="1200" HorizontalAlignment="Center" Style="{StaticResource TabControlCapsule}" SelectedIndex="{Binding SelectedIndex}">
+                            <TabItem Header="FUNCTION">
+                                <Border BorderThickness="1">
+                                    <DataGrid x:Name="item1dataGrid" Margin="5" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False"
+                                          ItemsSource="{Binding Funcdatas}" CanUserDeleteRows="False" FontSize="13">
+                                        <DataGrid.CellStyle>
+                                            <Style TargetType="DataGridCell" BasedOn="{StaticResource datagridcellaligncenter}"/>
+                                        </DataGrid.CellStyle>
+                                        <DataGrid.ColumnHeaderStyle>
+                                            <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource datagridheaderaligncenter}"/>
+                                        </DataGrid.ColumnHeaderStyle>
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Header="기호" Binding="{Binding Symbol}" Width="90" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH1" Binding="{Binding pCh1}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH2" Binding="{Binding pCh2}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH3" Binding="{Binding pCh3}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH4" Binding="{Binding pCh4}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH5" Binding="{Binding pCh5}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH6" Binding="{Binding pCh6}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH7" Binding="{Binding pCh7}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH8" Binding="{Binding pCh8}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH9" Binding="{Binding pCh9}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH10" Binding="{Binding pCh10}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH11" Binding="{Binding pCh11}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH12" Binding="{Binding pCh12}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH13" Binding="{Binding pCh13}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH14" Binding="{Binding pCh14}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH15" Binding="{Binding pCh15}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH16" Binding="{Binding pCh16}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH17" Binding="{Binding pCh17}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH18" Binding="{Binding pCh18}" Width="60" FontSize="13"/>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </Border>
+                            </TabItem>
+                            <TabItem Header="SET POINT">
+                                <Border BorderThickness="1">
+                                    <DataGrid x:Name="item2dataGrid" Margin="5" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"
+                                    ItemsSource="{Binding SetPointdatas}" CanUserDeleteRows="False" FontSize="13">
+                                        <DataGrid.CellStyle>
+                                            <Style TargetType="DataGridCell" BasedOn="{StaticResource datagridcellaligncenter}"/>
+                                        </DataGrid.CellStyle>
+                                        <DataGrid.ColumnHeaderStyle>
+                                            <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource datagridheaderaligncenter}"/>
+                                        </DataGrid.ColumnHeaderStyle>
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Header="기호" Binding="{Binding Symbol}" Width="90" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH1" Binding="{Binding pCh1}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH2" Binding="{Binding pCh2}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH3" Binding="{Binding pCh3}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH4" Binding="{Binding pCh4}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH5" Binding="{Binding pCh5}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH6" Binding="{Binding pCh6}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH7" Binding="{Binding pCh7}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH8" Binding="{Binding pCh8}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH9" Binding="{Binding pCh9}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH10" Binding="{Binding pCh10}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH11" Binding="{Binding pCh11}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH12" Binding="{Binding pCh12}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH13" Binding="{Binding pCh13}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH14" Binding="{Binding pCh14}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH15" Binding="{Binding pCh15}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH16" Binding="{Binding pCh16}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH17" Binding="{Binding pCh17}" Width="60" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH18" Binding="{Binding pCh18}" Width="60" FontSize="13"/>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </Border>
+                            </TabItem>
+                            <TabItem Header="IN / OUT">
+                                <Border BorderThickness="1">
+                                    <DataGrid x:Name="item3dataGrid" Margin="5" AutoGenerateColumns="False" SelectionMode="Single" CanUserAddRows="False" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center"
+                                            ItemsSource="{Binding InOutdatas}" CanUserDeleteRows="False" FontSize="13">
+                                        <DataGrid.CellStyle>
+                                            <Style TargetType="DataGridCell" BasedOn="{StaticResource datagridcellaligncenter}"/>
+                                        </DataGrid.CellStyle>
+                                        <DataGrid.ColumnHeaderStyle>
+                                            <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource datagridheaderaligncenter}"/>
+                                        </DataGrid.ColumnHeaderStyle>
+                                        <DataGrid.Columns>
+                                            <DataGridTextColumn Header="기호" Binding="{Binding Symbol}" Width="106" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH1" Binding="{Binding pCh1}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH2" Binding="{Binding pCh2}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH3" Binding="{Binding pCh3}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH4" Binding="{Binding pCh4}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH5" Binding="{Binding pCh5}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH6" Binding="{Binding pCh6}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH7" Binding="{Binding pCh7}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH8" Binding="{Binding pCh8}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH9" Binding="{Binding pCh9}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH10" Binding="{Binding pCh10}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH11" Binding="{Binding pCh11}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH12" Binding="{Binding pCh12}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH13" Binding="{Binding pCh13}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH14" Binding="{Binding pCh14}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH15" Binding="{Binding pCh15}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH16" Binding="{Binding pCh16}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH17" Binding="{Binding pCh17}" Width="59" FontSize="13"/>
+                                            <DataGridTextColumn Header="CH18" Binding="{Binding pCh18}" Width="59" FontSize="13"/>
+                                        </DataGrid.Columns>
+                                    </DataGrid>
+                                </Border>
+                            </TabItem>
+                        </TabControl>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="70"/>
+                            </Grid.RowDefinitions>
+                            <ListView Grid.ColumnSpan="5" Grid.RowSpan="2" Margin="-10" x:Name="xList_Para" Background="White" IsSynchronizedWithCurrentItem="True" FontSize="9" ItemsSource="{Binding ParaLogs}">
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="{x:Type ListViewItem}" >
+                                        <Setter Property="ToolTipService.Placement" Value="RelativePoint" />
+                                        <Setter Property="ToolTipService.HorizontalOffset" Value="0" />
+                                        <Setter Property="ToolTipService.VerticalOffset" Value="0" />
+                                        <Setter Property="ToolTipService.ToolTip" Value="{Binding Path=Message}" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Width="96" Header="Time" DisplayMemberBinding="{Binding Time}" />
+                                        <GridViewColumn Header="Message" DisplayMemberBinding="{Binding Message}" />
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                            <Grid Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="3">
+                                <ProgressBar x:Name="uiPb_main" VerticalAlignment="Center" Height="30" Minimum="0" Maximum="100" Value="{Binding uiPbint}" Margin="20,1,10,1"/>
+
+                            </Grid>
+                            <Button Grid.Row="1" Grid.Column="5" Margin="10,5,10,5" Content="Default Set" FontSize="16" FontWeight="DemiBold" Height="50" Command="{Binding ParaDeFaultSet}"/>
+                            <Button Grid.Row="1" Grid.Column="6" Margin="10,5,10,5" Content="TCon Read" FontSize="16" FontWeight="DemiBold" Height="50" Command="{Binding ParaValueRead}"/>
+                            <Button Grid.Row="1" Grid.Column="7" Margin="10,5,10,5" Content="TCon Write" FontSize="16" FontWeight="DemiBold" Height="50" Command="{Binding ParaValueWrite}"/>
+                        </Grid>
+                        <Grid Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                        </Grid>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Border>
+    </Grid>
+</Page>

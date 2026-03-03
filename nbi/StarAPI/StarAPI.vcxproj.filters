@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="bib.cpp" />
+    <ClCompile Include="DIAG_TEST.cpp" />
+    <ClCompile Include="errc.cpp" />
+    <ClCompile Include="failmem.cpp" />
+    <ClCompile Include="ioc.cpp" />
+    <ClCompile Include="net.cpp" />
+    <ClCompile Include="operation.cpp" />
+    <ClCompile Include="pgc.cpp" />
+    <ClCompile Include="result.cpp" />
+    <ClCompile Include="Scanner.cpp" />
+    <ClCompile Include="starAPI.cpp" />
+    <ClCompile Include="STAR_TEST.cpp" />
+    <ClCompile Include="tgc.cpp" />
+    <ClCompile Include="eapi\eapi_function.cpp">
+      <Filter>eapi</Filter>
+    </ClCompile>
+    <ClCompile Include="eapi\ec.cpp">
+      <Filter>eapi</Filter>
+    </ClCompile>
+    <ClCompile Include="eeprom.cpp" />
+    <ClCompile Include="dps.cpp" />
+    <ClCompile Include="cmd.cpp" />
+    <ClCompile Include="vec.cpp" />
+    <ClCompile Include="nand.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\starlib\starlib_dif.h" />
+    <ClInclude Include="bib.h" />
+    <ClInclude Include="DIAG_TEST.h" />
+    <ClInclude Include="errc.h" />
+    <ClInclude Include="failmem.h" />
+    <ClInclude Include="ioc.h" />
+    <ClInclude Include="macro.h" />
+    <ClInclude Include="net.h" />
+    <ClInclude Include="operation.h" />
+    <ClInclude Include="pgc.h" />
+    <ClInclude Include="result.h" />
+    <ClInclude Include="Scanner.h" />
+    <ClInclude Include="starAPI.h" />
+    <ClInclude Include="define.h" />
+    <ClInclude Include="STAR_TEST.h" />
+    <ClInclude Include="String.h" />
+    <ClInclude Include="tgc.h" />
+    <ClInclude Include="eapi\EApi.h">
+      <Filter>eapi</Filter>
+    </ClInclude>
+    <ClInclude Include="eapi\eapi_function.h">
+      <Filter>eapi</Filter>
+    </ClInclude>
+    <ClInclude Include="eapi\ec.h">
+      <Filter>eapi</Filter>
+    </ClInclude>
+    <ClInclude Include="eapi\I2CReset.h">
+      <Filter>eapi</Filter>
+    </ClInclude>
+    <ClInclude Include="eeprom.h" />
+    <ClInclude Include="dps.h" />
+    <ClInclude Include="cmd.h" />
+    <ClInclude Include="vec.h" />
+    <ClInclude Include="nand.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="eapi">
+      <UniqueIdentifier>{1bd1ac3b-6b45-47f8-932d-bc6a3cd5fc05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+D:\Project\mmtc-rack\bin\mongocrypt.dll
+D:\Project\mmtc-rack\bin\MongoAccess.dll.config
+D:\Project\mmtc-rack\bin\MongoAccess.dll
+D:\Project\mmtc-rack\bin\MongoAccess.pdb
+D:\Project\mmtc-rack\MongoAccess\obj\Debug\MongoAccess.csproj.AssemblyReference.cache
+D:\Project\mmtc-rack\MongoAccess\obj\Debug\MongoAccess.csproj.CoreCompileInputs.cache
+D:\Project\mmtc-rack\MongoAccess\obj\Debug\MongoAcc.44426603.Up2Date
+D:\Project\mmtc-rack\MongoAccess\obj\Debug\MongoAccess.dll
+D:\Project\mmtc-rack\MongoAccess\obj\Debug\MongoAccess.pdb

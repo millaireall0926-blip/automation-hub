@@ -1,0 +1,13 @@
+<StarIDE logo="1">
+  <compile>
+    <pgm cc="g++" api="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM/" eapi="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM" />
+    <pat pgc="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM/" />
+    <head path="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM/" name="STAR_TEST.h" />
+    <makefile delete="0" />
+  </compile>
+  <recent>
+    <folder name="lbj0529_nand" path="D:\nbi\test_pgm\lbj0529_nand" />
+    <folder name="kowin_132F_VEC" path="D:\nbi\test_pgm\test\kowin_132F_VEC" />
+    <folder name="NAND_132F_Kowin" path="D:\nbi\test_pgm\NAND_132F_Kowin" />
+  </recent>
+</StarIDE>

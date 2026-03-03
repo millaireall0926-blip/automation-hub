@@ -1,0 +1,356 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\viewmodel\\selectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\selectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\viewmodel\\mergevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\mergevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\view\\selectview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\selectview.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\view\\selectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\selectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\view\\mergeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\mergeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\view\\graphview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\graphview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\view\\mergeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\mergeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\view\\graphview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\graphview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\base\\mconv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:base\\mconv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\base\\basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:base\\basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TempView||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\lp-mmtcrack\\lp_0715\\tempmergeview\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MergeView.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\MergeView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MergeView.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\MergeView.xaml.cs",
+              "RelativeToolTip": "View\\MergeView.xaml.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwA8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:32:07.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADgvwkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:31:16.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GraphView.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\GraphView.xaml",
+              "RelativeDocumentMoniker": "View\\GraphView.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\GraphView.xaml",
+              "RelativeToolTip": "View\\GraphView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-29T07:09:01.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GraphView.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\GraphView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\GraphView.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\GraphView.xaml.cs",
+              "RelativeToolTip": "View\\GraphView.xaml.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwBMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:29:37.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectView.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\SelectView.xaml",
+              "RelativeDocumentMoniker": "View\\SelectView.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\SelectView.xaml",
+              "RelativeToolTip": "View\\SelectView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T02:11:58.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SelectView.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\SelectView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\SelectView.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\SelectView.xaml.cs",
+              "RelativeToolTip": "View\\SelectView.xaml.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwA4AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T07:26:15.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\GraphVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\GraphVM.cs",
+              "RelativeToolTip": "ViewModel\\GraphVM.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAgwBAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T06:11:01.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:10:01.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MergeVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\MergeVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MergeVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\MergeVM.cs",
+              "RelativeToolTip": "ViewModel\\MergeVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:43:30.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SelectionVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\SelectionVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SelectionVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\ViewModel\\SelectionVM.cs",
+              "RelativeToolTip": "ViewModel\\SelectionVM.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:12:52.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DimDataModel.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Model\\DimDataModel.cs",
+              "RelativeDocumentMoniker": "Model\\DimDataModel.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Model\\DimDataModel.cs",
+              "RelativeToolTip": "Model\\DimDataModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T07:22:08.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADgvw8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:31:03.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MConv.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Base\\MConv.cs",
+              "RelativeDocumentMoniker": "Base\\MConv.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Base\\MConv.cs",
+              "RelativeToolTip": "Base\\MConv.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:30:31.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BaseVM.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Base\\BaseVM.cs",
+              "RelativeDocumentMoniker": "Base\\BaseVM.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Base\\BaseVM.cs",
+              "RelativeToolTip": "Base\\BaseVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:30:23.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T02:28:37.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-10T01:23:29.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TempView",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\TempView.csproj",
+              "RelativeDocumentMoniker": "TempView.csproj",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\TempView.csproj",
+              "RelativeToolTip": "TempView.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-10T01:12:51.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:10:54.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T02:09:38.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MergeView.xaml",
+              "DocumentMoniker": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\MergeView.xaml",
+              "RelativeDocumentMoniker": "View\\MergeView.xaml",
+              "ToolTip": "D:\\Project\\LP-MMTCRack\\LP_0715\\TempMergeView\\View\\MergeView.xaml",
+              "RelativeToolTip": "View\\MergeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-07T08:42:40.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

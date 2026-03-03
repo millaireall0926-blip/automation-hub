@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LP-MMTCRack", "LP-MMTCRack.csproj", "{167E3A24-36D1-4448-8AA7-1789D50B7FEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{167E3A24-36D1-4448-8AA7-1789D50B7FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167E3A24-36D1-4448-8AA7-1789D50B7FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167E3A24-36D1-4448-8AA7-1789D50B7FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167E3A24-36D1-4448-8AA7-1789D50B7FEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CCC0EF2-B7CB-446F-815C-3B993E29C5DE}
+	EndGlobalSection
+EndGlobal

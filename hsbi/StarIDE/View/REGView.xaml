@@ -1,0 +1,81 @@
+﻿<Page x:Class="StarIDE.View.REGView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StarIDE.View"
+      xmlns:hc="https://handyorg.github.io/handycontrol"    
+      xmlns:vm="clr-namespace:StarIDE.ViewModel"   
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="REGView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="SDEF" Background="Transparent" HorizontalAlignment="Left" 
+                   FontSize="24" FontWeight="Bold" Foreground="#FFE2D78E"/>
+            <Button HorizontalAlignment="Right" Command="{Binding CmdSdefUpdate}">
+                <TextBlock Text="Update" FontSize="12" />
+            </Button>
+
+            <ListBox Grid.Row="1" ItemsSource="{Binding SdefModels}" BorderBrush="#FFE2D78E" Style="{DynamicResource WrapPanelHorizontalListBox}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="1" BorderBrush="#FFE2D78E" Margin="2,2" CornerRadius="2">
+                            <TextBlock Padding="2" Text="{Binding Name}" Foreground="#FFE2D78E" FontSize="10" Background="Transparent"/>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch"  Background="#FFE2D78E"/>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="OPCODE" Background="Transparent" HorizontalAlignment="Left" 
+                       FontSize="24" FontWeight="Bold" Foreground="#FF87A2E5"/>
+            <ListBox Grid.Row="1" BorderBrush="#FF87A2E5" ItemsSource="{Binding OpcModels}" Style="{DynamicResource WrapPanelHorizontalListBox}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="1" BorderBrush="#FF87A2E5" Margin="2,2" CornerRadius="2">
+                            <TextBlock Padding="2" Text="{Binding Name}" Foreground="#FF87A2E5" FontSize="11" Background="Transparent"/>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch"  Background="#FF87A2E5"/>
+        <Grid Grid.Row="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="REGISTER" Background="Transparent" HorizontalAlignment="Left" 
+                       FontSize="24" FontWeight="Bold" Foreground="#FF27C6B1"/>
+            <ListBox Grid.Row="1" BorderBrush="#FF27C6B1" ItemsSource="{Binding RegModels}" Style="{DynamicResource WrapPanelHorizontalListBox}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderThickness="1" BorderBrush="#FF27C6B1" Margin="2,2" CornerRadius="2">
+                            <TextBlock Padding="2" Text="{Binding Name}" Foreground="#FF27C6B1" FontSize="10" Background="Transparent"/>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,344 @@
+<htc-rack>
+  <rack-map column="2" dims="24" fpmax="1" logo="gsi" svmax="1" svmode="1" open-limit="300" save-only="0" ctrl-svmin="20" ctrl-svmax="80">
+    <rack id="0" ip="192.168.1.101" port="5000" as="0" prev-sv="60">
+      <box name="A" id="0">
+        <!--              0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 -->
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>       LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,LOW,LOW</each-temp>
+        <sub>
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+          <!-- type = HIGH LOW HL LH EACH-->
+          <dim type="LOW">0,1,2,3,4,5</dim>
+        </sub>
+      </box>
+      <box name="B" id="1">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>HL, HL ,HL ,HL, HL,HL, HL ,HL ,HL, HL, LH,  LH, LH,LH,  LH, LH, HL, HL, HL, HL</each-temp>
+        <sub>
+          <sv>2</sv>
+          <ssr>2,3,4,5</ssr>
+          <fp>2</fp>
+          <fan>2,4</fan>
+          <pv>2</pv>
+          <dim type="LOW">6,7,8,9,10,11,12,13,14,15,16,17</dim>
+        </sub>
+      </box>
+      <box name="C" id="2">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,Low,LOW, Low,Low</each-temp>
+        <sub>
+          <sv>4</sv>
+          <ssr>6,7</ssr>
+          <fp>4</fp>
+          <fan>6</fan>
+          <pv>4</pv>
+          <dim type="LOW">18,19,20,21,22,23</dim>
+        </sub>
+      </box>
+    </rack>
+    <rack id="1" ip="192.168.1.102" port="5000" as="0" prev-sv="60">
+      <box name="A" id="0">
+        <!--              0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 -->
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>       LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,LOW,LOW</each-temp>
+        <sub>
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+          <!-- type = HIGH LOW HL LH EACH-->
+          <dim type="LOW">0,1,2,3,4,5</dim>
+        </sub>
+      </box>
+      <box name="B" id="1">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>HL, HL ,HL ,HL, HL,HL, HL ,HL ,HL, HL, LH,  LH, LH,LH,  LH, LH, HL, HL, HL, HL</each-temp>
+        <sub>
+          <sv>2</sv>
+          <ssr>2,3,4,5</ssr>
+          <fp>2</fp>
+          <fan>2,4</fan>
+          <pv>2</pv>
+          <dim type="LOW">6,7,8,9,10,11,12,13,14,15,16,17</dim>
+        </sub>
+      </box>
+      <box name="C" id="2">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,Low,LOW, Low,Low</each-temp>
+        <sub>
+          <sv>4</sv>
+          <ssr>6,7</ssr>
+          <fp>4</fp>
+          <fan>6</fan>
+          <pv>4</pv>
+          <dim type="LOW">18,19,20,21,22,23</dim>
+        </sub>
+      </box>
+    </rack>
+    <rack id="2" ip="192.168.1.103" port="5000" as="0" prev-sv="60">
+      <box name="A" id="0">
+        <!--              0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 -->
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>       LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,LOW,LOW</each-temp>
+        <sub>
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+          <!-- type = HIGH LOW HL LH EACH-->
+          <dim type="LOW">0,1,2,3,4,5</dim>
+        </sub>
+      </box>
+      <box name="B" id="1">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>HL, HL ,HL ,HL, HL,HL, HL ,HL ,HL, HL, LH,  LH, LH,LH,  LH, LH, HL, HL, HL, HL</each-temp>
+        <sub>
+          <sv>2</sv>
+          <ssr>2,3,4,5</ssr>
+          <fp>2</fp>
+          <fan>2,4</fan>
+          <pv>2</pv>
+          <dim type="LOW">6,7,8,9,10,11,12,13,14,15,16,17</dim>
+        </sub>
+      </box>
+      <box name="C" id="2">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,Low,LOW, Low,Low</each-temp>
+        <sub>
+          <sv>4</sv>
+          <ssr>6,7</ssr>
+          <fp>4</fp>
+          <fan>6</fan>
+          <pv>4</pv>
+          <dim type="LOW">18,19,20,21,22,23</dim>
+        </sub>
+      </box>
+    </rack>
+    <rack id="3" ip="192.168.1.104" port="5000" as="0" prev-sv="60">
+      <box name="A" id="0">
+        <!--              0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 -->
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>       LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,LOW,LOW</each-temp>
+        <sub>
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+          <!-- type = HIGH LOW HL LH EACH-->
+          <dim type="LOW">0,1,2,3,4,5</dim>
+        </sub>
+      </box>
+      <box name="B" id="1">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>HL, HL ,HL ,HL, HL,HL, HL ,HL ,HL, HL, LH,  LH, LH,LH,  LH, LH, HL, HL, HL, HL</each-temp>
+        <sub>
+          <sv>2</sv>
+          <ssr>2,3,4,5</ssr>
+          <fp>2</fp>
+          <fan>2,4</fan>
+          <pv>2</pv>
+          <dim type="LOW">6,7,8,9,10,11,12,13,14,15,16,17</dim>
+        </sub>
+      </box>
+      <box name="C" id="2">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,Low,LOW, Low,Low</each-temp>
+        <sub>
+          <sv>4</sv>
+          <ssr>6,7</ssr>
+          <fp>4</fp>
+          <fan>6</fan>
+          <pv>4</pv>
+          <dim type="LOW">18,19,20,21,22,23</dim>
+        </sub>
+      </box>
+    </rack>
+    <rack id="4" ip="192.168.1.105" port="5000" as="0" prev-sv="60">
+      <box name="A" id="0">
+        <!--              0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 -->
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>       LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,LOW,LOW</each-temp>
+        <sub>
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+          <!-- type = HIGH LOW HL LH EACH-->
+          <dim type="LOW">0,1,2,3,4,5</dim>
+        </sub>
+      </box>
+      <box name="B" id="1">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>HL, HL ,HL ,HL, HL,HL, HL ,HL ,HL, HL, LH,  LH, LH,LH,  LH, LH, HL, HL, HL, HL</each-temp>
+        <sub>
+          <sv>2</sv>
+          <ssr>2,3,4,5</ssr>
+          <fp>2</fp>
+          <fan>2,4</fan>
+          <pv>2</pv>
+          <dim type="LOW">6,7,8,9,10,11,12,13,14,15,16,17</dim>
+        </sub>
+      </box>
+      <box name="C" id="2">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,Low,LOW, Low,Low</each-temp>
+        <sub>
+          <sv>4</sv>
+          <ssr>6,7</ssr>
+          <fp>4</fp>
+          <fan>6</fan>
+          <pv>4</pv>
+          <dim type="LOW">18,19,20,21,22,23</dim>
+        </sub>
+      </box>
+    </rack>
+    <rack id="5" ip="192.168.1.106" port="5000" as="0" prev-sv="60">
+      <box name="A" id="0">
+        <!--              0  5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 -->
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>       LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,LOW,LOW</each-temp>
+        <sub>
+          <sv>0</sv>
+          <ssr>0,1</ssr>
+          <fp>0</fp>
+          <fan>0</fan>
+          <pv>0</pv>
+          <!-- type = HIGH LOW HL LH EACH-->
+          <dim type="LOW">0,1,2,3,4,5</dim>
+        </sub>
+      </box>
+      <box name="B" id="1">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>HL, HL ,HL ,HL, HL,HL, HL ,HL ,HL, HL, LH,  LH, LH,LH,  LH, LH, HL, HL, HL, HL</each-temp>
+        <sub>
+          <sv>2</sv>
+          <ssr>2,3,4,5</ssr>
+          <fp>2</fp>
+          <fan>2,4</fan>
+          <pv>2</pv>
+          <dim type="LOW">6,7,8,9,10,11,12,13,14,15,16,17</dim>
+        </sub>
+      </box>
+      <box name="C" id="2">
+        <MinBefore10m>    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </MinBefore10m>
+        <MaxBefore10m>    0, 5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100   </MaxBefore10m>
+        <sv-ofs>          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0    </sv-ofs>
+        <each-temp>LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,LOW,High,High,Low,LOW, Low,Low</each-temp>
+        <sub>
+          <sv>4</sv>
+          <ssr>6,7</ssr>
+          <fp>4</fp>
+          <fan>6</fan>
+          <pv>4</pv>
+          <dim type="LOW">18,19,20,21,22,23</dim>
+        </sub>
+      </box>
+    </rack>
+    <dim-pos>5,4,3,29,2,1,0,28,6,7,8,31,9,10,11,30,17,16,15,25,14,13,12,24,18,19,20,27,21,22,23,26</dim-pos>
+  </rack-map>
+  <tams all="0" auto="1">
+    <!-- fix folder path is added rack number ex) fix1, fix2 ... -->
+    <set-temp path="z:\\result" folder="fix" name="hibim.txt" />
+    <!-- finish rack if test have made hdiag  ... -->
+    <end-flag path="z:\\result" folder="fix" name="hdiag.log" />
+  </tams>
+  <log save-ex="0" save-water="0" retention="2">
+    <event path="d:\\htc-data" />
+    <temp path="d:\\htc-data" />
+  </log>
+  <water over="70">
+    <pv>1,3,5,7</pv>
+  </water>
+  <!-- warte jacket Tcon PV Read : over temp limit -->
+  <fan duty="50" under="500" over="20000" />
+  <!-- set-duty, under rpm limit, over rpm limit -->
+  <cur>
+    <utility-cur>
+      <Water-Pump under="0.1" over="8" />
+      <Radiator-Fan under="1" over="8" />
+    </utility-cur>
+    <paltier-cur over="50" />
+  </cur>
+  <!-- Peltier Current Monitor -->
+  <fet-temp under="-10" warn="40" over="10000" />
+  <!-- FET Temp Monitor -->
+  <dimm max="90" min="60" stable="10" limit="5" per-log="5" alarmH="90" alarmL="30" per-alarm="5" no-dimm-check="1800" box-stop-min="10" SVMin="40" SVMax="85">
+    <!-- example  
+        sv 60 인경우
+          baseline = 4, step = 0.5 경우
+            dimm avg가 64가 되면 -0.5 씩 sv를 낮춤.
+          baseline = 2, step = 0.2 경우 
+            dimm avg가 62가 되면 -0.2 씩 sv를 낮춤
+    -->
+    <limit use="1" baseline="3" step="0.5" />
+  </dimm>
+  <!-- Dimm Warnning, Over Temp -->
+  <gpio>
+    <ssr in="ff" out="0" ch="f" en="0" cold="ff" freq="0" />
+    <extra pump="0" rad="0" fan="1" />
+  </gpio>
+  <password use="0" value="1234" />
+  <setup use="0" />
+  <fpga path="c:\\mmtc-rack\\bin\\htc_ctrl_wrapper_Rev0.50_230810.bit" />
+  <mongo use="0" name="htc_icheon" ip="222.98.49.24" port="27017" user="ui" pw="housemania2" auth="admin" />
+  <plc use="1" ip="192.168.1.200" port="2004" racks="6" />
+  <redfish use="1">
+    <auth user="gsi7" pw="gsipw1234" />
+    <path main="/redfish/v1/Chassis/AVC_Baseboard/Sensors/temperature_DIMM_" login="/redfish/v1/SessionService/Sessions">  
+          L:1,K:1,J:1,I:1,H:1,G:1,
+          A:1,B:1,C:1,D:1,E:1,F:1,
+          L:2,K:2,J:2,I:2,H:2,G:2,
+          A:2,B:2,C:2,D:2,E:2,F:2
+    </path>
+    <bmc-group>
+      <bmc id="0" ip="192.168.50.144" />
+      <bmc id="1" ip="192.168.50.145" />
+      <bmc id="2" ip="192.168.50.146" />
+      <bmc id="3" ip="192.168.50.147" />
+      <bmc id="4" ip="192.168.50.148" />
+      <bmc id="5" ip="192.168.50.149" />
+    </bmc-group>
+  </redfish>
+</htc-rack>

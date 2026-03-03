@@ -1,0 +1,16 @@
+<!--%File-Version:1.0.0%-->
+<StarLauncher logo="1">
+  <frame name="STAR PROGRAMS - Handler" />
+
+	<tools>
+    <tool name="QMOS" path="StarQMOS.exe" tip="Star-Test Operation System"/>
+    <tool name="Edit" path="StarIDE\\StarIDE.exe" tip="Star-Test IDE(Integrated Development Environment)"/>
+    <tool name="View" path="StarResult\\StarResult.exe" tip="Star-Test Result Viewer"/>
+    <tool name="Maint" path="StarMaint.exe" tip="Star-Test maintenance Program"/>
+    <tool name="Router" path="StarRouter\\StarRouter.exe" tip="Star-Test Slot Routing Program"/>
+  
+  </tools>  
+</StarLauncher>
+<!--%File-History:
+  v1.00 start
+ %-->

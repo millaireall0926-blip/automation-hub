@@ -1,0 +1,148 @@
+﻿<Page x:Class="StarResult.View.BIBView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StarResult.View"
+      xmlns:vm="clr-namespace:StarResult.ViewModel"
+      xmlns:hc="https://handyorg.github.io/handycontrol"    
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BIBView">
+    <Page.DataContext>
+        <vm:BIBVM/>
+    </Page.DataContext>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="24"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="/Resource/edge.png" Stretch="Uniform"/>
+            <Image Grid.Row="1" Source="/Resource/edge.png" Stretch="Uniform"/>
+        </Grid>
+        
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="18"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="#FF205020" />
+            <DataGrid Grid.Row="1" ItemsSource="{Binding RowIndexs}" HeadersVisibility="None" Background="#FF205020" RowHeight="{Binding RowHeight}"                     
+                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                      ScrollViewer.CanContentScroll="False" IsReadOnly="true" GridLinesVisibility="None" BorderThickness="0"
+                      >
+                <DataGrid.Resources>
+                    <Style TargetType="DataGrid">
+                        <Setter Property="RowBackground" Value="Transparent"/>
+                    </Style>
+                </DataGrid.Resources>
+                <DataGrid.CellStyle>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Setter Property="VerticalAlignment" Value="Center"/>
+                        <Setter Property="FontSize" Value="9"/>
+                        <Setter Property="Foreground" Value="#FFB0C0FF" />
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        
+                        <!-- Setter Property="Background" Value="red"/ -->
+                    </Style>
+                </DataGrid.CellStyle>
+                
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Line" Binding="{Binding Line}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            
+        </Grid>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="18"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ItemsControl Grid.Row="0" ItemsSource="{Binding ColIndexs}" Background="#FF205010">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <TextBlock
+                                Text="{Binding Line}"
+                                HorizontalAlignment="Center"                               
+                                VerticalAlignment="Bottom"
+                                FontSize="10"
+                                Foreground="#FFC0B0FF"
+                                TextAlignment="Center"
+                                FontWeight="DemiBold"  
+                                Width="{Binding ColWidth}"
+                                Height="16" />
+                        
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+            
+            <ItemsControl Grid.Row="1" ItemsSource="{Binding DutModels}" x:Name="xBIB" FontSize="10" >
+                <ItemsControl.ItemsPanel >
+                    <ItemsPanelTemplate>
+                        <Canvas x:Name="xCanvas" SizeChanged="xCanvas_SizeChanged" MouseDown="xCanvas_MouseDown">
+                            <Canvas.Background>
+                                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                                    <LinearGradientBrush.GradientStops>
+                                        <GradientStop Offset="0.1" Color="#FF205020" />
+                                        <GradientStop Offset="1" Color="#FF90FF90" />
+                                    </LinearGradientBrush.GradientStops>
+                                </LinearGradientBrush>
+                            </Canvas.Background>
+                        </Canvas>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemContainerStyle>
+                    <Style TargetType="ContentPresenter">
+                        <Setter Property="Canvas.Left" Value="{Binding Left}"/>
+                        <Setter Property="Canvas.Top" Value="{Binding Top}"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Width="{Binding Width}" Height="{Binding Height}"                                 
+                                    BorderThickness="2" BorderBrush="#FF303030" Foreground="Black"                          
+                                    FontSize="10"
+                                    Background="{Binding Color}"                                      
+                                    Content="{Binding Text}"
+                                    ToolTip="{Binding Text}"             
+                                    Uid="{Binding Num}"
+                                    Click="Button_Click"                                
+                                    ToolTipService.ShowOnDisabled="False"
+                                    VerticalAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"                                
+                                    >
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="4" />
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Hide}" Value="true">
+                                            <Setter Property="Visibility" Value="Hidden"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Hide}" Value="false">
+                                            <Setter Property="Visibility" Value="Visible"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                                <Style TargetType="Button">
+                                </Style>
+
+                            </Button.Resources>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </Grid>
+</Page>

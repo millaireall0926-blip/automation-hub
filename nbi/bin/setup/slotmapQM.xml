@@ -1,0 +1,15 @@
+<router logo="0">
+  <setting>
+    <log path="D:\\data\\router" />
+  </setting>
+  <cm-list>
+    <cm id="Slot01" ip="192.168.50.8" port="15267" />
+  </cm-list>
+  <plc-config>
+    <plc id="Plc01" ip="192.168.50.100" port="1000" use="1" />
+    <lamp id="Lamp01" pzone="PZone01" />
+    <zone id="PZone01" plc="Plc01">
+      <slot id="Slot01" cu="Slot01" phyRack="1" />
+    </zone>
+  </plc-config>
+</router>

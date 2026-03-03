@@ -1,0 +1,9 @@
+D:\Project\nbi\nbi\bin\StarIDE\Simple.Wpf.Terminal.dll.config
+D:\Project\nbi\nbi\bin\StarIDE\Simple.Wpf.Terminal.dll
+D:\Project\nbi\nbi\bin\StarIDE\Simple.Wpf.Terminal.pdb
+D:\Project\nbi\nbi\Simple.Wpf.Terminal\obj\Debug\Simple.Wpf.Terminal.csproj.AssemblyReference.cache
+D:\Project\nbi\nbi\Simple.Wpf.Terminal\obj\Debug\Simple.Wpf.Terminal.Properties.Resources.resources
+D:\Project\nbi\nbi\Simple.Wpf.Terminal\obj\Debug\Simple.Wpf.Terminal.csproj.GenerateResource.cache
+D:\Project\nbi\nbi\Simple.Wpf.Terminal\obj\Debug\Simple.Wpf.Terminal.csproj.CoreCompileInputs.cache
+D:\Project\nbi\nbi\Simple.Wpf.Terminal\obj\Debug\Simple.Wpf.Terminal.dll
+D:\Project\nbi\nbi\Simple.Wpf.Terminal\obj\Debug\Simple.Wpf.Terminal.pdb

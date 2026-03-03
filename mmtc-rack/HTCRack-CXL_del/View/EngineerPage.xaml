@@ -1,0 +1,136 @@
+﻿<Page x:Class="HTCRack.View.EngineerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HTCRack.View"
+      mc:Ignorable="d" 
+      xmlns:vm="clr-namespace:HTCRack.ViewModel"
+      xmlns:uc="clr-namespace:HTCRack.View.Component"
+      xmlns:hc="https://handyorg.github.io/handycontrol"  
+      d:DesignHeight="780" d:DesignWidth="1060" 
+      Title="EngineerPage">
+
+    <Page.DataContext>
+        <vm:EngineerVM/>
+    </Page.DataContext>
+
+    <Grid Margin="10,0,0,0">
+        <Border BorderThickness="2" Style="{StaticResource BorderRegion}" Width="205" Height="292" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+            <Grid>
+                <TextBlock Text="Fixture Selection" FontSize="16" FontFamily="Arial" FontWeight="DemiBold"/>
+                <Image Source="{Binding EquipImg}" Margin="5,24,5,-2" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                <Rectangle x:Name="xRect_Select" Fill="#550000ff" Stroke="Blue" StrokeThickness="3" Margin="23, 91, 92, 134" RadiusX="4" RadiusY="4"/>
+            </Grid>
+        </Border>
+        <Border BorderThickness="2" Style="{StaticResource BorderRegion}" Width="205" HorizontalAlignment="Left" Margin="10,325,0,18">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Message" FontSize="16" FontFamily="Arial" FontWeight="DemiBold"/>
+                <Button Content="Clear" Height="28" Margin="0,-2,-6,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="104" Click="msg_clear_Button_Click"/>
+                <ListView x:Name="xList_Msg" Grid.Row="1" Background="White" IsSynchronizedWithCurrentItem="True" Margin="-11" 
+                            ItemsSource="{Binding CmdLogs}" FontSize="9" >
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}" >
+                            <Setter Property="ToolTipService.Placement" Value="RelativePoint" />
+                            <Setter Property="ToolTipService.HorizontalOffset" Value="0" />
+                            <Setter Property="ToolTipService.VerticalOffset" Value="0" />
+                            <Setter Property="ToolTipService.ToolTip" Value="{Binding Path=Message}" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Type}" Value="0">
+                                    <Setter Property="Foreground" Value="blue" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Type}" Value="1">
+                                    <Setter Property="Foreground" Value="Green" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Type}" Value="2">
+                                    <Setter Property="Foreground" Value="IndianRed" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="30" Header="R" DisplayMemberBinding="{Binding Index}" />
+                            <GridViewColumn Width="500" Header="Message" DisplayMemberBinding="{Binding Message}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+        </Border>
+        <Border BorderThickness="2" Style="{StaticResource BorderRegion}" Margin="240,10,34,18">
+            <Grid>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="36"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="180" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                    
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="Register Menual Setup" FontSize="16" FontFamily="Arial" FontWeight="DemiBold" />
+                    <TextBlock Grid.Column="1" Text="{Binding CurName}" Foreground="DimGray" Margin="0,2,0,0" FontSize="14" FontFamily="Arial" FontWeight="DemiBold" HorizontalAlignment="Left" Width="93" />
+                    <TextBlock Grid.Column="2" Text="Input / Output Mode (Hex, Value)" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+
+                    <Button x:Name="xTestBT" Grid.Column="3" Content="Recv Fan" Style="{StaticResource ButtonWarning}"  hc:BorderElement.CornerRadius="15"
+                            Width="100" HorizontalAlignment="Right" Click="xTestBT_Click"/>
+
+                    <Button x:Name="xModeBT" Grid.Column="4" Content="{Binding OutputMode}" Style="{StaticResource ButtonPrimary}" hc:BorderElement.CornerRadius="15"
+                            Width="100" HorizontalAlignment="Right" Click="Mode_Button_Click"/>
+
+                    
+                </Grid>
+                <TabControl Grid.Row="1" Margin="2" HorizontalAlignment="Center" Style="{StaticResource TabControlCapsule}" SelectionChanged="Expand_SelectionChanged">
+                    <TabItem Header="FAN" />
+                    <TabItem Header="CUR" />
+                    <TabItem Header="TEMP" />
+                    <TabItem Header="FP" />
+                    <TabItem Header="DIMM" />
+                    <TabItem Header="TCON" />
+                    <TabItem Header="GPIO" />
+
+                </TabControl>
+
+
+                <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+                    <StackPanel Orientation="Vertical">
+
+                        <!-- FAN -->
+                        <Expander Header="FAN : EMC2303 – 3CH Fan Controller" Background="LightGray" IsExpanded="{Binding ExpandFan}">
+                            <uc:RegFormUC RegType="FAN" ValueType="VAl=%" ItemsSource="{Binding FanRegModels}"/>
+                        </Expander>
+                        <Expander Header="CUR : INA226 – 1CH Current Monitor" Background="LightGray" IsExpanded="{Binding ExpandCur}">
+                            <uc:RegFormUC RegType="CUR" ValueType="VAL=A" ItemsSource="{Binding CurRegModels}"/>
+                        </Expander>
+                        <Expander Header="TEMP : TMP102 – 1CH Temperature Sensor" Background="LightGray" IsExpanded="{Binding ExpandTemp}">
+                            <uc:RegFormUC RegType="TEMP" ValueType="VAL=°C" ItemsSource="{Binding TempRegModels}"/>
+                        </Expander>
+                        <Expander Header="FP : Front Pannel – SV/PV Display" Background="LightGray" IsExpanded="{Binding ExpandFP}">
+                            <uc:RegFormUC RegType="FP" ValueType="VAL=°C" ItemsSource="{Binding FPRegModels}"/>
+                        </Expander>
+                        <Expander Header="DIMM : TSOD Temperature" Background="LightGray" IsExpanded="{Binding ExpandDimm}">
+                            <uc:RegFormUC RegType="DIMM" ValueType="VAL=°C"  ItemsSource="{Binding DimRegModels}"/>
+                        </Expander>
+                        <Expander Header="TCON : M74 – PID Controller" Background="LightGray" IsExpanded="{Binding ExpandTCon}">
+                            <uc:RegFormUC RegType="TCON" ValueType="HEX/°C"  ItemsSource="{Binding TConRegModels}"/>
+                        </Expander>
+                        <Expander Header="GPIO" Background="LightGray" IsExpanded="{Binding ExpandGPIO}">
+                            <uc:RegFormUC RegType="GPIO" ValueType="VAL=HEX" ItemsSource="{Binding GPIORegModels}" />
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

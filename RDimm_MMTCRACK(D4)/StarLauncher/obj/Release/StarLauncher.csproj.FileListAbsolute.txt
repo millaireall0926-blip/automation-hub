@@ -1,0 +1,17 @@
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\bin\RDimmMMTC_Launcher.exe.config
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\bin\RDimmMMTC_Launcher.exe
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\bin\RDimmMMTC_Launcher.pdb
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\StarLauncher.csproj.AssemblyReference.cache
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\MainWindow.g.cs
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\App.g.cs
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\RDimmMMTC_Launcher_MarkupCompile.cache
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\RDimmMMTC_Launcher_MarkupCompile.lref
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\App.baml
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\MainWindow.baml
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\RDimmMMTC_Launcher.g.resources
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\StarLauncher.Properties.Resources.resources
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\StarLauncher.csproj.GenerateResource.cache
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\StarLauncher.csproj.CoreCompileInputs.cache
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\RDimmMMTC_Launcher.exe
+D:\Project\DRimmMM\mmtc-old\RDimm_MMTCRACK(D4)\StarLauncher\obj\Release\RDimmMMTC_Launcher.pdb

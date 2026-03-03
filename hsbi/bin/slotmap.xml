@@ -1,0 +1,45 @@
+<router>
+  <setting>
+    <log path="D:\\data\\router" />
+  </setting>
+  <cm-list>
+    <cm id="Slot01" ip="192.168.50.1" port="15267" />
+    <cm id="Slot02" ip="192.168.50.2" port="15267" />
+    <cm id="Slot03" ip="192.168.50.3" port="15267" />
+    <cm id="Slot04" ip="192.168.50.4" port="15267" />
+    <cm id="Slot05" ip="192.168.50.4" port="15267" />
+    <cm id="Slot06" ip="192.168.50.6" port="15267" />
+    <cm id="Slot07" ip="192.168.50.7" port="15267" />
+    <cm id="Slot08" ip="192.168.50.8" port="15267" />
+    <cm id="Slot09" ip="192.168.50.9" port="15267" />
+    <cm id="Slot10" ip="192.168.50.10" port="15267" />
+    <cm id="Slot11" ip="192.168.50.11" port="15267" />
+    <cm id="Slot12" ip="192.168.50.12" port="15267" />
+    <cm id="Slot13" ip="192.168.50.13" port="15267" />
+    <cm id="Slot14" ip="192.168.50.14" port="15267" />
+    <cm id="Slot15" ip="192.168.50.15" port="15267" />
+    <cm id="Slot16" ip="192.168.50.16" port="15267" />
+  </cm-list>
+  <plc-config>
+    <plc id="Plc01" ip="192.168.50.100" port="1000" use="1" />
+    <lamp id="Lamp01" pzone="PZone01" />
+    <zone id="PZone01" plc="Plc01">
+      <slot id="Slot01" cu="Slot01" phyRack="1" />
+      <slot id="Slot02" cu="Slot02" phyRack="1" />
+      <slot id="Slot03" cu="Slot03" phyRack="1" />
+      <slot id="Slot04" cu="Slot04" phyRack="1" />
+      <slot id="Slot05" cu="Slot05" phyRack="1" />
+      <slot id="Slot06" cu="Slot06" phyRack="1" />
+      <slot id="Slot07" cu="Slot07" phyRack="1" />
+      <slot id="Slot08" cu="Slot08" phyRack="1" />
+      <slot id="Slot09" cu="Slot09" phyRack="1" />
+      <slot id="Slot10" cu="Slot10" phyRack="1" />
+      <slot id="Slot11" cu="Slot11" phyRack="1" />
+      <slot id="Slot12" cu="Slot12" phyRack="1" />
+      <slot id="Slot13" cu="Slot13" phyRack="1" />
+      <slot id="Slot14" cu="Slot14" phyRack="1" />
+      <slot id="Slot15" cu="Slot15" phyRack="1" />
+      <slot id="Slot16" cu="Slot16" phyRack="1" />
+    </zone>
+  </plc-config>
+</router>

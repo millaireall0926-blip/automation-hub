@@ -1,0 +1,8 @@
+<!-- %%File-Version:STAR 1.0% -->
+<config>
+	<daemon vmount="1" port="15267" boardIP="1" calData="0" classIP="192.168.50" defaultIP="254" />			
+	<diag dps="no" /> 
+	<mount path="/mnt/dump" />   
+	<fpga pg1-id="0xaabbccd4" pg2-id="0xaabbccd6" pg-clk-sel="0x606" tg-clk-sel="2" tg-latency="3" />
+</config>
+  

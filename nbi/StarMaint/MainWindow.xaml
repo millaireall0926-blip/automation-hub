@@ -1,0 +1,261 @@
+﻿<Window x:Class="StarMaint.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarMaint"        
+        xmlns:sc="clr-namespace:ScintillaNET;assembly=ScintillaNET"
+        xmlns:vm="clr-namespace:StarMaint.ViewModel"
+        mc:Ignorable="d"
+        Title="StarMaint"  Height="700" Width="980" Loaded="Window_Loaded" Closed="Window_Closed">
+
+    <Window.Resources>
+        <Style x:Key="DT_Style" TargetType="DataGrid">
+            <Setter Property="CanUserAddRows" Value="False"/>
+            <Setter Property="AutoGenerateColumns" Value="False"/>
+            <Setter Property="CanUserResizeRows" Value="True"/>
+            <Setter Property="HeadersVisibility" Value="None" />
+        </Style>
+    </Window.Resources>
+
+    <Window.DataContext>
+        <vm:MainVM/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row ="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="260"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Background="DarkGray" BorderBrush="Gray" BorderThickness="1">
+                <DataGrid                   
+                  x:Name="SlotGrid"
+                  CanUserAddRows="False"
+                  AutoGenerateColumns = "False"
+                  CanUserResizeRows="True"
+                  HeadersVisibility="None"                   
+                  ItemsSource="{Binding Slots}"  
+                  Background="#FF505050"  BorderBrush="#FF303030"
+                  HorizontalGridLinesBrush="#FF707070" VerticalGridLinesBrush="#FF707070"                    
+                  MouseLeftButtonUp="SlotGrid_MouseLeftButtonUp" >
+                            
+                <DataGrid.CellStyle>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Setter Property="Foreground" Value="Black" />
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="BorderThickness" Value="0, 2, 0, 2" />
+                                <Setter Property="BorderBrush" Value="#FF303090" />
+                                <Setter Property="Foreground" Value="#FF202070" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>                    
+                </DataGrid.CellStyle>
+                <DataGrid.Columns>
+                        <DataGridTemplateColumn Header=" " Width="30" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding Icon, UpdateSourceTrigger=PropertyChanged}"  />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="Slot" Width="60" IsReadOnly="True"  >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Name}" Background="{Binding Statbr}" 
+                                               TextAlignment="Center" VerticalAlignment="Center" 
+                                               FontFamily="Fixedsys" FontWeight="Bold" Padding="10"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="BID"  Width="*" IsReadOnly="True">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding BID}" Background="{Binding Statbr}" VerticalAlignment="Center"
+                                               FontFamily="Fixedsys" FontWeight="Bold"  Padding="10"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="Stat" Width="*" IsReadOnly="True" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Stat}" Background="{Binding Statbr}" VerticalAlignment="Center"
+                                               FontFamily="Fixedsys" FontWeight="Bold"  Padding="10"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns >
+                
+                </DataGrid>
+            </Border>
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Background="Gray"/>
+
+            <Border Grid.Column="2" Width="Auto"  Background="#FF505050" BorderBrush="Black" BorderThickness="1" >
+                <TabControl BorderBrush="#FF202020" BorderThickness="2" SelectionChanged="TabControl_SelectionChanged">
+                    <TabItem BorderThickness="2" BorderBrush="Black" FontSize="18" FontFamily="FixedSys" Background="#FF8080A0" >
+                        <TabItem.Header>Board Number</TabItem.Header>
+                        <Frame x:Name="xCL_BoardSerial" Source="/View/BoardNo.xaml"/>
+                    </TabItem>
+                    <TabItem BorderThickness="2" BorderBrush="Black" 
+                             FontSize="18" FontFamily="FixedSys" Background="DarkSeaGreen">
+                        <TabItem.Header>Text Editor</TabItem.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="8"/>
+                                <ColumnDefinition Width="200"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <DockPanel Grid.Row="0">
+                                    <ToolBarPanel Name="toolStrip" HorizontalAlignment="Stretch" Grid.Column="0" DockPanel.Dock="Left" >
+                                        <ToolBarTray>
+                                            <ToolBar Height="25px" ToolBarTray.IsLocked="True">
+                                                <Button Width="23px" Height="22px" Padding="0px"
+                                                        ToolTip="Save File (Ctrl+S)" Click="ToolbarButton_Click">
+                                                    <StackPanel>
+                                                        <Image Height="16px" Source="/Resources/ImageFileSave.png" Stretch="Uniform" />
+                                                    </StackPanel>
+                                                </Button>
+                                                <Separator />
+                                                <Button Width="23px" Height="22px" Padding="0px"
+                                                        ToolTip="Cut (Ctrl+X)" Click="ToolbarButton_Click">
+                                                    <StackPanel>
+                                                        <Image Height="16px" Source="/Resources/ImageEditCut.png" Stretch="Uniform" />
+                                                    </StackPanel>
+                                                </Button>
+                                                <Button Width="23px" Height="22px" Padding="0px"
+                                                         ToolTip="Copy (Ctrl+C)" Click="ToolbarButton_Click">
+                                                    <StackPanel>
+                                                        <Image Height="16px" Source="/Resources/ImageEditCopy.png" Stretch="Uniform" />
+                                                    </StackPanel>
+                                                </Button>
+                                                <Button Width="23px" Height="22px" Padding="0px"
+                                                          ToolTip="Paste (Ctrl+V)" Click="ToolbarButton_Click">
+                                                    <StackPanel>
+                                                        <Image Height="16px" Source="/Resources/ImageEditPaste.png" Stretch="Uniform" />
+                                                    </StackPanel>
+                                                </Button>
+                                                <Separator />
+                                                <Button Width="23px" Height="22px" Padding="0px"
+                                                          ToolTip="Undo (Ctrl+Z)" Click="ToolbarButton_Click">
+                                                    <StackPanel>
+                                                        <Image Height="16px" Source="/Resources/ImageEditUndo.png" Stretch="Uniform" />
+                                                    </StackPanel>
+                                                </Button>
+                                                <Button Width="23px" Height="22px" Padding="0px"
+                                                         ToolTip="Redo (Ctrl+Y)" Click="ToolbarButton_Click">
+                                                    <StackPanel>
+                                                        <Image Height="16px" Source="/Resources/ImageEditRedo.png" Stretch="Uniform" />
+                                                    </StackPanel>
+                                                </Button>
+                                                <TextBox Text="{Binding ModifyFile}" ToolBarTray.IsLocked="True" 
+                                                         HorizontalAlignment="Left" Margin="30,0,0,0" FontSize="12"
+                                                         IsReadOnly="True" 
+                                                         Background="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Control}, Path=Background}"
+                                                         BorderBrush="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Control}, Path=Background}"/>
+                                            </ToolBar>
+                                        </ToolBarTray>
+                                    </ToolBarPanel>
+                                    <Border BorderThickness="2" BorderBrush="LightSkyBlue" DockPanel.Dock="Right" Width="180">
+                                        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Right" >
+                                            <TextBlock Text="Daemon" FontSize="12" VerticalAlignment="Center"/>
+                                            <Button x:Name="xBT_update" Content=" Update " FontSize="12" Margin="8,0,4,0" 
+                                                Command="{x:Static vm:MainVM.DaemonCmd}" CommandParameter="{Binding}" 
+                                                Background="AliceBlue"
+                                                />
+                                            <Button x:Name="xBT_restart" Content=" Restart " FontSize="12" Margin="0,0,8,0" 
+                                                Command="{x:Static vm:MainVM.DaemonCmd}" CommandParameter="{Binding}"
+                                                Background="PowderBlue"
+                                                />
+                                        </StackPanel>
+                                    </Border>
+                                </DockPanel>
+                                <WindowsFormsHost Grid.Row="1">
+                                    <sc:Scintilla x:Name="xSintilla" />
+                                </WindowsFormsHost>
+                            </Grid>
+                            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Background="Gray"/>
+                            <Grid Grid.Column="2" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200"/>
+                                    <RowDefinition Height="6"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <ListBox x:Name="xListFolder"
+                                         Grid.Row="0" ItemsSource="{Binding Folders}"                                          
+                                         SelectionMode="Single" SelectionChanged="TabControl_SelectionChanged"
+                                         Background="#FFb0b0b0">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Vertical" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Image Source="{Binding Icon}" Height="24" Margin="4,1,4,1"/>
+                                                <TextBlock Text="{Binding Name}" FontSize="14" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ListBox>
+                                <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Background="#FF808080" />
+                                <ListBox    x:Name="xListFile"
+                                            Grid.Row="2" ItemsSource="{Binding Files}"
+                                            SelectionMode="Single" SelectionChanged="TabControl_SelectionChanged"
+                                            Background="#FFb0b0b0">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Vertical" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Image Source="{Binding Icon}" Height="18" Margin="4,1,4,1"/>
+                                                <TextBlock Text="{Binding Name}" FontSize="11" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ListBox>
+                            </Grid>
+                        </Grid>
+                    </TabItem>
+
+                    
+                </TabControl>
+            </Border>
+
+        </Grid>
+        <Grid  Grid.Row="1" >
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.1" Color="#FF909090" />
+                        <GradientStop Offset="1" Color="#FF303030" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Image Source="/Resources/logo.bmp" Visibility="Hidden" Margin="0,0,4,0" HorizontalAlignment="Right"/>
+        </Grid>
+
+    </Grid>
+</Window>
+ 

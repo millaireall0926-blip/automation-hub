@@ -1,0 +1,11 @@
+﻿# Build outputs
+*.nupkg
+*.dcp
+*.bit
+**/packages/
+**/HTC-Install*/
+**/synth_1/
+bin/
+obj/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+﻿<Page x:Class="TempMergeView.View.MergeView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:vm="clr-namespace:TempMergeView.ViewModel"        
+      xmlns:hc="https://handyorg.github.io/handycontrol" 
+      xmlns:local="clr-namespace:TempMergeView.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="300"
+      Title="MergeView">
+
+    <Page.DataContext>
+        <vm:MergeVM />
+    </Page.DataContext>
+
+    <Border BorderThickness="3" Style="{StaticResource BorderRegion}" BorderBrush="BlanchedAlmond">
+        <Grid>
+            <Button Content="Temp File Merge" HorizontalAlignment="Center" VerticalAlignment="Center"
+                Command="{Binding MergeCmd}" FontSize="18" Height="40" FontWeight="DemiBold"/>
+        </Grid>
+    </Border>
+</Page>

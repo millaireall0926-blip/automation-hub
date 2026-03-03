@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_Installer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48C9DB49-84B3-4974-A254-3EAC58EB1D4A}|RDimm_Installer\\RDimm_Installer.vdproj|_rdimmrack.xml_ead20eeb8e6d4bf097d763b293aaeb5a||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RDimmRack.xml",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\bin\\RDimmRack.xml",
+              "RelativeDocumentMoniker": "..\\bin\\RDimmRack.xml",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\bin\\RDimmRack.xml",
+              "RelativeToolTip": "..\\bin\\RDimmRack.xml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-30T01:06:00.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

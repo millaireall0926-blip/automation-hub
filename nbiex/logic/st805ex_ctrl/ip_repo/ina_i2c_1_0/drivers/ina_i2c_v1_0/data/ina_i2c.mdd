@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER ina_i2c
+	OPTION supported_peripherals = (ina_i2c);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = ina_i2c;
+END DRIVER

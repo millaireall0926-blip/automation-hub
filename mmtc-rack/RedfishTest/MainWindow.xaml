@@ -1,0 +1,59 @@
+﻿<Window x:Class="RedfishTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RedfishTest"
+        xmlns:vm="clr-namespace:RedfishTest.ViewModel"
+        mc:Ignorable="d" Closed="Window_Closed"
+        Title="MainWindow" Height="600" Width="1080">
+    <Window.DataContext>
+        <vm:MainVM />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+            
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Height="32">
+                <Label Content="Redfish IP:" />
+                <TextBox Text="{Binding RedfishIP}" Width="180" VerticalAlignment="Center"/>
+                <Label Content="Dimm 요청 갯수" Margin="100,0,0,0"/>
+                <ComboBox Margin="10,0,0,0" Width="80" SelectedIndex="{Binding ComboSelectedIndex}" IsEnabled="{Binding IsGetEnable}" VerticalAlignment="Center" >
+                    <ComboBoxItem Content="24개" />
+                    <ComboBoxItem Content="48개" />
+                </ComboBox>
+                
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Height="32">
+                <Label Content="사용자 :" />
+                <TextBox Text="{Binding UserID}" Width="100" VerticalAlignment="Center"/>
+                <Label Content="비번 :" />
+                <TextBox Text="{Binding Password}" Width="100" VerticalAlignment="Center"/>
+                
+                
+                <Button Content="순차요청(한번실행)" FontSize="10" Command="{Binding GetCommandOne}" IsEnabled="{Binding IsGetEnable}" CommandParameter="s" Width="100" Margin="100,0,0,0"/>
+                <Button Content="동시요청(한번실행)" FontSize="10" Command="{Binding GetCommandOne}"  IsEnabled="{Binding IsGetEnable}" CommandParameter="a" Width="100" Margin="10,0,0,0"/>
+                <Button Content="계속실행" Command="{Binding GetCommandContinue}"  IsEnabled="{Binding IsGetEnable}" CommandParameter="c" Width="100" Margin="100,0,0,0"/>
+                <Button Content="중지"      Command="{Binding GetCommandContinue}"  IsEnabled="{Binding IsGetDisEnable}" CommandParameter="t" Width="100" Margin="10,0,0,0"/>
+                <Button Content="BMC 리셋"      Command="{Binding GetCommandOne}"   CommandParameter="r" Width="100" Margin="10,0,0,0"/>
+
+            </StackPanel>
+
+        </Grid>
+        <TextBlock Grid.Row="1" Text="{Binding TempList}" FontSize="9" TextAlignment="Center"/>
+        <ScrollViewer x:Name="xRespScroll" Grid.Row="2"
+                       VerticalScrollBarVisibility="Auto"
+                        HorizontalScrollBarVisibility="Disabled">
+            <RichTextBox x:Name="xRespTextBox" FontSize="9" Background="DimGray" Foreground="White" />
+        </ScrollViewer>
+
+    </Grid>
+</Window>

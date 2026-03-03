@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="StarMaint.View.DpsNo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:StarMaint.View"
+             xmlns:vm="clr-namespace:StarMaint.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="200">
+    <Grid Margin="10,10,10,10">
+        <Rectangle StrokeThickness="4" Fill="#00000000" 
+                       Stroke="#FF404040" RadiusX="5" RadiusY="5"
+                       />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                       Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                       FontSize="16" Foreground="DeepSkyBlue" 
+                       HorizontalAlignment="Center" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="UserData1" FontSize="11" Foreground="DeepSkyBlue"
+                       VerticalAlignment="Center" HorizontalAlignment="Center" Margin="4"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding UserData1}" IsReadOnly="{Binding IsLock}"
+                     FontSize="14" Foreground="Cornsilk" Background="#FF505050"
+                     VerticalAlignment="Center" MinWidth="70" MinHeight="20" Margin="2,8,8,8"/>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="UserData2" FontSize="11" Foreground="DeepSkyBlue"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding UserData2}" IsReadOnly="{Binding IsLock}"
+                     FontSize="14" Foreground="Cornsilk" Background="#FF505050"
+                     VerticalAlignment="Center" MinWidth="80" MinHeight="20" Margin="2,8,8,8"/>
+
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="UserData3" FontSize="11" Foreground="DeepSkyBlue"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding UserData3}" IsReadOnly="{Binding IsLock}"
+                     FontSize="14" Foreground="Cornsilk" Background="#FF505050"
+                     VerticalAlignment="Center" MinWidth="80" MinHeight="20" Margin="2,8,8,8"/>
+
+        </Grid>
+    </Grid>
+</UserControl>

@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\mmtc-rack\\TempView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\mmtc-rack\\tempview\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\mmtc-rack\\TempView\\model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\mmtc-rack\\TempView\\viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\mmtc-rack\\TempView\\viewmodel\\selectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\selectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\mmtc-rack\\TempView\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\milla\\AppData\\Local\\SourceServer\\e0ed2b0a480d7aa652a68aa40cb1c85d3e705a947c60e0d790283e4bbb2cce47\\src\\ScottPlot4\\ScottPlot\\Validate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\mmtc-rack\\TempView\\view\\graphview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\graphview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\TempView\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\TempView\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAwHoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T07:46:50.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Validate.cs",
+              "DocumentMoniker": "C:\\Users\\milla\\AppData\\Local\\SourceServer\\e0ed2b0a480d7aa652a68aa40cb1c85d3e705a947c60e0d790283e4bbb2cce47\\src\\ScottPlot4\\ScottPlot\\Validate.cs",
+              "ToolTip": "C:\\Users\\milla\\AppData\\Local\\SourceServer\\e0ed2b0a480d7aa652a68aa40cb1c85d3e705a947c60e0d790283e4bbb2cce47\\src\\ScottPlot4\\ScottPlot\\Validate.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAD4v1gAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T06:46:59.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GraphView.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\TempView\\View\\GraphView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\GraphView.xaml.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\TempView\\View\\GraphView.xaml.cs",
+              "RelativeToolTip": "View\\GraphView.xaml.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAawGYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T08:15:14.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DimDataModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\TempView\\Model\\DimDataModel.cs",
+              "RelativeDocumentMoniker": "Model\\DimDataModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\TempView\\Model\\DimDataModel.cs",
+              "RelativeToolTip": "Model\\DimDataModel.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA1wBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T08:14:19.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SelectionVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\TempView\\ViewModel\\SelectionVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SelectionVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\TempView\\ViewModel\\SelectionVM.cs",
+              "RelativeToolTip": "ViewModel\\SelectionVM.cs",
+              "ViewState": "AQIAAKMAAAAAAAAAAAD4v7IAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T08:14:02.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\TempView\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\TempView\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAArwDkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T08:10:19.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GraphVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\TempView\\ViewModel\\GraphVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\TempView\\ViewModel\\GraphVM.cs",
+              "RelativeToolTip": "ViewModel\\GraphVM.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAACIBAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T08:10:21.4Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

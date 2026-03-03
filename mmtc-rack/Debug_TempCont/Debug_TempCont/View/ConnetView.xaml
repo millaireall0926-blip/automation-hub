@@ -1,0 +1,116 @@
+﻿<Page x:Class="Debug_TempCont.View.ConnetView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Debug_TempCont.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="120" d:DesignWidth="360"
+      Title="ConnetView">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Grid.Column="0"  BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="Com Port" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="0" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="M7 국번" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="0" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="응답 지연" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="프로토콜" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" BorderThickness="1,1,0,1" BorderBrush="Black">
+            <ComboBox x:Name="cb_protocol" ItemsSource="{Binding Ctm.ProtocolList}" Text="{Binding Ctm.Protocoltxt}" IsEnabled="{Binding Ctm.Isenabed}" >
+            </ComboBox>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="1" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <ComboBox x:Name="cb_commport" ItemsSource="{Binding Ctm.PortList}" Text="{Binding Ctm.SelPort}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsEnabled="{Binding Ctm.Isenabed}"/>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBox x:Name="txt_M7num" Text="{Binding Ctm.M7num}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" IsEnabled="{Binding Ctm.Isenabed}" />
+        </Border>
+        <Border Grid.Row="2" Grid.Column="1" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBox x:Name="txt_Wrepon" Text="{Binding Ctm.Wrespon}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" IsEnabled="{Binding Ctm.Isenabed}" />
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <Button x:Name="btn_connect" Content="연결" Width="70" HorizontalAlignment="Center" Margin="5,0,0,0" Command="{Binding ConnetCommand}" IsEnabled="{Binding Ctm.Isenabed}" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 0.7">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.0" Color="#fffde7"/>
+                            <GradientStop Offset="1.0" Color="#90a4ae"/>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Border>
+        <Border Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="통신 속도" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="패리티 비트" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" BorderThickness="1,1,0,0" BorderBrush="Black">
+            <TextBlock Text="스톱 비트" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+        <Border Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" BorderThickness="1,1,0,1" BorderBrush="Black">
+            <TextBlock Text="데이터 길이" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"/>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="4" BorderThickness="1,1,1,0" BorderBrush="Black">
+            <Button x:Name="btn_disconnect" Content="해제" Width="70" Margin="7,0,6,0" Command="{Binding DisconnetCommand}" IsEnabled="{Binding Ctm.Isenabed2}" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0 0" EndPoint="0 0.7">
+                        <LinearGradientBrush.GradientStops>
+                            <GradientStop Offset="0.0" Color="#fffde7"/>
+                            <GradientStop Offset="1.0" Color="#90a4ae"/>
+                        </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </Border>
+        <Border Grid.Row="0" Grid.Column="4" BorderThickness="1,1,1,0" BorderBrush="Black">
+        </Border>
+        <Border Grid.Row="1" Grid.Column="4" BorderThickness="1,1,2,0" BorderBrush="Black">
+            <ComboBox x:Name="cb_speed" ItemsSource="{Binding Ctm.SpeedList}" Text="{Binding Ctm.Selpeed}" IsEnabled="{Binding Ctm.Isenabed}" />
+        </Border>
+        <Border Grid.Row="2" Grid.Column="4" BorderThickness="1,1,2,0" BorderBrush="Black">
+            <ComboBox x:Name="cb_parity" ItemsSource="{Binding Ctm.ParityList}" Text="{Binding Ctm.Selparity}" IsEnabled="{Binding Ctm.Isenabed}" />
+        </Border>
+        <Border Grid.Row="3" Grid.Column="4" BorderThickness="1,1,2,0" BorderBrush="Black">
+            <ComboBox x:Name="cb_stopbit" ItemsSource="{Binding Ctm.StopBitList}" Text="{Binding Ctm.Selstopbit}" IsEnabled="{Binding Ctm.Isenabed}" />
+        </Border>
+        <Border Grid.Row="4" Grid.Column="4" BorderThickness="1,1,2,1" BorderBrush="Black">
+            <ComboBox x:Name="cb_datalength" ItemsSource="{Binding Ctm.DataLengthList}" Text="{Binding Ctm.Seldatalen}" IsEnabled="{Binding Ctm.Isenabed}" />
+        </Border>
+    </Grid>
+</Page>

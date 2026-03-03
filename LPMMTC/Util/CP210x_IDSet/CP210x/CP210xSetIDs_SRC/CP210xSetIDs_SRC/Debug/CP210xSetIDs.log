@@ -1,0 +1,9 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.Analysis.props(24,5): warning MSB4211: "MsvcAnalysisPluginPath" 속성에 처음으로 값이 설정되고 있지만 이미 "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CodeAnalysis.Extensions.props(33,5)"에서 사용되었습니다.
+cl : 명령줄  warning D9035: 'Gm' 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다.
+  StdAfx.cpp
+cl : 명령줄  warning D9035: 'Gm' 옵션은 더 이상 사용되지 않으므로 이후 릴리스에서 제거될 예정입니다.
+  CP210xSetIDsDlg.cpp
+  CP210xSetIDs.cpp
+  코드를 생성하고 있습니다...
+CP210xSetIDs.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+  CP210xSetIDs.vcxproj -> D:\Project\LP-MMTCRack\LP\lpmmtc\Util\CP210x_IDSet\CP210x\CP210xSetIDs_SRC\CP210xSetIDs_SRC\Debug\CP210xSetIDs.exe

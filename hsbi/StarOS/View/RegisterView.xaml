@@ -1,0 +1,56 @@
+﻿<Window x:Class="StarOS.View.RegisterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarOS.View"
+        xmlns:vm="clr-namespace:StarOS.ViewModel"
+        xmlns:hc="https://handyorg.github.io/handycontrol" 
+        mc:Ignorable="d"
+        WindowStyle="None" ResizeMode="CanResizeWithGrip" Background="Transparent" 
+        Title="RegisterView" Height="600" Width="300">
+    <Grid Background="#DD0D0B19">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding SelSlot}" Foreground="#ffffffff" Margin="10,0,0,0" FontSize="16" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" MouseLeftButtonDown="DragAndMove"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTClose" Background="Transparent" BorderThickness="0" Click="xBTClose_Click" >
+                    <Image Source="/Resource/close.png" />
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Register" FontSize="20" Foreground="Wheat" TextAlignment="Center" VerticalAlignment="Center" />
+            <ToggleButton Grid.Column="1" Command="{Binding DGCMD_Toggle}" IsChecked="{Binding ShowToggleSetOnly}" Content="ShowSetOnly" FontSize="9"   Style="{StaticResource ToggleButtonInfo}" />
+            <ToggleButton Grid.Column="2" Command="{Binding DGCMD_Toggle}" IsChecked="{Binding ShowToggleHex}" Content="Hex/Dec" FontSize="9"   Style="{StaticResource ToggleButtonDanger}" />
+        </Grid>
+        <ListView Grid.Row="2" ItemsSource="{Binding RegModels}">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Setter Property="Foreground" Value="Black"/>
+                    <Setter Property="Background" Value="{Binding Color}"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="140" Header="Item" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Width="160" Header="Value" DisplayMemberBinding="{Binding Value}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+    </Grid>
+</Window>

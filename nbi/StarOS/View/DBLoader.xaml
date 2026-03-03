@@ -1,0 +1,122 @@
+﻿<Window x:Class="StarOS.View.DBLoader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarOS.View"
+        xmlns:vm="clr-namespace:StarOS.ViewModel"
+        xmlns:hc="https://handyorg.github.io/handycontrol" 
+        mc:Ignorable="d"
+        Title="PGM Info" Height="550" Width="800"        
+        AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" MouseDown="Window_MouseDown"
+        Loaded="Window_Loaded" KeyDown="Window_KeyDown" Topmost="True" >
+    <Grid>
+
+        <Rectangle Visibility="{Binding VisibilityDBList}" HorizontalAlignment="Left" Height="327" Margin="163,195,0,0" Stroke="Black" VerticalAlignment="Top" Width="564" RadiusX="42.675" RadiusY="42.675">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#E03D7730" Offset="1"/>
+                    <GradientStop Color="#E088BB88" Offset="0.013"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Grid Margin="212,266,110,228" Height="56" Visibility="{Binding VisibilityDBList}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="140"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Week : " Foreground="White"/>
+                <TextBlock Text="Inbound Date : " Foreground="White"/>
+                <TextBlock Text="Serial Number : " Foreground="White"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="{Binding Week}" Foreground="White"/>
+                <TextBlock Text="{Binding InboudDate}" Foreground="White"/>
+                <TextBlock Text="{Binding SerialNumber}" Foreground="White"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <TextBlock Text="Dev Type : " Foreground="White"/>
+                <TextBlock Text="Chamber Type : " Foreground="White"/>
+                <TextBlock Text="Test Type : " Foreground="White"/>
+            </StackPanel>
+            <StackPanel Grid.Column="3">
+                <TextBlock Text="{Binding DevType}" Foreground="White"/>
+                <TextBlock Text="{Binding ChamberType}" Foreground="White"/>
+                <TextBlock Text="{Binding TestType}" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+        <ItemsControl Visibility="{Binding VisibilityDBList}" Margin="203,327,109,31" ItemsSource="{Binding PgmModels}">
+
+            <ItemsControl.Template>
+                <ControlTemplate TargetType="ItemsControl">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                        <ItemsPresenter />
+                    </ScrollViewer>
+                </ControlTemplate>
+            </ItemsControl.Template>
+
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel/>
+                    <!-- 성능 개선을 위해 변경 -->
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <!-- ItemTemplate을 설정하여 개별 항목을 렌더링 -->
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="DarkSeaGreen" BorderThickness="2" Padding="2" CornerRadius="5" Margin="0,5,0,5">
+                        <Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="80"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Orientation="Vertical" Grid.Column="0" Margin="5,0,0,0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="PGM :" Width="40" Foreground="White" VerticalAlignment="Center"/>
+                                        <TextBlock Text="{Binding Pgm}" FontWeight="DemiBold" FontSize="15" Foreground="Blue"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="PC :" Width="40" Foreground="White"/>
+                                        <TextBlock Text="{Binding Adr}"  FontSize="11" Foreground="White"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Path :" Width="40" Foreground="White"/>
+                                        <TextBlock Text="{Binding Path}" FontSize="11" Foreground="White"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <Button Content="PGM Load" Command="{Binding DelCmdLoad}" Grid.Column="1" Height="50" />
+                            </Grid>
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <Rectangle HorizontalAlignment="Left" Height="164" Margin="238,94,0,0" Stroke="Black" VerticalAlignment="Top" Width="504" RadiusX="42.675" RadiusY="42.675">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF50AA50" Offset="1"/>
+                    <GradientStop Color="#FF86AA86" Offset="0.013"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="265" Margin="80,9,0,0" VerticalAlignment="Top" Width="265" Source="/Resource/DB.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="348,124,0,0" TextWrapping="Wrap" Text="LOT ID" VerticalAlignment="Top" Width="135" Foreground="White"/>
+        <hc:TextBox hc:InfoElement.Placeholder="LOT ID" Margin="346,144,103,360" Text="{Binding LotID}" FontSize="14"/>
+        <CheckBox Content="ReTest" IsChecked="{Binding ReTest}" Margin="347,213,353,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="xBT_DBSeach" Command="{x:Static vm:MainVM.CmdDB}" Content="Search" HorizontalAlignment="Left" Height="34" Margin="602,195,0,0" Width="95" VerticalAlignment="Top"/>
+        <Button x:Name="xBT_DBCancle" Command="{x:Static vm:MainVM.CmdDB}" Content="Cancel" HorizontalAlignment="Left" Height="34" Margin="503,195,0,0" Width="95" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

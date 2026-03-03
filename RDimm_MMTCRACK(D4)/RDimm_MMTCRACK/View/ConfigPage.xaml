@@ -1,0 +1,412 @@
+﻿<Page x:Class="RDimm_MMTCRACK.View.ConfigPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RDimm_MMTCRACK.View"
+      xmlns:ports="clr-namespace:System.IO.Ports;assembly=System"
+      xmlns:vm="clr-namespace:RDimm_MMTCRACK.ViewModel"
+      xmlns:hc="https://handyorg.github.io/handycontrol"  
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1000"
+      Title="ConfigPage">
+
+    <Page.DataContext>
+        <vm:ConfigVM/>
+    </Page.DataContext>
+
+    <!--
+    <Page.Resources>
+        <ObjectDataProvider ObjectType="{x:Type ports:SerialPort}" MethodName="GetPortNames" x:Key="portNames"/>   
+    </Page.Resources>
+    -->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="750"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TabControl Margin="10" Style="{StaticResource TabControlInLine}" SelectionChanged="TabControl_Selected">
+            <TabItem Header="Test Condition">
+                <Grid>
+                    <Rectangle Fill="#FFECEAE1" Margin="20,10,20,0" RadiusX="20.675" RadiusY="20.675" Height="120" VerticalAlignment="Top"  Grid.ColumnSpan="2"/>
+                    <Rectangle Fill="#FFECE1E5" Margin="20,150,20,0" RadiusX="20.675" RadiusY="20.675" Height="120" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <Rectangle Fill="#FFE1ECEC" Margin="20,290,20,0" RadiusX="20.675" RadiusY="20.675" Height="90" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <Rectangle Fill="#FFFFFACD" Margin="20,400,20,0" RadiusX="20.675" RadiusY="20.675" Height="120" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <Rectangle Fill="#D8DDFF" Margin="20,540,20,0" RadiusX="20.675" RadiusY="20.675" Height="120" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <StackPanel Orientation="Vertical" Margin="10,25,0,0" Grid.ColumnSpan="2">
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="High Temp Alarm " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding HighTempAlarm}"  FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Low Temp Alarm "  FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding LowTempAlarm}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Stabilization " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding StableTime}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" Min" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="Temp Error ± " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="27,0,0,0" />
+                            <TextBox   Text="{Binding TempErr}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Temp Error Condition " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding TempErrCondition}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" Min" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Alarm Condition " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding AlarmCondition}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" Min" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" >
+                        <StackPanel Orientation="Horizontal" Margin="10,170,0,0">
+                            <TextBlock Text="Defrost Target Temp " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding TargetTemp}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Defrost Time Step " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" />
+                            <TextBox   Text="{Binding TempStepTime}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" Sec" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="Defrost Temp Setp " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding TempStep}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Defrost Target Temp Wait Time " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="27,0,0,0" />
+                            <TextBox   Text="{Binding TargetWaitTime}" FontSize="18" Height="32" Width="50" Margin="0,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" Min" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,55,0,0">
+                            <TextBlock Text="Humidity Defrosting Standard " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding humidityWarnval}" FontSize="18" Height="32" Width="50" Margin="5,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text=" %" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                            <TextBlock Text="Motor Maximum Value " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="27,0,0,0" />
+                            <TextBox   Text="{Binding MotorMaxVal}" FontSize="18" Height="32" Width="100" Margin="5,3,0,3" TextAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" >
+                            <StackPanel Orientation="Horizontal" Margin="10,70,0,0">
+                                <TextBlock Text="Temp Control Step " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding ControlSetp}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                                <TextBlock Text="Temp Control Diff " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding ControlDiff}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                                <TextBlock Text="Temp Control Offset " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding ControlOffset}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                                <TextBlock Text="Max Control Temp " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding ControlMaxTemp}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+                                <TextBlock Text="Min Control Temp " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding ControlMinTemp}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" >
+                            <StackPanel Orientation="Horizontal" Margin="10,55,0,0">
+                                <TextBlock Text="Temp Capture Cycle " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding CaptureCycle}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" Sec" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                <TextBlock Text="Contorl SV Cycle " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding ProcessBoxSVCycle}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" Cycle" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                <CheckBox Content="Engineer Mode" FontSize="18" IsChecked="{Binding EngrMode}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" >
+                            <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                                <TextBlock Text="Abnormal Temp Diff " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                                <TextBox   Text="{Binding NoiseTempDiff}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                                <TextBlock Text=" ℃" Foreground="DimGray " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                                <CheckBox Content="Use NoTemp Graph" FontSize="18" IsChecked="{Binding GraphMode}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="45,0,0,0" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Control">
+                <Grid>
+                    <Rectangle Fill="PaleGreen" Margin="10,10,60,0" RadiusX="20.675" RadiusY="20.675" Height="170" VerticalAlignment="Top" />
+                    <Rectangle Fill="#FFECE1E5" Margin="10,200,60,0" RadiusX="20.675" RadiusY="20.675" Height="300" VerticalAlignment="Top" />
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <!-- Dimm Temp -->
+                        <StackPanel Orientation="Horizontal" Margin="10,20,0,0">
+                            <TextBlock Text="Control" FontSize="21" />
+                            <Grid Margin="10,30,0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0" Text="SV Control Mode Selection " Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" FontWeight="Bold" Margin="4" />
+                                <TextBlock Grid.Row="1" Text="Program Logic R1: Normal Programing Control " Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="4" />
+                                <TextBlock Grid.Row="2" Text="Program Logic R2: Normal Programing Control " Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="4" />
+                                <TextBlock Grid.Row="3" Text="TCon Only : No Program Logic Control " Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="4" />
+                            </Grid>
+                            <ComboBox VerticalAlignment="Center" Width="200" Height="40" Margin="10,0,0,0" SelectedIndex="{Binding ControlMode}">
+                                <ComboBoxItem Content="Program Logic R1" />
+                                <ComboBoxItem Content="Program Logic R2" />
+                                <ComboBoxItem Content="Program Logic R3" />
+                                <ComboBoxItem Content="Program Logic R4" />
+                                <ComboBoxItem Content="Program Logic R5" />
+                                <ComboBoxItem Content="TCon Only" />
+                            </ComboBox>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,60,0,0">
+                            <TextBlock Text="Short Term Count          " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding shorttermCountval}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                            <TextBlock Text="Long Term Count           " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding longtermCountval}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                        </StackPanel>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="Down Catch Short Value " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding DownCatchshortmaxcount}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                            <TextBlock Text="Catch Max Dimm Diff Value " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" />
+                            <TextBox   Text="{Binding MaxDIM_SV_Diffcount}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="Down Catch Up Value    " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding SDupvalue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                            <TextBlock Text="UP Catch Down Value         " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" />
+                            <TextBox   Text="{Binding SUdownvalue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="Down Catch Avg Value   " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding DownCatchAvgValue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                            <TextBlock Text="Down Catch Down Value     " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" />
+                            <TextBox   Text="{Binding DownCatchDownValue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="UP Catch Avg Value       " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding UPCatchAvgValue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                            <TextBlock Text="UP Catch UP Value             " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" />
+                            <TextBox   Text="{Binding UPCatchUPValue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="UP/Down Catch DIM_SV_Diff Value " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding UPDownCatchDIMSVDiffValue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                            <TextBlock Text="UP Action Down Value " FontSize="18" Foreground="DimGray"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <TextBox   Text="{Binding UpActionDownValue}" FontSize="18" Height="32" Width="70" Margin="5,3,0,3" TextAlignment="Center"/>
+                        </StackPanel>
+                        
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Port Path">
+                <Grid>
+                    <Rectangle Fill="#FFECEAE1" Margin="20,10,20,0" RadiusX="20.675" RadiusY="20.675" Height="120" VerticalAlignment="Top"  Grid.ColumnSpan="2"/>
+                    <Rectangle Fill="#FFECE1E5" Margin="20,150,20,0" RadiusX="20.675" RadiusY="20.675" Height="120" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <Rectangle Fill="#FFE1ECEC" Margin="20,290,20,0" RadiusX="20.675" RadiusY="20.675" Height="90" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <StackPanel Orientation="Vertical" Margin="10,25,0,0" Grid.ColumnSpan="2">
+                        <StackPanel Orientation="Horizontal" >
+                            <TextBlock Text="Capture Port 1 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding CapPortName[0]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Capture Port 2 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding CapPortName[1]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Capture Port 3 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding CapPortName[2]}" Margin="15,3,0,3"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                            <TextBlock Text="Capture Port 4 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding CapPortName[3]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Capture Port 5 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding CapPortName[4]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Capture Port 6 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding CapPortName[5]}" Margin="15,3,0,3"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" >
+                        <StackPanel Orientation="Horizontal" Margin="10,170,0,0">
+                            <TextBlock Text="Site Port 1 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding MotorPortName[0]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Site Port 2 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding MotorPortName[1]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Site Port 3 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding MotorPortName[2]}" Margin="15,3,0,3"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                            <TextBlock Text="Site Port 4 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding MotorPortName[3]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Site Port 5 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding MotorPortName[4]}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Site Port 6 " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding MotorPortName[5]}" Margin="15,3,0,3"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,65,0,0">
+                            <TextBlock Text="TCON Port " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding TempConPortName}" Margin="15,3,0,3"/>
+                            <TextBlock Text="FlowMetor Port " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding FlowPortName}" Margin="15,3,0,3"/>
+                            <TextBlock Text="Alarm Port " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="37,0,0,0" />
+                            <ComboBox ItemsSource="{Binding ComPortList}" SelectedItem="{Binding ArmPortName}" Margin="15,3,0,3"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="File Path">
+                <Grid>
+                    <Rectangle Fill="#D8DDFF" Margin="10,10,10,0" RadiusX="20.675" RadiusY="20.675" Height="650" VerticalAlignment="Top"/>
+                    <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                        <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                            <TextBlock Text="System Log" FontSize="21" />
+                            <TextBlock Text="System Log Path : Generate on a daily cycle" Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="10" />
+                        </StackPanel>
+                        <Grid Height="38">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Path" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="1" Text="{Binding EventLogPath}" Height="32"/>
+                            <Button Grid.Column="2" Content="..." Command="{Binding DGCmdFile}" CommandParameter="syslog" />
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                            <TextBlock Text="Temp Log" FontSize="21" />
+                            <TextBlock Text="Dimm Temp Log Path : Generate per test" Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="10" />
+                        </StackPanel>
+                        <Grid Height="38">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Path" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="1" Text="{Binding TempLogPath}" Height="32"/>
+                            <Button Grid.Column="2" Content="..." Command="{Binding DGCmdFile}" CommandParameter="Templog" />
+                        </Grid>
+                        <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                            <TextBlock Text="Humidity Log" FontSize="21" />
+                            <TextBlock Text="Humidity Log Path : Generate per test" Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="10" />
+                        </StackPanel>
+                        <Grid Height="38">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Path" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="1" Text="{Binding HumidityLogPath}" Height="32"/>
+                            <Button Grid.Column="2" Content="..." Command="{Binding DGCmdFile}" CommandParameter="Humiditylog" />
+                        </Grid>
+                        <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                            <TextBlock Text="FlowMeter Log" FontSize="21" />
+                            <TextBlock Text="FlowMeter Log Path : Generate " Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="10" />
+                        </StackPanel>
+                        <Grid Height="38">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="40"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Path" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="1" Text="{Binding FlowMeterLogPath}" Height="32"/>
+                            <Button Grid.Column="2" Content="..." Command="{Binding DGCmdFile}" CommandParameter="FlowMeterlog" />
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                            <TextBlock Text="Tams Temp" FontSize="21" />
+                            <TextBlock Text="Tams Temp File Name. Including Path" Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="10" />
+                        </StackPanel>
+                        <Grid Height="38">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="40"/>
+
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="40"/>
+
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="40"/>
+
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Path" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="1" Text="{Binding TamsSVPath}" Height="32"/>
+                            <Button Grid.Column="2" Content="..." Command="{Binding DGCmdFile}" CommandParameter="tamstemp" />
+
+                            <TextBlock Grid.Column="4" Text="Folder" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="5" Text="{Binding TamsSVFolder}" Height="32"/>
+
+                            <TextBlock Grid.Column="7" Text="Name" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="8" Text="{Binding TamsSVFile}" Height="32"/>
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal" Margin="20,20,0,0">
+                            <TextBlock Text="Test End" FontSize="21" />
+                            <TextBlock Text="Test End Flag File Name. Including Path" Foreground="Gray" VerticalAlignment="Bottom" FontSize="12" Margin="10" />
+                        </StackPanel>
+                        <Grid Height="38">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="40"/>
+
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="40"/>
+
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="40"/>
+
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Path" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="1" Text="{Binding TamsEndPath}" Height="32"/>
+                            <Button Grid.Column="2" Content="..." Command="{Binding DGCmdFile}" CommandParameter="endfile" />
+
+                            <TextBlock Grid.Column="4" Text="Folder" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="5" Text="{Binding TamsEndFolder}" Height="32"/>
+
+                            <TextBlock Grid.Column="7" Text="Name" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBox Grid.Column="8" Text="{Binding TamsEndFile}" Height="32"/>
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal" Margin="20,30,0,0">
+                            <TextBlock Text="Log Delete Month" FontSize="21" />
+                            <TextBox   Text="{Binding LogDelMonth}" Height="32" Width="50" Margin="10,0,10,0" TextAlignment="Center"/>
+                            <TextBlock Text=" Month" Foreground="DimGray "  VerticalAlignment="Center" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Row="1">
+            <Button Content="SAVE" HorizontalAlignment="Center" FontSize="24" FontWeight="DemiBold" Height="50" Command="{Binding DGCmdSave}" />
+        </Grid>
+    </Grid>
+</Page>

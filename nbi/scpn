@@ -1,0 +1,8 @@
+#sshpass -p 1111 scp abin/test startest@192.168.50.65:/home/startest/samba/star/.
+#sshpass -p 1111 scp abin/test pc@192.168.50.208:/home/pc/samba/sb/star/.
+#sshpass -p 1111 scp ../comModule/eapi_alone/eapi_write/eapi_write pc@192.168.50.208:/home/pc/samba/sb/star/.
+#sshpass -p 1111 scp ../comModule/eapi_alone/eapi_read/eapi_read pc@192.168.50.208:/home/pc/samba/sb/star/.
+sshpass -p 1111 scp abin/starapi.a $1@192.168.50.$2:/star/StarAPI/.
+sshpass -p 1111 scp StarApi/STAR_TEST.h $1@192.168.50.$2:/star/StarAPI/.
+sshpass -p 1111 scp StarApi/DIAG_TEST.h $1@192.168.50.$2:/star/StarAPI/.
+sshpass -p 1111 scp StarApi/macro.h $1@192.168.50.$2:/star/StarAPI/.

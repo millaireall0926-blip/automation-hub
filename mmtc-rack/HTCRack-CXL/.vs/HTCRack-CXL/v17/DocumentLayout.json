@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\net\\htcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:net\\htcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|d:\\project\\mmtc-rack\\htcrack-cxl\\model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\viewmodel\\configvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:viewmodel\\configvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\model\\regmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:model\\regmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\view\\engineerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:view\\engineerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\model\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:model\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\viewmodel\\engineervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:viewmodel\\engineervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\net\\htcprotocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:net\\htcprotocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|HTCRack-CXL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\view\\component\\regformuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:view\\component\\regformuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|D:\\Project\\mmtc-rack\\HTCRack-CXL\\view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AA9836CE-F796-4CA8-9B87-40D611A7353D}|HTCRack-CXL.csproj|solutionrelative:view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Model\\RegModel.cs",
+              "RelativeDocumentMoniker": "Model\\RegModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Model\\RegModel.cs",
+              "RelativeToolTip": "Model\\RegModel.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAADwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T01:42:33.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegFormUC.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\Component\\RegFormUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\RegFormUC.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\Component\\RegFormUC.xaml",
+              "RelativeToolTip": "View\\Component\\RegFormUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-23T07:40:55.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HTCRack-CXL",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\HTCRack-CXL.csproj",
+              "RelativeDocumentMoniker": "HTCRack-CXL.csproj",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\HTCRack-CXL.csproj",
+              "RelativeToolTip": "HTCRack-CXL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-22T10:56:25.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RackModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Model\\RackModel.cs",
+              "RelativeDocumentMoniker": "Model\\RackModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Model\\RackModel.cs",
+              "RelativeToolTip": "Model\\RackModel.cs",
+              "ViewState": "AQIAAJ0FAAAAAAAAAAAlwKcFAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T10:48:47.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HtcClient.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Net\\HtcClient.cs",
+              "RelativeDocumentMoniker": "Net\\HtcClient.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Net\\HtcClient.cs",
+              "RelativeToolTip": "Net\\HtcClient.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAMwNIAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T07:38:03.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HtcProtocal.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Net\\HtcProtocal.cs",
+              "RelativeDocumentMoniker": "Net\\HtcProtocal.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Net\\HtcProtocal.cs",
+              "RelativeToolTip": "Net\\HtcProtocal.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADwvyAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T02:16:28.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ConfigPage.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\ConfigPage.xaml",
+              "RelativeDocumentMoniker": "View\\ConfigPage.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\ConfigPage.xaml",
+              "RelativeToolTip": "View\\ConfigPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-23T04:50:07.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EngineerVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\EngineerVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\EngineerVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\EngineerVM.cs",
+              "RelativeToolTip": "ViewModel\\EngineerVM.cs",
+              "ViewState": "AQIAAE4BAAAAAAAAAAAnwFkBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T01:41:41.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConfigVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\ConfigVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ConfigVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\ConfigVM.cs",
+              "RelativeToolTip": "ViewModel\\ConfigVM.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAhwFIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T00:49:08.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAAPgAAAAAAAAAAAAjwAEBAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T04:57:28.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EngineerPage.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\EngineerPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\EngineerPage.xaml.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\EngineerPage.xaml.cs",
+              "RelativeToolTip": "View\\EngineerPage.xaml.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAjwHcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T02:34:12.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAvwJoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T04:09:33.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RackUC.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\Component\\RackUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\RackUC.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\Component\\RackUC.xaml",
+              "RelativeToolTip": "View\\Component\\RackUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T01:14:30.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPageVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\MainPageVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainPageVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\ViewModel\\MainPageVM.cs",
+              "RelativeToolTip": "ViewModel\\MainPageVM.cs",
+              "ViewState": "AQIAALkAAAAAAAAAAAAAwL4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T01:35:10.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BoxModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Model\\BoxModel.cs",
+              "RelativeDocumentMoniker": "Model\\BoxModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\Model\\BoxModel.cs",
+              "RelativeToolTip": "Model\\BoxModel.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAhwBsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T06:35:47.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\MainPage.xaml",
+              "RelativeDocumentMoniker": "View\\MainPage.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-CXL\\View\\MainPage.xaml",
+              "RelativeToolTip": "View\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-25T09:43:26.535Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

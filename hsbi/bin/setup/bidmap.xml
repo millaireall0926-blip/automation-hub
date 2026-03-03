@@ -1,0 +1,14 @@
+<bib-id use="1">
+    <type>
+        <item value="1" text="256P-96F" />
+        
+    </type>
+    <device>
+        <item value="1" text="DDR4" />
+        <item value="2" text="DDR5" />
+        <item value="3" text="NAND" />
+        <item value="4" text="eMMC" />
+        <item value="5" text="eMCP" />
+    </device>
+    
+</bib-id>    

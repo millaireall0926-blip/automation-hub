@@ -1,0 +1,19 @@
+<!--%File-Version:1.0.0%-->
+<staros logo="1">
+	<router ip="127.0.0.1" port="15267" />	
+  <log>
+    <system path="D:\\data\\sys" />    
+    <result path="D:\\data\\result" />
+    <sub path="D:\\data\\sub" />
+    <slot path="D:\\data\\slot" />
+    <data path="D:\\data\\data" />
+    <power path="D:\\data\\power" />
+    <diag path="D:\\data\\diag" />
+  </log>
+  <loader use="0" path="D:\\data"/> 
+  <chamber id="KW-NB01" use="1" model="jst" own="0" ctrl="0" />
+  <db use="0" loader="0" equip="KW-NB01" pc="KowinPC01" ip="222.117.171.130" port="3306" name="testdb" id="root" pw="root"/>        
+</staros>
+<!--%File-History:
+  v1.00 start
+ %-->

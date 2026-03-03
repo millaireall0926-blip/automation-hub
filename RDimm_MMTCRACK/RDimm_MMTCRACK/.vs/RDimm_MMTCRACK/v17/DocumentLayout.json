@@ -1,0 +1,374 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\model\\dimmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:model\\dimmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\model\\cboxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:model\\cboxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|d:\\project\\drimmmm\\mmtc-old\\rdimm_mmtcrack\\rdimm_mmtcrack\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\net\\sitecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:net\\sitecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\model\\manmotormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:model\\manmotormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\view\\dimmpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:view\\dimmpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\viewmodel\\dimmvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:viewmodel\\dimmvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\view\\graphpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:view\\graphpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\base\\mconv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:base\\mconv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\net\\tconcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:net\\tconcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\net\\capturecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:net\\capturecom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\net\\alarmcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:net\\alarmcom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\net\\flowmetercom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E3A24-36D1-4448-8AA7-1789D50B7FEC}|RDimm_MMTCRACK.csproj|solutionrelative:net\\flowmetercom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DimDataModel.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\DimDataModel.cs",
+              "RelativeDocumentMoniker": "Model\\DimDataModel.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\DimDataModel.cs",
+              "RelativeToolTip": "Model\\DimDataModel.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAjwCMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:42:09.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DImmVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\DImmVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\DImmVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\DImmVM.cs",
+              "RelativeToolTip": "ViewModel\\DImmVM.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAASwHMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T01:46:44.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CBoxModel.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\CBoxModel.cs",
+              "RelativeDocumentMoniker": "Model\\CBoxModel.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\CBoxModel.cs",
+              "RelativeToolTip": "Model\\CBoxModel.cs",
+              "ViewState": "AQIAABwEAAAAAAAAAAAqwCgEAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T08:34:18.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RackModel.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\RackModel.cs",
+              "RelativeDocumentMoniker": "Model\\RackModel.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\RackModel.cs",
+              "RelativeToolTip": "Model\\RackModel.cs",
+              "ViewState": "AQIAACAEAAAAAAAAAAAUwC8EAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T07:24:16.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GraphVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\GraphVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\GraphVM.cs",
+              "RelativeToolTip": "ViewModel\\GraphVM.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAWwCsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T02:34:50.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAAwIgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T08:34:02.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SiteCom.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\SiteCom.cs",
+              "RelativeDocumentMoniker": "Net\\SiteCom.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\SiteCom.cs",
+              "RelativeToolTip": "Net\\SiteCom.cs",
+              "ViewState": "AQIAAAEDAAAAAAAAAAAuwA0DAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:53:49.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RackUC.xaml",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\Component\\RackUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\RackUC.xaml",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\Component\\RackUC.xaml",
+              "RelativeToolTip": "View\\Component\\RackUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-14T04:59:14.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPageVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\MainPageVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainPageVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\MainPageVM.cs",
+              "RelativeToolTip": "ViewModel\\MainPageVM.cs",
+              "ViewState": "AQIAAAgCAAAAAAAAAAAcwBwBAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T05:20:21.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAACMCAAAAAAAAAAAAACICAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:45:33.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\MainPage.xaml",
+              "RelativeDocumentMoniker": "View\\MainPage.xaml",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\MainPage.xaml",
+              "RelativeToolTip": "View\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-20T07:10:01.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DimmPage.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\DimmPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\DimmPage.xaml.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\DimmPage.xaml.cs",
+              "RelativeToolTip": "View\\DimmPage.xaml.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADwvyIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T07:01:35.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManMotorModel.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\ManMotorModel.cs",
+              "RelativeDocumentMoniker": "Model\\ManMotorModel.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\ManMotorModel.cs",
+              "RelativeToolTip": "Model\\ManMotorModel.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAIA3wDYAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T08:49:53.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GraphPage.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\GraphPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\GraphPage.xaml.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\GraphPage.xaml.cs",
+              "RelativeToolTip": "View\\GraphPage.xaml.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAArwDcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T01:37:44.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MConv.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Base\\MConv.cs",
+              "RelativeDocumentMoniker": "Base\\MConv.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Base\\MConv.cs",
+              "RelativeToolTip": "Base\\MConv.cs",
+              "ViewState": "AQIAAP8BAAAAAAAAAAArwBkCAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T07:42:41.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAhwEsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T01:10:26.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TconCom.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\TconCom.cs",
+              "RelativeDocumentMoniker": "Net\\TconCom.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\TconCom.cs",
+              "RelativeToolTip": "Net\\TconCom.cs",
+              "ViewState": "AQIAAPcAAAAAAAAAAAAvwP4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:36:46.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AlarmCom.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\AlarmCom.cs",
+              "RelativeDocumentMoniker": "Net\\AlarmCom.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\AlarmCom.cs",
+              "RelativeToolTip": "Net\\AlarmCom.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAuwJYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T10:33:39.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FlowMeterCom.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\FlowMeterCom.cs",
+              "RelativeDocumentMoniker": "Net\\FlowMeterCom.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\FlowMeterCom.cs",
+              "RelativeToolTip": "Net\\FlowMeterCom.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAAwLcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T03:43:45.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CaptureCom.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\CaptureCom.cs",
+              "RelativeDocumentMoniker": "Net\\CaptureCom.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Net\\CaptureCom.cs",
+              "RelativeToolTip": "Net\\CaptureCom.cs",
+              "ViewState": "AQIAAB8BAAAAAAAAAAAkwEABAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T11:06:42.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConfigPage.xaml",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\ConfigPage.xaml",
+              "RelativeDocumentMoniker": "View\\ConfigPage.xaml",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\View\\ConfigPage.xaml",
+              "RelativeToolTip": "View\\ConfigPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-19T08:27:37.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DimModel.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\DimModel.cs",
+              "RelativeDocumentMoniker": "Model\\DimModel.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK\\RDimm_MMTCRACK\\Model\\DimModel.cs",
+              "RelativeToolTip": "Model\\DimModel.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAIwEUAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T11:06:42.467Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

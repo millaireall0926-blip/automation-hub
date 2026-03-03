@@ -1,0 +1,9 @@
+1. 모든 visual studio 종료
+
+2. 관리자 모드로 cmd실행
+
+3. 다음 명령 입력
+
+	regsvr32 "C:\Program Files (x86)\Common Files\Microsoft Shared\MSI Tools\mergemod.dll"
+	regsvr32 ole32.dll
+

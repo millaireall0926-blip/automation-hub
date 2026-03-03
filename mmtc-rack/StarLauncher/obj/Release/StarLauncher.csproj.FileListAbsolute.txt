@@ -1,0 +1,17 @@
+D:\Project\mmtc-rack\bin\ATCLauncher.exe.config
+D:\Project\mmtc-rack\bin\ATCLauncher.exe
+D:\Project\mmtc-rack\bin\ATCLauncher.pdb
+D:\Project\mmtc-rack\StarLauncher\obj\Release\StarLauncher.csproj.AssemblyReference.cache
+D:\Project\mmtc-rack\StarLauncher\obj\Release\MainWindow.g.cs
+D:\Project\mmtc-rack\StarLauncher\obj\Release\App.g.cs
+D:\Project\mmtc-rack\StarLauncher\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Project\mmtc-rack\StarLauncher\obj\Release\ATCLauncher_MarkupCompile.cache
+D:\Project\mmtc-rack\StarLauncher\obj\Release\ATCLauncher_MarkupCompile.lref
+D:\Project\mmtc-rack\StarLauncher\obj\Release\App.baml
+D:\Project\mmtc-rack\StarLauncher\obj\Release\MainWindow.baml
+D:\Project\mmtc-rack\StarLauncher\obj\Release\ATCLauncher.g.resources
+D:\Project\mmtc-rack\StarLauncher\obj\Release\StarLauncher.Properties.Resources.resources
+D:\Project\mmtc-rack\StarLauncher\obj\Release\StarLauncher.csproj.GenerateResource.cache
+D:\Project\mmtc-rack\StarLauncher\obj\Release\StarLauncher.csproj.CoreCompileInputs.cache
+D:\Project\mmtc-rack\StarLauncher\obj\Release\ATCLauncher.exe
+D:\Project\mmtc-rack\StarLauncher\obj\Release\ATCLauncher.pdb

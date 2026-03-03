@@ -1,0 +1,28 @@
+<bib-id use="0">
+    <function>  <!-- 20~23 Bit -->
+        <item value="0" text="Vir" />
+        <item value="1" text="Nor" />
+        <item value="2" text="Lim" />
+        <item value="3" text="DNU" />
+        <item value="4" text="ROOM" />
+        <item value="5" text="ConC" />
+        <item value="6" text="Prob" />
+        <item value="7" text="Load" />
+    </function>
+    <device>  <!-- 27~24 Bit -->
+        <item value="0" text="DNU" />
+        <item value="1" text="DNU" />
+        <item value="2" text="DDR4" />
+        <item value="3" text="DDR5" />
+        <item value="4" text="DRAM" />
+        <item value="5" text="LPDDR" />
+        <item value="6" text="RawN" />
+        <item value="7" text="Sol" />
+    </device>
+    <ball>  <!--(=Position) 16~19 Bit -->
+        <item value="0" text="Pub" />
+        <item value="1" text="320" />
+        <item value="2" text="192" />
+        <item value="3" text="168" />
+    </ball>
+</bib-id>    

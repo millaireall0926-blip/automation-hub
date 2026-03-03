@@ -1,0 +1,16 @@
+HTCRack.exe
+const string Date = "2025/08/04";
+const string Ver = Ver = "V1.0.1 ";
+        - 그래프 X측 누적 시간으로 변경.
+        - Stop 시 Temp File 하나 더 생성되는 문제 수정.
+        - side open -> Slide Open 변경
+
+
+TempView.exe
+* * ** * "2025/08/04";
+*          "V1.1.2";
+*          Graph 데이터 양 늘림 60일치까지 표현하게
+*          
+* ** * "2025/08/04";
+*          "V1.1.1";
+*          x측 표현 누적 시간으로 변경

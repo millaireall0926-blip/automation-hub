@@ -1,0 +1,10 @@
+D:\Project\mmtc-rack\bin\RedfishLib.dll.config
+D:\Project\mmtc-rack\bin\RedfishLib.dll
+D:\Project\mmtc-rack\bin\RedfishLib.pdb
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.csproj.AssemblyReference.cache
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.Properties.Resources.resources
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.csproj.GenerateResource.cache
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.csproj.CoreCompileInputs.cache
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.csproj.Up2Date
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.dll
+D:\Project\mmtc-rack\RedfishLib\obj\Release\RedfishLib.pdb

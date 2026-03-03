@@ -1,0 +1,189 @@
+﻿<Window x:Class="StarIDE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarIDE"
+        xmlns:hc="https://handyorg.github.io/handycontrol"              
+        xmlns:sc="clr-namespace:ScintillaNET;assembly=ScintillaNET"
+        xmlns:vm="clr-namespace:StarIDE.ViewModel"           
+        WindowStyle="None" ResizeMode="CanResize" Background="Transparent" 
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="900" Width="1400" Closed="Window_Closed">
+
+    <Window.DataContext>
+        <vm:MainVM />
+    </Window.DataContext>
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="{Binding TitleColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{Binding Title}" Foreground="WhiteSmoke" Margin="10,0,0,0" FontSize="16" FontWeight="Bold" FontFamily="Calibri" MouseLeftButtonDown="MoveTitle"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTMin" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/min.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTRestore" Background="Transparent"  BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/restore.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="3" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTClose" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/close.png" />
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="3"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="32"/>
+                    </Grid.RowDefinitions>
+                    <hc:SideMenu  BorderThickness="0"  >
+                        <hc:SideMenu.Background>
+                            <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Offset="0.1" Color="#DD395C96" />
+                                    <GradientStop Offset="1" Color="#DD1A2D4C" />
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </hc:SideMenu.Background>
+                        <hc:SideMenuItem Header="OPEN PROJECT" Background="Transparent" Margin="0,0,0,0"  
+                                         MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" >
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/open_project.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+                        <hc:SideMenuItem Header="REOPEN PROJECT" Background="Transparent" Margin="0,0,0,0"  
+                                         MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" >
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/reload.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+                        <hc:SideMenuItem  Header="NEW PROJECT" Background="Transparent" Margin="0,0,0,0"
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/new_project.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+                        <hc:SideMenuItem  Header="CLOSE PROJECT" Background="Transparent" Margin="0,0,0,0"
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/close_project.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+
+                        <hc:SideMenuItem  Header="SAVE FILE" Background="Transparent" Margin="0,30,0,0"
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" ToolTip="CTRL + S">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/save-file.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+                        <hc:SideMenuItem  Header="SAVE ALL" Background="Transparent" Margin="0,0,0,0" 
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" ToolTip="CTRL + SHIFT + S">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/save-all.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+
+                        <hc:SideMenuItem  Header="COMPILE FILE" Background="Transparent" Margin="0,30,0,0"
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" ToolTip="SHIFT + B">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/compile.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+                        <hc:SideMenuItem  Header="COMPILE ALL" Background="Transparent" Margin="0,0,0,0"
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" ToolTip="CTRL + SHIFT + B">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/compile_all.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+                        </hc:SideMenuItem>
+
+                        <hc:SideMenuItem  Header="RECENT PROJECT" Background="Transparent" Margin="0,30,0,0"
+                                          MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp" ItemsSource="{Binding RecentModels}">
+                            <hc:SideMenuItem.Icon>
+                                <Image Source="/Resource/recent.png" Width="32" Height="32"/>
+                            </hc:SideMenuItem.Icon>
+
+                            <hc:SideMenuItem Uid="Recent" x:Name="xMenu_Recent0" MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp">
+                                <hc:SideMenuItem.Icon>
+                                    <Image Source="/Resource/new-file.png" Width="32" Height="32"/>
+                                </hc:SideMenuItem.Icon>
+                            </hc:SideMenuItem>
+
+                            <hc:SideMenuItem Uid="Recent" x:Name="xMenu_Recent1" MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp">
+                                <hc:SideMenuItem.Icon>
+                                    <Image Source="/Resource/new-file.png" Width="32" Height="32"/>
+                                </hc:SideMenuItem.Icon>
+                            </hc:SideMenuItem>
+
+                            <hc:SideMenuItem Uid="Recent" x:Name="xMenu_Recent2" MouseLeftButtonUp="SideMenuItem_MouseLeftButtonUp">
+                                <hc:SideMenuItem.Icon>
+                                    <Image Source="/Resource/new-file.png" Width="32" Height="32"/>
+                                </hc:SideMenuItem.Icon>
+                            </hc:SideMenuItem>
+
+                            <!-- side menu는 binding 안되나.. 모르겠음 -->
+                            <!--
+                            <hc:SideMenuItem.ItemTemplate>
+                                <DataTemplate>
+                                    <hc:SideMenuItem Header="{Binding Name}"/>
+                                </DataTemplate>
+                            </hc:SideMenuItem.ItemTemplate>
+                            -->
+                            
+                            <!--hc:SideMenuItem.ItemsSource >
+                                <CompositeCollection>
+                                    <CollectionContainer Collection="{Binding RecentModels}">                                        
+                                    </CollectionContainer>
+                                </CompositeCollection>
+                            </hc:SideMenuItem.ItemsSource >
+                            <hc:SideMenuItem.ItemContainerStyle>
+                                <Style>
+                                    <Setter Property="hc:SideMenuItem.Header" Value="{Binding Name}"></Setter>
+                                </Style>
+                            </hc:SideMenuItem.ItemContainerStyle -->
+                            
+                            
+
+                        </hc:SideMenuItem>
+                    </hc:SideMenu>
+                    <Line  X1="10" X2="80" Y1="210"  Y2="210" Stroke="WhiteSmoke" StrokeThickness="1"/>
+                    <Line  X1="10" X2="80" Y1="340"  Y2="340" Stroke="WhiteSmoke" StrokeThickness="1"/>
+                    <Line  X1="10" X2="80" Y1="460"  Y2="460" Stroke="WhiteSmoke" StrokeThickness="1"/>
+
+
+                    <Grid Grid.Row="1" Background="#DD151D29">
+                        <Image Source="Resource/logo.png" Height="32" HorizontalAlignment="Left"/>
+                    </Grid>
+
+
+                </Grid>
+                <GridSplitter Grid.Column="1"  Background="#FF27709E" HorizontalAlignment="Stretch"/>
+                <Grid Grid.Column="2" >
+                    <Frame Source="/View/DockView.xaml" BorderThickness="0"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+    
+</Window>

@@ -1,0 +1,19 @@
+<!--%File-Version:1.0.0%-->
+<StarQMOS logo="1">
+	<router ip="127.0.0.1" port="15267" />	
+  <log>
+    <system path="D:\\data\\sys" />    
+    <result path="D:\\data\\result" />
+    <sub path="D:\\data\\sub" />
+    <slot path="D:\\data\\slot" />
+    <data path="D:\\data\\data" />
+    <power path="D:\\data\\power" />
+    <diag path="D:\\data\\diag" />
+  </log>
+  <loader ip="127.0.0.1" port="15268" /> 
+  <chamber id="SNBI-805" use="0" model="jst" own="0" ctrl="0" />
+  <db use="0" equip="기흥 - 챔버1" pc="윤책임 PC 라우터" ip="222.98.49.24" port="3306" name="testdb" id="root" pw="housemania2"/>
+</StarQMOS>
+<!--%File-History:
+  v1.00 start
+ %-->

@@ -1,0 +1,132 @@
+﻿<UserControl x:Class="HTCRack_CXL.View.Component.RackUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HTCRack_CXL.View.Component"
+             mc:Ignorable="d" 
+             xmlns:uc="clr-namespace:HTCRack_CXL.View.Component"
+             xmlns:hc="https://handyorg.github.io/handycontrol" 
+             d:DesignHeight="300" d:DesignWidth="520">
+    <Grid Margin="4">
+        <Border BorderThickness="3" Style="{StaticResource BorderRegion}" BorderBrush="{Binding BoarderColor}" >
+            <Grid Background="{Binding RackColor}" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="38" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <Grid Margin="0,0,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.2*"/>
+                        <ColumnDefinition Width="0.9*"/>
+                        <ColumnDefinition Width="0.9*"/>
+                        <ColumnDefinition Width="0.7*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.6*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Text="{Binding Name}" Style="{StaticResource TitleText}" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="18" FontFamily="Arial" FontWeight="DemiBold"  />
+                    <CheckBox Grid.Column="2" Content="TC Unit" Margin="5,0,0,0" IsChecked="{Binding IsTCUnit}" />
+                    <CheckBox Grid.Column="3" Content="TAMS" IsChecked="{Binding IsTams}"/>
+                    <CheckBox Grid.Column="4" Content="Save Temp"  Visibility="{Binding RackEngrmodeVisibility}" HorizontalAlignment="Right" Margin="0,0,10,0" IsChecked="{Binding IsSaveOnlyTemp}"/>
+                    <CheckBox Grid.Column="5" Content="AS" HorizontalAlignment="Right" Margin="0,0,10,0" IsChecked="{Binding IsAS}"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="0.8*"/>
+                        <ColumnDefinition Width="0.82*"/>
+                        <ColumnDefinition Width="0.82*"/>
+                        <ColumnDefinition Width="0.78*"/>
+                        <ColumnDefinition Width="0.78*"/>
+                        <ColumnDefinition Width="0.75*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <TextBlock VerticalAlignment="Center" Text="SV" Margin="5,0,5,0"/>
+                        <TextBox x:Name="txtSV" Margin="2,0,0,0" Width="45" Height="30" Text="{Binding SetSV, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding EnableSV}" FontSize="14" >
+                            <TextBox.InputBindings>
+                                <KeyBinding Command="{Binding DGCmdSetTemp}" Key="Enter"/>
+                            </TextBox.InputBindings>
+                        </TextBox>
+                        <TextBlock VerticalAlignment="Center" Text="℃" Margin="2,0,10,0"/>
+                    </StackPanel>
+                    <Button Grid.Column="1" Content="CLEAR" Width="55" Height="30" Style="{StaticResource DangerButton}" Command="{Binding DGRackCmdAll}" CommandParameter="RackStatClear" Visibility="{Binding RackEngrmodeVisibility}"/>
+                    <Button Grid.Column="2" Content="습도ON" Width="57" Height="30" Style="{StaticResource OutlineButton}" Command="{Binding DGRackCmdAll}" CommandParameter="RackHumOn" Visibility="{Binding RackEngrmodeVisibility}"/>
+                    <Button Grid.Column="3" Content="습도OFF" Width="57" Height="30" Style="{StaticResource OutlineButton}" Command="{Binding DGRackCmdAll}" CommandParameter="RackHumOff" Visibility="{Binding RackEngrmodeVisibility}"/>
+                    <Button Grid.Column="4" Content="UP" Width="53" Height="30" Style="{StaticResource OutlineButton}" Command="{Binding DGRackCmdAll}" CommandParameter="RackMotorUp" Visibility="{Binding RackEngrmodeVisibility}"/>
+                    <Button Grid.Column="5" Content="DOWN" Width="53" Height="30" Style="{StaticResource OutlineButton}" Command="{Binding DGRackCmdAll}" CommandParameter="RackMotorDown" Visibility="{Binding RackEngrmodeVisibility}"/>
+                    <Button Grid.Column="6" Content="STOP" Width="53" Height="30" Style="{StaticResource DangerButton}" Command="{Binding DGRackCmdAll}" CommandParameter="RackMotorStop" Visibility="{Binding RackEngrmodeVisibility}"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <ItemsControl ItemsSource="{Binding Boxs}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="2"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <uc:BoxUC/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
+                <Grid Grid.Row ="2" Visibility="{Binding ShowBox}">
+                    <Rectangle Fill="{Binding BoxColor}"/>
+                    <TextBlock Text="{Binding BoxMsg}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontFamily="굴림" FontWeight="Bold"></TextBlock>
+                </Grid>
+                <Grid Grid.Row="3" Margin="5,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition Width="80" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Content="Start" Width="58" Height="30" Command="{Binding DGCmdRun}" CommandParameter="{Binding RackStat}" Style="{StaticResource PrimaryButton}"/>
+                    <Button Grid.Column="1" Content="Stop" Width="58" Height="30" Command="{Binding DGCmdStop}" CommandParameter="{Binding RackStat}" Style="{StaticResource DangerButton}"/>
+                    <!-- Motor Stat 추가 필요 -->
+                    <TextBox Grid.Column="2" Margin="5" IsReadOnly="True" Text="{Binding MotorText}" FontWeight="DemiBold" HorizontalContentAlignment="Center" BorderThickness="2" BorderBrush="Black" Background="{Binding MotorColor}"/>
+                    <TextBox Grid.Column="3" Margin="5" IsReadOnly="True" Text="{Binding StatText}" FontWeight="DemiBold" HorizontalContentAlignment="Center" BorderThickness="2" BorderBrush="Black" Background="{Binding BoarderColor}"/>
+                    <Button Grid.Column="4"  Width="68" Command="{Binding DGCmdPower}" CommandParameter="{Binding PowerStat}" Margin="5">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+
+                            <Style TargetType="Button">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding PowerStat}" Value="0">
+                                        <Setter Property="Content" Value="PLC Off"/>
+                                        <Setter Property="Background" Value="Gray" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding PowerStat}" Value="1">
+                                        <Setter Property="Content" Value="Power Off"/>
+                                        <Setter Property="Background" Value="LightGray" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding PowerStat}" Value="2">
+                                        <Setter Property="Content" Value="Power Mix"/>
+                                        <Setter Property="Background" Value="LightBlue" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding PowerStat}" Value="3">
+                                        <Setter Property="Content" Value="Power On"/>
+                                        <Setter Property="Background" Value="LightGreen" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding PowerStat}" Value="4">
+                                        <Setter Property="Content" Value="Changing"/>
+                                        <Setter Property="Background" Value="LightBlue" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

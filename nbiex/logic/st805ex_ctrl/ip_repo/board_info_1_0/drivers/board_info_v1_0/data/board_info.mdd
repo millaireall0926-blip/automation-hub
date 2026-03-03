@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER board_info
+	OPTION supported_peripherals = (board_info);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = board_info;
+END DRIVER

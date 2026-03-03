@@ -1,0 +1,34 @@
+﻿<Window x:Class="StarQMOS.View.LotInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarQMOS.View"
+        xmlns:vm="clr-namespace:StarQMOS.ViewModel"
+        mc:Ignorable="d"
+        Title="LotInfo" Height="450" Width="800"
+        xmlns:hc="https://handyorg.github.io/handycontrol" 
+        AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" MouseDown="Window_MouseDown"
+        Loaded="Window_Loaded" KeyDown="Window_KeyDown" Topmost="True"
+        >
+    <Grid>
+
+        <Rectangle HorizontalAlignment="Left" Height="163" Margin="236,156,0,0" Stroke="Black" VerticalAlignment="Top" Width="440" RadiusX="42.675" RadiusY="42.675">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF8C5050" Offset="1"/>
+                    <GradientStop Color="#FF9C8686" Offset="0.013"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Image HorizontalAlignment="Left" Height="200" Margin="72,128,0,0" VerticalAlignment="Top" Width="265" Source="/View/wafer.jpg" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="346,188,0,0" TextWrapping="Wrap" Text="LOT ID" VerticalAlignment="Top" Width="135" Foreground="White"/>
+        <hc:TextBox hc:InfoElement.Placeholder="LOT ID" Margin="342,213,148,191" Text="{Binding LotID}"/>
+        <Button x:Name="xBT_LotInput" Command="{x:Static vm:MainVM.CmdLot}" Content="Input" HorizontalAlignment="Left" Height="34" Margin="557,264,0,0" VerticalAlignment="Top" Width="95"/>
+        <Button x:Name="xBT_LotCancel" Command="{x:Static vm:MainVM.CmdLot}" Content="Cancel" HorizontalAlignment="Left" Height="34" Margin="457,264,0,0" VerticalAlignment="Top" Width="95"/>
+        <Image HorizontalAlignment="Left" Stretch="Fill" Height="260" Width="260" Margin="77,70,0,0" VerticalAlignment="Top"  Source="/Resource/wafer.png"/>
+
+    </Grid>
+</Window>

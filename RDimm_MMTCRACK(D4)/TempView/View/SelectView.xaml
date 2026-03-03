@@ -1,0 +1,44 @@
+﻿<Page x:Class="TempView.View.SelectView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TempView.View"
+      xmlns:vm="clr-namespace:TempView.ViewModel"        
+      xmlns:hc="https://handyorg.github.io/handycontrol"      
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="400"
+      Title="SelectView">
+
+    <Page.DataContext>
+        <vm:SelectionVM />
+    </Page.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="260" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"  >
+            <!--hc:SearchBar Text="{Binding SelBID}" hc:InfoElement.Title="BIB     " hc:InfoElement.Necessary="True"
+                              hc:InfoElement.Placeholder="Please Input BID" Margin="0,0,0,0" Style="{StaticResource SearchBarExtend}"/-->
+            <TextBlock Text="RackID / DATE Searching" FontSize="12" Margin="6, 4, 0, 0" />
+            <hc:SearchBar Text="{Binding FindName}" hc:InfoElement.Title="Rack ID" hc:InfoElement.Necessary="True" FontWeight="Bold"
+                              hc:InfoElement.Placeholder="Please Input Rack ID" Margin="0,0,0,0" Style="{StaticResource SearchBarExtend}" 
+                                  Command="{Binding FindCmd}" CommandParameter="1"/>
+            <hc:DatePicker hc:InfoElement.TitleWidth="140" Margin="0,20,0,0" FontWeight="Bold"
+                                   hc:InfoElement.Placeholder="Please enter the content"
+                                   hc:InfoElement.Title="DATE FROM" SelectedDate="{Binding SelFrom}"/>
+            <hc:DatePicker hc:InfoElement.TitleWidth="140" 
+                                   hc:InfoElement.Placeholder="Please enter the content" FontWeight="Bold"
+                                   hc:InfoElement.Title="DATE TO" SelectedDate="{Binding SelTo}"/>
+            <Button Margin="0,10,0,0" Content="Search By Time" HorizontalAlignment="Right"
+                            Command="{Binding FindCmd}" CommandParameter="2">
+            </Button>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="xSP_File"/>
+        </ScrollViewer>
+        
+    </Grid>
+</Page>

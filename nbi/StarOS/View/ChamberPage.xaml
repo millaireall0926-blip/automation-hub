@@ -1,0 +1,109 @@
+﻿<Page x:Class="StarOS.View.ChamberPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StarOS.View"
+      xmlns:vm="clr-namespace:StarOS.ViewModel"
+      xmlns:sp="clr-namespace:ScottPlot;assembly=ScottPlot.WPF"
+      mc:Ignorable="d"      
+      Title="ChamberPage" >
+
+    <Page.DataContext>
+        <vm:ChamberVM />
+    </Page.DataContext>
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="41" Margin="10,0,0,0"  VerticalAlignment="Top" Width="45">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Offset="0"/>
+                    <GradientStop Color="#77BBBBBB" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+               
+        <Image Source="/Resource/Chamber.png" HorizontalAlignment="Left" Height="32" Margin="16,1,0,0" VerticalAlignment="Top" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" Margin="63,1,0,0" Text="CHAMBER" Foreground="#FFFDFAFA" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Margin="14,103,0,0" Text="EQUIP-ID" Foreground="#FFFDFAFA" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Margin="172,103,0,0" Text="STATE" Foreground="#FFFDFAFA" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Margin="76,82,0,0" Text="Current Temp" Foreground="#FFFDFAFA" FontSize="11"/>
+        <TextBlock HorizontalAlignment="Left" Height="52" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" Margin="114,40,0,0" Text="℃" Foreground="#FFFDFAFA" FontSize="32" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="52" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" Margin="252,40,0,0" Text="℃" Foreground="#FFFDFAFA" FontSize="32" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Margin="219,82,0,0" Text="Target Temp" Foreground="#FFFDFAFA" FontSize="11"/>
+
+        <TextBlock Text="{Binding CurPLC.CurTemp, StringFormat=\{0:F1\}}" HorizontalAlignment="Left" Height="52" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Margin="32,40,0,0" Foreground="#FFFDFAFA" FontSize="32" FontWeight="Bold"/>
+        <TextBlock Text="{Binding CurPLC.TargetTemp, StringFormat=\{0:F1\}}" Height="52" TextWrapping="Wrap" VerticalAlignment="Top" Margin="166,38,0,0" Foreground="#FFFDFAFA" FontSize="32" FontWeight="Bold" HorizontalAlignment="Left" Width="81"/>
+
+        <TextBlock Text="{Binding EquipID}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="94" Margin="84,102,0,0" Foreground="#FFFDFAFA" FontSize="16" Height="29" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Margin="222,102,0,0" FontSize="16" FontWeight="Bold" >
+            <TextBlock.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding CurPLC.Stat}" Value="0">
+                            <Setter Property="Foreground" Value="DarkGray"/>
+                            <Setter Property="Text" Value="DISCONNECT"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CurPLC.Stat}" Value="1">
+                            <Setter Property="Foreground" Value="#FF60A221"/>
+                            <Setter Property="Text" Value="RUN"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CurPLC.Stat}" Value="4">
+                            <Setter Property="Foreground" Value="#FF2047A5"/>
+                            <Setter Property="Text" Value="STOP"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding CurPLC.Stat}" Value="2">
+                            <Setter Property="Foreground" Value="#FFC7C131"/>
+                            <Setter Property="Text" Value="AMBIENT"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Resources>
+        </TextBlock>
+
+
+
+        <ToolBar Margin="0,146,0,0" Height="36" VerticalAlignment="Top" HorizontalAlignment="Left" Width="411">
+            <Button x:Name="xBT_RackIn" Click="PLC_Menu_Click" Background="Transparent" Height="48" BorderThickness="0" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Resource/cmdrackin.png" Height="24"/>
+                    <TextBlock Text="In" HorizontalAlignment="Center" FontSize="9"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="xBT_RackOut" Click="PLC_Menu_Click" Background="Transparent" Height="48" BorderThickness="0" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Resource/cmdrackout.png" Height="24"/>
+                    <TextBlock Text="Out" HorizontalAlignment="Center" FontSize="9"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="xBT_DoorOpen" Click="PLC_Menu_Click" Background="Transparent" Height="48" BorderThickness="0" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Resource/cmddooropen.png" Height="24"/>
+                    <TextBlock Text="Open" HorizontalAlignment="Center" FontSize="9"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="xBT_DoorClose" Click="PLC_Menu_Click"  Background="Transparent" Height="48" BorderThickness="0" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Resource/cmddoorclose.png" Height="24"/>
+                    <TextBlock Text="Close" HorizontalAlignment="Center" FontSize="9"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="xBT_Menual" Click="PLC_Menu_Click" Background="Transparent" Height="48" BorderThickness="0" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Resource/cmdcham.png" Height="24"/>
+                    <TextBlock Text="Manual" HorizontalAlignment="Center" FontSize="9"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="xBT_Alarm" Click="PLC_Menu_Click" Background="Transparent" Height="48" BorderThickness="0" >
+                <StackPanel Orientation="Vertical">
+                    <Image Source="/Resource/cmdreset.png" Height="24"/>
+                    <TextBlock Text="AlarmReset" HorizontalAlignment="Center" FontSize="9"/>
+                </StackPanel>
+            </Button>
+        </ToolBar>
+
+        <sp:WpfPlot x:Name="xTempGraph" Margin="360,0,0,0" />
+        <ToggleButton Content="AutoFit" IsChecked="{Binding AutoFit}" Style="{StaticResource ToggleButtonPrimary}" Height="30" Width="60"  HorizontalAlignment="Left" Margin="299,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.65"/>
+        
+    </Grid>
+</Page>

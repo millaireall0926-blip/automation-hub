@@ -1,0 +1,13 @@
+<StarIDE>
+  <compile>
+    <pgm cc="g++" api="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM/" eapi="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM" />
+    <pat pgc="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM/" />
+    <head path="/mnt/c/'Program Files (x86)'/StarTest-NBI/CM/" name="STAR_TEST.h" />
+    <makefile delete="0" />
+  </compile>
+  <recent>
+    <folder name="bib_contact_rev1" path="D:\work\805\bib_contact_rev1" />
+    <folder name="20240712" path="D:\nbi\test_pgm\kowin\kowin_nand_20240712\20240712" />
+    <folder name="KOWIN_EMMC_230109" path="D:\nbi\test_pgm\kowin\KOWIN_EMMC_230109" />
+  </recent>
+</StarIDE>

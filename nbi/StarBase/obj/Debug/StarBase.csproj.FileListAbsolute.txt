@@ -1,0 +1,7 @@
+D:\Project\nbi\nbi\bin\StarBase.dll
+D:\Project\nbi\nbi\bin\StarBase.pdb
+D:\Project\nbi\nbi\StarBase\obj\Debug\StarBase.csproj.AssemblyReference.cache
+D:\Project\nbi\nbi\StarBase\obj\Debug\StarBase.csproj.CoreCompileInputs.cache
+D:\Project\nbi\nbi\StarBase\obj\Debug\StarBase.csproj.Up2Date
+D:\Project\nbi\nbi\StarBase\obj\Debug\StarBase.dll
+D:\Project\nbi\nbi\StarBase\obj\Debug\StarBase.pdb

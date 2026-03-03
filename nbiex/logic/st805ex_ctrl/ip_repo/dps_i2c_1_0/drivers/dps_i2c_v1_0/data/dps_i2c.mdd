@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER dps_i2c
+	OPTION supported_peripherals = (dps_i2c);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = dps_i2c;
+END DRIVER

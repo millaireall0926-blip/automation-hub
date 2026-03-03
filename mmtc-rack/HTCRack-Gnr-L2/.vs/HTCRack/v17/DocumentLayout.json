@@ -1,0 +1,358 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\model\\dimmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:model\\dimmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\model\\cboxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:model\\cboxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:model\\rackmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|d:\\project\\mmtc-rack\\htcrack-gnr-l2\\view\\component\\cboxuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:view\\component\\cboxuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\viewmodel\\configvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:viewmodel\\configvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:view\\configpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD386DE7-513D-4D86-93B7-ADDCBC2002CA}|..\\RedfishLib\\RedfishLib.csproj|d:\\project\\mmtc-rack\\redfishlib\\restbmc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|d:\\project\\mmtc-rack\\htcrack-gnr-l2\\viewmodel\\dimmvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:viewmodel\\dimmvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:model\\dimdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\net\\htcprotocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:net\\htcprotocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\net\\htcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:net\\htcclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\net\\modbusls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:net\\modbusls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:viewmodel\\mainpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:view\\component\\rackuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:view\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\view\\dimmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:view\\dimmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\view\\configpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB7D0D13-5A6E-41F9-AD73-598012309BD4}|HTCRack.csproj|solutionrelative:view\\configpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CBoxUC.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\Component\\CBoxUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\CBoxUC.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\Component\\CBoxUC.xaml",
+              "RelativeToolTip": "View\\Component\\CBoxUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-24T02:04:20.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DimDataModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\DimDataModel.cs",
+              "RelativeDocumentMoniker": "Model\\DimDataModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\DimDataModel.cs",
+              "RelativeToolTip": "Model\\DimDataModel.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA6wB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:20:44.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RackModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\RackModel.cs",
+              "RelativeDocumentMoniker": "Model\\RackModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\RackModel.cs",
+              "RelativeToolTip": "Model\\RackModel.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAIAwwH4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:19:51.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DimmVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\DimmVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\DimmVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\DimmVM.cs",
+              "RelativeToolTip": "ViewModel\\DimmVM.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAA5wFcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:12:33.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainPageVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\MainPageVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainPageVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\MainPageVM.cs",
+              "RelativeToolTip": "ViewModel\\MainPageVM.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAjwIMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T08:35:32.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RackUC.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\Component\\RackUC.xaml",
+              "RelativeDocumentMoniker": "View\\Component\\RackUC.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\Component\\RackUC.xaml",
+              "RelativeToolTip": "View\\Component\\RackUC.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-29T05:08:13.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAawFkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T08:03:48.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RestBMC.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\RedfishLib\\RestBMC.cs",
+              "RelativeDocumentMoniker": "..\\RedfishLib\\RestBMC.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\RedfishLib\\RestBMC.cs",
+              "RelativeToolTip": "..\\RedfishLib\\RestBMC.cs",
+              "ViewState": "AQIAAOoAAAAAAAAAAAAawPYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T02:28:33.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-26T10:47:26.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModbusLS.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Net\\ModbusLS.cs",
+              "RelativeDocumentMoniker": "Net\\ModbusLS.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Net\\ModbusLS.cs",
+              "RelativeToolTip": "Net\\ModbusLS.cs",
+              "ViewState": "AQIAADYBAAAAAAAAAAAWwEIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T03:16:16.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAALIBAAAAAAAAAAArwL4BAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T10:25:35.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HtcProtocal.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Net\\HtcProtocal.cs",
+              "RelativeDocumentMoniker": "Net\\HtcProtocal.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Net\\HtcProtocal.cs",
+              "RelativeToolTip": "Net\\HtcProtocal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T10:52:01.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HtcClient.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Net\\HtcClient.cs",
+              "RelativeDocumentMoniker": "Net\\HtcClient.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Net\\HtcClient.cs",
+              "RelativeToolTip": "Net\\HtcClient.cs",
+              "ViewState": "AQIAAPQAAAAAAAAAAAAuwAQBAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T10:52:16.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DimModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\DimModel.cs",
+              "RelativeDocumentMoniker": "Model\\DimModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\DimModel.cs",
+              "RelativeToolTip": "Model\\DimModel.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAA9wEMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:20:44.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAIAywDsAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:55:29.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CBoxModel.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\CBoxModel.cs",
+              "RelativeDocumentMoniker": "Model\\CBoxModel.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\Model\\CBoxModel.cs",
+              "RelativeToolTip": "Model\\CBoxModel.cs",
+              "ViewState": "AQIAAJoBAAAAAAAAAAAUwKkBAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T09:20:21.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConfigVM.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\ConfigVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ConfigVM.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\ViewModel\\ConfigVM.cs",
+              "RelativeToolTip": "ViewModel\\ConfigVM.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAtwHYAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:04:31.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConfigPage.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\ConfigPage.xaml",
+              "RelativeDocumentMoniker": "View\\ConfigPage.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\ConfigPage.xaml",
+              "RelativeToolTip": "View\\ConfigPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-22T05:47:37.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ConfigPage.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\ConfigPage.xaml.cs",
+              "RelativeDocumentMoniker": "View\\ConfigPage.xaml.cs",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\ConfigPage.xaml.cs",
+              "RelativeToolTip": "View\\ConfigPage.xaml.cs",
+              "ViewState": "AQIAAK4AAAAAAAAAAAASwL0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T07:13:10.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\MainPage.xaml",
+              "RelativeDocumentMoniker": "View\\MainPage.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\MainPage.xaml",
+              "RelativeToolTip": "View\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T08:35:35.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DimmPage.xaml",
+              "DocumentMoniker": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\DimmPage.xaml",
+              "RelativeDocumentMoniker": "View\\DimmPage.xaml",
+              "ToolTip": "D:\\Project\\mmtc-rack\\HTCRack-Gnr-L2\\View\\DimmPage.xaml",
+              "RelativeToolTip": "View\\DimmPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-30T08:18:15.616Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

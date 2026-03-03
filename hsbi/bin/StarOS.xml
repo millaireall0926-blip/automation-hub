@@ -1,0 +1,20 @@
+<!--%File-Version:1.0.0%-->
+<staros>
+	<router ip="127.0.0.1" port="15267" />	
+  <log>
+    <system path="D:\\hsbi-data\\sys" />    
+    <result path="D:\\hsbi-data\\result" />
+    <sub path="D:\\hsbi-data\\sub" />
+    <slot path="D:\\hsbi-data\\slot" />
+    <data path="D:\\hsbi-data\\data" />
+    <power path="D:\\hsbi-data\\power" />
+    <diag path="D:\\hsbi-data\\diag" />
+  </log>
+  <setup mode="0"/>
+  <loader use="1" path="D:\\hsbi-data"/> 
+  <chamber id="SNBI-840" use="0" model="jst" own="0" ctrl="0" />
+  <db use="0" loader="1" equip="ST840-Equip01" pc="LSYSPC01-1" ip="222.117.171.30" port="3306" name="testdb" id="root" pw="housemania2"/>       
+</staros>
+<!--%File-History:
+  v1.00 start
+ %-->

@@ -1,0 +1,17 @@
+﻿<Application x:Class="StarIDE.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:StarIDE"
+             StartupUri="MainWindow.xaml"
+             xmlns:hc="https://handyorg.github.io/handycontrol">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <hc:ThemeResources RequestedTheme="Dark" />
+                <hc:Theme />
+
+                <ResourceDictionary Source="pack://application:,,,/StarIDE;component/Style/Style_Ctrl.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

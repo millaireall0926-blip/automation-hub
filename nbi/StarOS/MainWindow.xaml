@@ -1,0 +1,261 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StarOS"
+        xmlns:vm="clr-namespace:StarOS.ViewModel"
+        xmlns:hc="https://handyorg.github.io/handycontrol"         
+        mc:Ignorable="d"
+        Title="MainWindow" Height="990" Width="1400" AllowsTransparency="True" WindowStyle="None" ResizeMode="CanResizeWithGrip" Background="Transparent" 
+        x:Class="StarOS.MainWindow" 
+        Closed="Window_Closed" Loaded="Window_Loaded" >
+
+    <Window.DataContext>
+        <vm:MainVM/>
+    </Window.DataContext>
+
+    <Grid Background="#DD0D0B19">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="xTB_Title" Grid.Column="0" Foreground="#AAAAAAFF" Margin="10,0,0,0" FontSize="16" FontWeight="Bold" FontFamily="Calibri" MouseLeftButtonDown="MoveTitle"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTMin" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/min.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="2" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTRestore" Background="Transparent"  BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/restore.png" />
+                </Button>
+            </Grid>
+            <Grid Grid.Column="3" HorizontalAlignment="Center"  Style="{StaticResource xsTitleGrid}">
+                <Button x:Name="xBTClose" Background="Transparent" BorderThickness="0" Click="ClickTileButton">
+                    <Image Source="/Resource/close.png" />
+                </Button>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="32*"/>
+                <ColumnDefinition Width="4"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="{Binding MainText}" VerticalAlignment="Top" Height="57" Width="366" FontSize="32" >
+                <TextBlock.Resources>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Style.Triggers>
+                            <Trigger Property="Text" Value="SLOT SELECTION">
+                                <Setter Property="Foreground" Value="#FFFBF5F5"/>
+                            </Trigger>
+                            <Trigger Property="Text" Value="NO ROUTER">
+                                <Setter Property="Foreground" Value="#FFFB0505"/>
+                            </Trigger>                        
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Resources>
+            </TextBlock>
+            <hc:Card Background="Black" BorderBrush="#FF131313" Margin="10,50,10,10" >
+                <Frame Source="/View/SlotPage.xaml" Margin="10" BorderThickness="1"/>
+            </hc:Card>
+
+            <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" >
+                <GridSplitter.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#DD000000"/>
+                        <GradientStop Color="#DD928EF9" Offset="1"/>
+                    </LinearGradientBrush>
+                </GridSplitter.Background>
+            </GridSplitter>
+
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="727*"/>
+                    <ColumnDefinition Width="231*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30*"/>
+                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="35*"/>
+                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="50*"/>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <hc:Card Grid.Row="0" Background="Black" BorderBrush="#FF131313" Margin="10,0,10,16" Grid.ColumnSpan="2" >
+                    <Frame Source="/View/ChamberPage.xaml" Margin="10" BorderThickness="1"/>
+                </hc:Card>
+
+                <GridSplitter Grid.Row="1" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
+                    <GridSplitter.Background>
+                        <LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+                            <GradientStop Color="#DD12172D"/>
+                            <GradientStop Color="#DD6560E0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </GridSplitter.Background>
+                </GridSplitter>
+
+                <hc:Card Grid.Row="2" Background="Black" BorderBrush="#FF131313" Margin="10,0,10,16" Grid.ColumnSpan="2" >
+                    <Frame Source="/View/PowerPage.xaml" Margin="10" BorderThickness="1"/>
+                </hc:Card>
+
+                <GridSplitter Grid.Row="3" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
+                    <GridSplitter.Background>
+                        <LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+                            <GradientStop Color="#DD12172D"/>
+                            <GradientStop Color="#DD6560E0" Offset="1"/>
+                        </LinearGradientBrush>
+                    </GridSplitter.Background>
+                </GridSplitter>
+
+                <hc:Card Grid.Row="4" Background="Black" BorderBrush="#FF131313" Margin="10,0,10,0" Grid.ColumnSpan="2" >
+                    <Frame Source="/View/TestInfo.xaml" Margin="10" BorderThickness="1"/>
+                </hc:Card>
+
+                <Grid Grid.Row="5" Grid.ColumnSpan="2">
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+                            <LinearGradientBrush.GradientStops>
+                                <GradientStop Color="#DD3B36A9"/>
+                                <GradientStop Color="#DD12172D" Offset="1"/>
+                            </LinearGradientBrush.GradientStops>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                </Grid>
+                <Grid Grid.Row="6" Grid.ColumnSpan="2">
+                    <hc:StepBar Name="xSteps" ItemsSource="{Binding Steps}" Margin="0,4,0,0">
+                        <hc:StepBar.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </hc:StepBar.ItemTemplate>
+                    </hc:StepBar>
+                </Grid>
+
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2" >
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="1, 0.5" StartPoint="0, 0.5">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#DD3B36A9"/>
+                        <GradientStop Color="#DD12172D" Offset="1"/>
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Image Source="/Resource/logo.png" Visibility="{Binding ShowLogo}" Margin="4" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+
+            <Button x:Name="xBT_LoadDB" Visibility="Hidden" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="220,0,0,0" BorderThickness="0" HorizontalAlignment="Left" >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmddb.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="DBLoad" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Load" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="300,0,0,0" BorderThickness="0" HorizontalAlignment="Left" >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdload.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Load" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_ReLoad" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="380,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdReload.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="ReLoad" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Con" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="460,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdCon.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Contact" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Test" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="540,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdRun.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Test" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Stop" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="620,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdStop.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Stop" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Step" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="700,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdStep.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Single" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Reset" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="780,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdReset.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Reset" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+            <Button x:Name="xBT_Diag" Click="ClickMenuButton" Background="Transparent" Height="60" Margin="860,0,0,0" BorderThickness="0" HorizontalAlignment="Left"  >
+                <StackPanel Orientation="Vertical">
+                    <Border Grid.Row="0" Background="#A0C0FF" Width="60" Height="24" VerticalAlignment="Bottom" CornerRadius="10">
+                        <Image Source="/Resource/cmdDiag.png" Width="24" Height="24" />
+                    </Border>
+                    <Border Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#404080" Width="60" Height="18" CornerRadius="10" Margin="0,2,0,0">
+                        <TextBlock Text="Diag" FontSize="10px" FontFamily="Fixed Sys" TextTrimming="CharacterEllipsis" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="WhiteSmoke" />
+                    </Border>
+                </StackPanel>
+            </Button>
+
+        </Grid>
+
+    </Grid>
+</Window>

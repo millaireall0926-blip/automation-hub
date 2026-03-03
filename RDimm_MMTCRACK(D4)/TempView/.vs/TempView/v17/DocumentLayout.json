@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\graphvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\drimmmm\\mmtc-old\\rdimm_mmtcrack(d4)\\tempview\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|d:\\project\\drimmmm\\mmtc-old\\rdimm_mmtcrack(d4)\\tempview\\view\\graphview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\graphview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\viewmodel\\selectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\selectionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\view\\selectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:view\\selectview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02F6DEF3-E876-417A-A072-08CA83B9D816}|TempView.csproj|solutionrelative:viewmodel\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAywAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T04:37:58.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GraphVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\ViewModel\\GraphVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\GraphVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\ViewModel\\GraphVM.cs",
+              "RelativeToolTip": "ViewModel\\GraphVM.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAwPwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T06:11:01.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GraphView.xaml.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\View\\GraphView.xaml.cs",
+              "RelativeDocumentMoniker": "View\\GraphView.xaml.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\View\\GraphView.xaml.cs",
+              "RelativeToolTip": "View\\GraphView.xaml.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAMwF8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:29:37.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectionVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\ViewModel\\SelectionVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\SelectionVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\ViewModel\\SelectionVM.cs",
+              "RelativeToolTip": "ViewModel\\SelectionVM.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAnwEoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:12:52.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SelectView.xaml",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\View\\SelectView.xaml",
+              "RelativeDocumentMoniker": "View\\SelectView.xaml",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\View\\SelectView.xaml",
+              "RelativeToolTip": "View\\SelectView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T02:11:58.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Global.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\Global.cs",
+              "RelativeDocumentMoniker": "Global.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\Global.cs",
+              "RelativeToolTip": "Global.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAcwGsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:10:54.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\ViewModel\\MainVM.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainVM.cs",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\ViewModel\\MainVM.cs",
+              "RelativeToolTip": "ViewModel\\MainVM.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCAAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T02:10:01.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Project\\DRimmMM\\mmtc-old\\RDimm_MMTCRACK(D4)\\TempView\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-19T02:09:38.983Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+D:\Project\HSBI\hsbi\bin\StarBase.dll
+D:\Project\HSBI\hsbi\bin\StarBase.pdb
+D:\Project\HSBI\hsbi\StarBase\obj\Debug\StarBase.csproj.AssemblyReference.cache
+D:\Project\HSBI\hsbi\StarBase\obj\Debug\StarBase.csproj.CoreCompileInputs.cache
+D:\Project\HSBI\hsbi\StarBase\obj\Debug\StarBase.csproj.Up2Date
+D:\Project\HSBI\hsbi\StarBase\obj\Debug\StarBase.dll
+D:\Project\HSBI\hsbi\StarBase\obj\Debug\StarBase.pdb
+D:\Project\HSBIEX\nbiex\bin\StarBase.dll
+D:\Project\HSBIEX\nbiex\bin\StarBase.pdb
+D:\Project\HSBIEX\nbiex\StarBase\obj\Debug\StarBase.csproj.AssemblyReference.cache
+D:\Project\HSBIEX\nbiex\StarBase\obj\Debug\StarBase.csproj.CoreCompileInputs.cache
+D:\Project\HSBIEX\nbiex\StarBase\obj\Debug\StarBase.csproj.Up2Date
+D:\Project\HSBIEX\nbiex\StarBase\obj\Debug\StarBase.dll
+D:\Project\HSBIEX\nbiex\StarBase\obj\Debug\StarBase.pdb

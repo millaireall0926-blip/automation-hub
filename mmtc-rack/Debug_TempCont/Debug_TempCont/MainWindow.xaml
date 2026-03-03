@@ -1,0 +1,51 @@
+﻿<Window x:Class="Debug_TempCont.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Debug_TempCont"
+        mc:Ignorable="d"
+        Title="Debug_Temp" Height="570" Width="850" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Frame Source="\View\ConnetView.xaml"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Frame Source="\View\FuncView.xaml"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Frame Source="\View\TempChView.xaml"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="2" Grid.RowSpan="3" Grid.ColumnSpan="2">
+            <Expander ExpandDirection="Right" IsExpanded="False" Expanded="Expander_Expanded" Collapsed="Expander_Collapsed">
+                <Expander.Header>
+                    <TextBlock Text="GRAPH" FontWeight="Bold" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock.LayoutTransform>
+                            <RotateTransform Angle="90"/>
+                        </TextBlock.LayoutTransform>
+                    </TextBlock>
+                </Expander.Header>
+                <Expander.Content>
+                    <Frame Source="\View\GraphView.xaml"/>
+                </Expander.Content>
+            </Expander>
+            <!--
+            <Frame Source="\View\GraphView.xaml"/>
+            -->
+        </Grid>
+    </Grid>
+</Window>

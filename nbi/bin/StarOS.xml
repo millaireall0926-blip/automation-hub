@@ -1,0 +1,19 @@
+<!--%File-Version:1.0.0%-->
+<staros logo="0">
+	<router ip="127.0.0.1" port="15267" />	
+  <log>
+    <system path="D:\\data\\sys" />    
+    <result path="D:\\data\\result" />
+    <sub path="D:\\data\\sub" />
+    <slot path="D:\\data\\slot" />
+    <data path="D:\\data\\data" />
+    <power path="D:\\data\\power" />
+    <diag path="D:\\data\\diag" />
+  </log>
+  <loader use="1" path="D:\\data"/> 
+  <chamber id="SNBI-805" use="0" model="jst" own="0" ctrl="0" />
+  <db use="0" loader="1" loadPath="\\192.168.50.36\home\" equip="Suzhou - Debug" pc="Debug PC" ip="222.117.171.30" port="3306" name="testdb" id="root" pw="housemania2"/>        
+</staros>
+<!--%File-History:
+  v1.00 start
+ %-->

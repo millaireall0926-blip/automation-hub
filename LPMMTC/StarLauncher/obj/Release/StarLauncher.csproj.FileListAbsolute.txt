@@ -1,0 +1,17 @@
+D:\Project\LP-MMTCRack\LP\lpmmtc\bin\LPMMTC_Launcher.exe.config
+D:\Project\LP-MMTCRack\LP\lpmmtc\bin\LPMMTC_Launcher.exe
+D:\Project\LP-MMTCRack\LP\lpmmtc\bin\LPMMTC_Launcher.pdb
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\StarLauncher.csproj.AssemblyReference.cache
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\MainWindow.g.cs
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\App.g.cs
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\LPMMTC_Launcher_MarkupCompile.cache
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\LPMMTC_Launcher_MarkupCompile.lref
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\App.baml
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\MainWindow.baml
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\LPMMTC_Launcher.g.resources
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\StarLauncher.Properties.Resources.resources
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\StarLauncher.csproj.GenerateResource.cache
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\StarLauncher.csproj.CoreCompileInputs.cache
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\LPMMTC_Launcher.exe
+D:\Project\LP-MMTCRack\LP\lpmmtc\StarLauncher\obj\Release\LPMMTC_Launcher.pdb

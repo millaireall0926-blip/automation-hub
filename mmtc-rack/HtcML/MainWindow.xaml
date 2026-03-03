@@ -1,0 +1,107 @@
+﻿<Window x:Class="HtcML.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HtcML"
+        xmlns:vm="clr-namespace:HtcML.ViewModel"
+        xmlns:hc="https://handyorg.github.io/handycontrol"  
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="600" Width="880">
+    <Window.DataContext>
+        <vm:MainVM/>
+    </Window.DataContext>
+       
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="70"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"  FontSize="20" Text="Deep Learning" Background="DarkOliveGreen"/>
+            <StackPanel Grid.Row="1"  Orientation="Horizontal">
+                <TextBlock Text="TrainingData" VerticalAlignment="Center" Width="80"/>
+                <ListView ItemsSource="{Binding InputFilss}" Width="300" Margin="10,0,0,0" >
+                    <ListView.Resources>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Setter Property="Height" Value="10"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn DisplayMemberBinding="{Binding}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button Content="Input" Command="{Binding CmdInput}" Margin="10,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <TextBlock Text="epochs" VerticalAlignment="Center" Margin="40,0,0,0"/>
+                <TextBox Text="{Binding LearnEpochs}" Width="80" Height="36" Margin="10,0,0,0"/>
+                <Button Content="LearnAll" Background="MediumSeaGreen" Command="{Binding CmdLearning}" CommandParameter="ALL" Margin="10,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <Button Content="BoxA" Background="LawnGreen" Command="{Binding CmdLearning}" CommandParameter="A" Margin="5,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <Button Content="BoxB" Background="LawnGreen" Command="{Binding CmdLearning}" CommandParameter="B" Margin="5,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <Button Content="BoxC" Background="LawnGreen" Command="{Binding CmdLearning}" CommandParameter="C" Margin="5,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                <TextBlock Text="HDF5" VerticalAlignment="Center" Width="80"/>
+                <Button Content="{Binding OutputPath}" Command="{Binding CmddOutput}" Width="300" Margin="10,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <TextBox Text="{Binding OutputName}" Width="100" Margin="4" TextAlignment="Center"/>
+            </StackPanel>
+            
+            
+            <ScrollViewer x:Name="xTraninigScroll" Grid.Row="3"                     
+                    VerticalContentAlignment="Bottom"
+                    VerticalScrollBarVisibility="Auto"
+                    HorizontalScrollBarVisibility="Disabled">
+                <RichTextBox x:Name="xTrainingTextBox" FontSize="12" Background="SlateGray" Foreground="White"/>
+            </ScrollViewer>
+            <hc:LoadingLine Grid.Row="3" Margin="30" Visibility="{Binding TrainingLoading}" Foreground="IndianRed" Style="{StaticResource LoadingLineLarge}" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"  FontSize="20" Text="Predict" Background="CadetBlue"/>
+            <StackPanel Grid.Row="1"  Orientation="Horizontal">
+                <TextBlock Text="HDF5" VerticalAlignment="Center" Width="80"/>
+                <TextBox Text="{Binding PredictPath}" Width="300" Margin="10,0,0,0" />
+                <Button Content="Select" Command="{Binding CmdHDF5}"  Margin="10,0,0,0"/>
+                <TextBlock Text="IPC Control" VerticalAlignment="Center" Margin="50,0,0,0"/>
+                <Image Source="{Binding IPCStatIcon}" Stretch="Fill" Height="32" Width="32" Margin="10,0,0,0" />
+                <Button Content="{Binding IPCMode}" Command="{Binding CmdIPC}" Width="80"
+                        Background="{Binding IPCColor}" Margin="10,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+
+
+                
+
+
+            </StackPanel>
+            <StackPanel Grid.Row="2"  Orientation="Horizontal">
+                <TextBlock Text="SampleData" VerticalAlignment="Center" Width="80"/>
+                <TextBox Text="{Binding SamplePath}" Width="300" Margin="10,0,0,0" />
+                <Button Content="Select" Command="{Binding CmdSample}" Margin="10,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <Button Content="Simulation" Background="LightSeaGreen" Command="{Binding CmdSimul}" Margin="10,0,0,0" IsEnabled="{Binding EnableCmd}"/>
+                <Button Content="SimCancle" Background="Tomato" Command="{Binding CmdSimCancle}" Margin="10,0,0,0" />
+                
+            </StackPanel>
+            <ScrollViewer x:Name="xPredictScroll" Grid.Row="3"                     
+                    VerticalContentAlignment="Bottom"
+                    VerticalScrollBarVisibility="Auto"
+                    HorizontalScrollBarVisibility="Disabled">
+                <RichTextBox x:Name="xPredictTextBox" FontSize="12" Background="DimGray" Foreground="White"/>
+            </ScrollViewer>
+            <hc:LoadingLine Grid.Row="3" Margin="30" Visibility="{Binding PredictLoading}" Foreground="OrangeRed" Style="{StaticResource LoadingLineLarge}" />
+
+        </Grid>
+        
+    </Grid>
+</Window>

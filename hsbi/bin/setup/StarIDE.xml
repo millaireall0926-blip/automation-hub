@@ -1,0 +1,13 @@
+<StarIDE>
+  <compile>
+    <pgm cc="g++" api="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM/" eapi="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM" />
+    <pat pgc="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM/" />
+    <head path="/mnt/c/'Program Files (x86)'/STAR-TEST/STAR-TEST-HSBI/CM/" name="STAR_HSBI.h" />
+    <makefile delete="0" />
+  </compile>
+  <recent>
+    <folder name="table_Tennis_2_0_win_jjerin_st840_test_r02" path="D:\hsbi\pgm\table_Tennis_2_0_win_jjerin_st840_test_r02" />
+    <folder name="NAND_132F_Kowin" path="D:\nbi\test_pgm\NAND_132F_Kowin" />
+    <folder name="diag" path="D:\nbi\diag" />
+  </recent>
+</StarIDE>
