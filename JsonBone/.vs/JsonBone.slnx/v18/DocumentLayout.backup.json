@@ -1,32 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\milla\\source\\repos\\JsonBone\\",
+  "WorkspaceRootPath": "D:\\work\\PhilipU\\JsonBone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|c:\\users\\milla\\source\\repos\\jsonbone\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|d:\\work\\philipu\\jsonbone\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|c:\\users\\milla\\source\\repos\\jsonbone\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|D:\\work\\PhilipU\\JsonBone\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|solutionrelative:mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|c:\\users\\milla\\source\\repos\\jsonbone\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|D:\\work\\PhilipU\\JsonBone\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|c:\\users\\milla\\source\\repos\\jsonbone\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|D:\\work\\PhilipU\\JsonBone\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|JsonBone||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|c:\\users\\milla\\source\\repos\\jsonbone\\basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|D:\\work\\PhilipU\\JsonBone\\basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|solutionrelative:basevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AB6F579-5910-4961-99BE-7EB720296516}|JsonBone.csproj|c:\\users\\milla\\source\\repos\\jsonbone\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,15 +39,14 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainVM.cs",
-              "DocumentMoniker": "C:\\Users\\milla\\source\\repos\\JsonBone\\MainVM.cs",
+              "DocumentMoniker": "D:\\work\\PhilipU\\JsonBone\\MainVM.cs",
               "RelativeDocumentMoniker": "MainVM.cs",
-              "ToolTip": "C:\\Users\\milla\\source\\repos\\JsonBone\\MainVM.cs",
+              "ToolTip": "D:\\work\\PhilipU\\JsonBone\\MainVM.cs",
               "RelativeToolTip": "MainVM.cs",
               "ViewState": "AgIAAJYAAAAAAAAAAAAcwKIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T06:08:30.352Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -60,9 +56,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\milla\\source\\repos\\JsonBone\\App.xaml",
+              "DocumentMoniker": "D:\\work\\PhilipU\\JsonBone\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\milla\\source\\repos\\JsonBone\\App.xaml",
+              "ToolTip": "D:\\work\\PhilipU\\JsonBone\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-25T07:06:39.997Z",
@@ -72,9 +68,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\milla\\source\\repos\\JsonBone\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\work\\PhilipU\\JsonBone\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\milla\\source\\repos\\JsonBone\\MainWindow.xaml",
+              "ToolTip": "D:\\work\\PhilipU\\JsonBone\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-25T09:21:00.901Z",
@@ -84,39 +80,36 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "JsonBone",
-              "DocumentMoniker": "C:\\Users\\milla\\source\\repos\\JsonBone\\JsonBone.csproj",
+              "DocumentMoniker": "D:\\work\\PhilipU\\JsonBone\\JsonBone.csproj",
               "RelativeDocumentMoniker": "JsonBone.csproj",
-              "ToolTip": "C:\\Users\\milla\\source\\repos\\JsonBone\\JsonBone.csproj",
+              "ToolTip": "D:\\work\\PhilipU\\JsonBone\\JsonBone.csproj",
               "RelativeToolTip": "JsonBone.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-24T09:48:26.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T09:48:26.748Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "BaseVM.cs",
-              "DocumentMoniker": "C:\\Users\\milla\\source\\repos\\JsonBone\\BaseVM.cs",
+              "DocumentMoniker": "D:\\work\\PhilipU\\JsonBone\\BaseVM.cs",
               "RelativeDocumentMoniker": "BaseVM.cs",
-              "ToolTip": "C:\\Users\\milla\\source\\repos\\JsonBone\\BaseVM.cs",
+              "ToolTip": "D:\\work\\PhilipU\\JsonBone\\BaseVM.cs",
               "RelativeToolTip": "BaseVM.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAkwEkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T06:12:04.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T06:12:04.875Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\milla\\source\\repos\\JsonBone\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\work\\PhilipU\\JsonBone\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\milla\\source\\repos\\JsonBone\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\work\\PhilipU\\JsonBone\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T05:12:32.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T05:12:32.605Z"
             }
           ]
         }

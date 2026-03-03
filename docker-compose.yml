@@ -1,0 +1,26 @@
+﻿services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: phillip-n8n
+    ports:
+      - '5678:5678'
+    volumes:
+      - ./n8n-data:/home/node/.n8n
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=false
+      - N8N_HOST=0.0.0.0
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://hypernormal-serriedly-una.ngrok-free.dev/
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: phillip-ngrok
+    command: http n8n:5678
+    environment:
+      - NGROK_AUTHTOKEN=3AQhqtVc97Lu9bX5g4ZBDkYMLf0_4F7sfP4tpxsZbzBTjAPRj
+    ports:
+      - '4040:4040'
+    depends_on:
+      - n8n
+    restart: unless-stopped
