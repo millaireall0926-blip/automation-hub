@@ -178,7 +178,7 @@ public static class VerInfo
 
     const string Program = "LPMMRACK";
     const string Date = "2026/2/27";
-    const string Ver = "V1.5.0";
+    const string Ver = "V1.5.0 ";
     const string Author = "-";
     public static string getVer() => Program + "    " + Date + " " + Ver;
 	/*
